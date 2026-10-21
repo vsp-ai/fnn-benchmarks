@@ -1,0 +1,800 @@
+{
+  "atoms": {
+    "type": "predicates",
+    "len": 30,
+    "content": [
+      "guard:block_0 eq 0",
+      "guard:block_0 eq 1",
+      "guard:block_0 eq 2",
+      "guard:block_0 eq 3",
+      "guard:block_0 eq 4",
+      "guard:block_1 eq 0",
+      "guard:block_1 eq 1",
+      "guard:block_1 eq 2",
+      "guard:block_1 eq 3",
+      "guard:block_1 eq 4",
+      "guard:block_2 eq 0",
+      "guard:block_2 eq 1",
+      "guard:block_2 eq 2",
+      "guard:block_2 eq 3",
+      "guard:block_2 eq 4",
+      "guard:block_3 eq 0",
+      "guard:block_3 eq 1",
+      "guard:block_3 eq 2",
+      "guard:block_3 eq 3",
+      "guard:block_3 eq 4",
+      "guard:clear_0 geq 1",
+      "guard:clear_1 geq 1",
+      "guard:clear_2 geq 1",
+      "guard:clear_3 geq 1",
+      "guard:hand-empty geq 1",
+      "guard:clear_0 leq 0",
+      "guard:clear_1 leq 0",
+      "guard:clear_2 leq 0",
+      "guard:clear_3 leq 0",
+      "guard:hand-empty leq 0"
+    ]
+  },
+  "rules": {
+    "L1_0": {
+      "AND": [
+        "guard:block_0 eq 0",
+        "guard:block_1 eq 1",
+        "guard:clear_1 geq 1",
+        "guard:clear_0 leq 0"
+      ]
+    },
+    "L1_1": {
+      "AND": [
+        "guard:block_1 eq 2",
+        "guard:block_2 eq 4",
+        "guard:block_3 eq 1",
+        "guard:clear_1 geq 1",
+        "guard:clear_2 geq 1",
+        "guard:clear_3 leq 0"
+      ]
+    },
+    "L1_2": {
+      "AND": [
+        "guard:block_1 eq 3",
+        "guard:block_2 eq 1",
+        "guard:block_3 eq 1",
+        "guard:clear_0 geq 1",
+        "guard:clear_1 leq 0"
+      ]
+    },
+    "L1_3": {
+      "AND": [
+        "guard:clear_1 geq 1"
+      ]
+    },
+    "L1_4": {
+      "AND": [
+        "guard:block_2 eq 1",
+        "guard:clear_1 leq 0"
+      ]
+    },
+    "L1_5": {
+      "AND": [
+        "guard:block_3 eq 1",
+        "guard:clear_3 leq 0"
+      ]
+    },
+    "L1_6": {
+      "AND": [
+        "guard:block_0 eq 0",
+        "guard:block_2 eq 4",
+        "guard:clear_1 geq 1",
+        "guard:clear_3 leq 0"
+      ]
+    },
+    "L1_7": {
+      "AND": [
+        "guard:block_1 eq 1",
+        "guard:block_2 eq 4",
+        "guard:clear_1 geq 1",
+        "guard:clear_2 geq 1",
+        "guard:clear_3 leq 0"
+      ]
+    },
+    "L1_8": {
+      "AND": [
+        "guard:block_1 eq 0",
+        "guard:clear_0 geq 1",
+        "guard:clear_3 leq 0",
+        "guard:hand-empty leq 0"
+      ]
+    },
+    "L1_9": {
+      "AND": [
+        "guard:block_3 eq 1",
+        "guard:hand-empty geq 1"
+      ]
+    },
+    "L1_10": {
+      "AND": [
+        "guard:block_1 eq 2",
+        "guard:block_2 eq 3"
+      ]
+    },
+    "L1_11": {
+      "AND": [
+        "guard:block_0 eq 3",
+        "guard:block_3 eq 1",
+        "guard:clear_1 geq 1"
+      ]
+    },
+    "L1_12": {
+      "AND": [
+        "guard:clear_1 leq 0",
+        "guard:hand-empty leq 0"
+      ]
+    },
+    "L1_13": {
+      "AND": [
+        "guard:clear_0 leq 0",
+        "guard:clear_3 leq 0"
+      ]
+    },
+    "L1_14": {
+      "AND": [
+        "guard:clear_3 geq 1",
+        "guard:hand-empty geq 1",
+        "guard:clear_1 leq 0"
+      ]
+    },
+    "L1_15": {
+      "AND": [
+        "guard:block_0 eq 1",
+        "guard:block_1 eq 4",
+        "guard:block_2 eq 1",
+        "guard:clear_0 geq 1"
+      ]
+    },
+    "L1_16": {
+      "AND": [
+        "guard:block_3 eq 1",
+        "guard:clear_3 geq 1",
+        "guard:hand-empty geq 1",
+        "guard:clear_0 leq 0"
+      ]
+    },
+    "L1_17": {
+      "AND": [
+        "guard:block_0 eq 1",
+        "guard:block_2 eq 4",
+        "guard:block_3 eq 1",
+        "guard:clear_0 geq 1",
+        "guard:clear_1 geq 1",
+        "guard:clear_3 leq 0"
+      ]
+    },
+    "L1_18": {
+      "AND": [
+        "guard:block_0 eq 1",
+        "guard:clear_0 geq 1",
+        "guard:clear_3 geq 1"
+      ]
+    },
+    "L1_19": {
+      "AND": [
+        "guard:block_0 eq 1",
+        "guard:block_3 eq 1",
+        "guard:clear_2 geq 1",
+        "guard:clear_1 leq 0"
+      ]
+    },
+    "L1_20": {
+      "AND": [
+        "guard:clear_0 leq 0",
+        "guard:clear_2 leq 0",
+        "guard:clear_3 leq 0",
+        "guard:hand-empty leq 0"
+      ]
+    },
+    "L1_21": {
+      "AND": [
+        "guard:block_0 eq 1",
+        "guard:block_3 eq 1",
+        "guard:clear_0 geq 1",
+        "guard:clear_2 geq 1",
+        "guard:clear_3 geq 1",
+        "guard:clear_1 leq 0",
+        "guard:hand-empty leq 0"
+      ]
+    },
+    "L1_22": {
+      "AND": [
+        "guard:block_0 eq 1",
+        "guard:block_1 eq 3",
+        "guard:clear_1 geq 1"
+      ]
+    },
+    "L1_23": {
+      "AND": [
+        "guard:block_1 eq 1",
+        "guard:clear_1 geq 1",
+        "guard:clear_2 geq 1"
+      ]
+    },
+    "L1_24": {
+      "AND": [
+        "guard:block_0 eq 3",
+        "guard:block_1 eq 4",
+        "guard:hand-empty geq 1",
+        "guard:clear_3 leq 0"
+      ]
+    },
+    "L1_25": {
+      "AND": [
+        "guard:block_2 eq 4",
+        "guard:block_3 eq 1",
+        "guard:clear_0 geq 1",
+        "guard:hand-empty geq 1",
+        "guard:clear_2 leq 0"
+      ]
+    },
+    "L1_26": {
+      "OR": [
+        "guard:block_1 eq 0",
+        "guard:block_2 eq 2",
+        "guard:block_3 eq 0",
+        "guard:block_3 eq 4",
+        "guard:hand-empty leq 0"
+      ]
+    },
+    "L1_27": {
+      "OR": [
+        "guard:block_0 eq 0",
+        "guard:block_1 eq 1",
+        "guard:block_2 eq 2",
+        "guard:block_3 eq 0",
+        "guard:block_3 eq 4"
+      ]
+    },
+    "L1_28": {
+      "OR": [
+        "guard:block_0 eq 2",
+        "guard:block_1 eq 3"
+      ]
+    },
+    "L1_29": {
+      "OR": [
+        "guard:block_0 eq 0",
+        "guard:block_0 eq 3",
+        "guard:block_1 eq 1",
+        "guard:block_3 eq 0",
+        "guard:block_3 eq 4",
+        "guard:clear_3 leq 0"
+      ]
+    },
+    "L1_30": {
+      "OR": [
+        "guard:block_0 eq 0",
+        "guard:block_1 eq 0",
+        "guard:block_1 eq 3",
+        "guard:block_2 eq 0",
+        "guard:block_2 eq 1",
+        "guard:block_3 eq 2",
+        "guard:block_3 eq 4",
+        "guard:hand-empty leq 0"
+      ]
+    },
+    "L1_31": {
+      "OR": [
+        "guard:block_0 eq 2",
+        "guard:block_0 eq 4",
+        "guard:block_1 eq 0",
+        "guard:block_1 eq 4",
+        "guard:block_2 eq 2",
+        "guard:block_2 eq 3",
+        "guard:clear_1 leq 0"
+      ]
+    },
+    "L1_32": {
+      "OR": [
+        "guard:block_0 eq 3",
+        "guard:block_1 eq 3",
+        "guard:block_1 eq 4",
+        "guard:block_2 eq 0",
+        "guard:block_3 eq 0",
+        "guard:block_3 eq 4",
+        "guard:clear_2 leq 0"
+      ]
+    },
+    "L1_33": {
+      "OR": [
+        "guard:block_0 eq 3",
+        "guard:block_0 eq 4",
+        "guard:block_1 eq 4",
+        "guard:block_2 eq 4",
+        "guard:block_3 eq 3",
+        "guard:clear_1 geq 1",
+        "guard:hand-empty geq 1",
+        "guard:clear_0 leq 0",
+        "guard:clear_3 leq 0"
+      ]
+    },
+    "L1_34": {
+      "OR": [
+        "guard:block_0 eq 4",
+        "guard:clear_2 leq 0"
+      ]
+    },
+    "L1_35": {
+      "OR": [
+        "guard:block_0 eq 3",
+        "guard:block_3 eq 3"
+      ]
+    },
+    "L1_36": {
+      "OR": [
+        "guard:block_0 eq 3",
+        "guard:block_0 eq 4",
+        "guard:block_1 eq 2",
+        "guard:clear_1 leq 0"
+      ]
+    },
+    "L1_37": {
+      "OR": [
+        "guard:block_3 eq 3"
+      ]
+    },
+    "L1_38": {
+      "OR": [
+        "guard:block_0 eq 3",
+        "guard:block_0 eq 4",
+        "guard:block_2 eq 3",
+        "guard:block_3 eq 3"
+      ]
+    },
+    "L1_39": {
+      "OR": [
+        "guard:block_2 eq 1",
+        "guard:block_2 eq 2",
+        "guard:hand-empty geq 1"
+      ]
+    },
+    "L1_40": {
+      "OR": [
+        "guard:block_0 eq 3",
+        "guard:block_0 eq 4",
+        "guard:block_1 eq 0",
+        "guard:block_3 eq 2",
+        "guard:block_3 eq 3",
+        "guard:block_3 eq 4"
+      ]
+    },
+    "L1_41": {
+      "OR": [
+        "guard:block_1 eq 3",
+        "guard:block_1 eq 4",
+        "guard:block_2 eq 4",
+        "guard:block_3 eq 2",
+        "guard:block_3 eq 3"
+      ]
+    },
+    "L1_42": {
+      "OR": [
+        "guard:block_0 eq 0",
+        "guard:block_2 eq 0",
+        "guard:block_2 eq 2",
+        "guard:block_3 eq 0",
+        "guard:block_3 eq 4"
+      ]
+    },
+    "L1_43": {
+      "OR": [
+        "guard:block_0 eq 3",
+        "guard:block_2 eq 4",
+        "guard:block_3 eq 2",
+        "guard:hand-empty geq 1"
+      ]
+    },
+    "L1_44": {
+      "OR": [
+        "guard:block_0 eq 2",
+        "guard:block_0 eq 4",
+        "guard:block_1 eq 3",
+        "guard:block_3 eq 3"
+      ]
+    },
+    "L1_45": {
+      "OR": [
+        "guard:block_0 eq 3",
+        "guard:block_2 eq 1",
+        "guard:block_2 eq 2"
+      ]
+    },
+    "L1_46": {
+      "OR": [
+        "guard:block_1 eq 1"
+      ]
+    },
+    "L1_47": {
+      "OR": [
+        "guard:block_2 eq 4",
+        "guard:block_3 eq 3",
+        "guard:clear_1 geq 1"
+      ]
+    },
+    "L1_48": {
+      "OR": [
+        "guard:block_0 eq 0",
+        "guard:block_0 eq 4",
+        "guard:block_1 eq 2",
+        "guard:block_1 eq 3",
+        "guard:block_2 eq 4",
+        "guard:block_3 eq 0",
+        "guard:clear_0 leq 0"
+      ]
+    },
+    "L1_49": {
+      "OR": [
+        "guard:block_0 eq 0",
+        "guard:block_1 eq 4",
+        "guard:block_2 eq 2",
+        "guard:hand-empty leq 0"
+      ]
+    },
+    "L1_50": {
+      "OR": [
+        "guard:block_1 eq 0",
+        "guard:block_1 eq 4",
+        "guard:block_2 eq 0",
+        "guard:block_2 eq 2",
+        "guard:block_3 eq 4"
+      ]
+    },
+    "L1_51": {
+      "OR": [
+        "guard:block_0 eq 0",
+        "guard:block_0 eq 1",
+        "guard:block_1 eq 0",
+        "guard:block_1 eq 1",
+        "guard:block_2 eq 0",
+        "guard:block_2 eq 2",
+        "guard:hand-empty leq 0"
+      ]
+    },
+    "L1_52": {
+      "OR": [
+        "guard:block_0 eq 3",
+        "guard:block_0 eq 4",
+        "guard:block_1 eq 2",
+        "guard:block_2 eq 3",
+        "guard:block_2 eq 4",
+        "guard:clear_1 geq 1",
+        "guard:hand-empty geq 1",
+        "guard:clear_0 leq 0",
+        "guard:clear_3 leq 0"
+      ]
+    },
+    "L1_53": {
+      "OR": [
+        "guard:block_1 eq 0",
+        "guard:block_2 eq 2",
+        "guard:block_2 eq 4"
+      ]
+    },
+    "L1_54": {
+      "OR": [
+        "guard:block_1 eq 0",
+        "guard:block_2 eq 2",
+        "guard:clear_2 geq 1",
+        "guard:clear_3 geq 1",
+        "guard:hand-empty leq 0"
+      ]
+    }
+  },
+  "linear": {
+    "bias": {
+      "choose_table": -0.123437,
+      "choose_block_0": 0.070523,
+      "choose_block_1": -0.266641,
+      "choose_block_2": 0.117161,
+      "choose_block_3": -0.021377
+    },
+    "weights": {
+      "choose_table": {
+        "L1_0": 0.076406,
+        "L1_21": -4.10035,
+        "L1_42": -0.105185,
+        "L1_33": 1.120571,
+        "L1_19": -0.503727,
+        "L1_20": -0.428795,
+        "L1_9": 0.709079,
+        "L1_6": 0.008278,
+        "L1_36": -0.131128,
+        "L1_7": -0.090651,
+        "L1_53": -0.554615,
+        "L1_37": 0.749609,
+        "L1_8": 0.868458,
+        "L1_41": 0.308159,
+        "L1_1": 0.560995,
+        "L1_16": 0.293888,
+        "L1_22": 0.147937,
+        "L1_35": 0.719257,
+        "L1_5": 0.471733,
+        "L1_30": -0.132334,
+        "L1_12": -0.438458,
+        "L1_39": -0.074549,
+        "L1_11": -0.070356,
+        "L1_18": -0.464198,
+        "L1_40": -0.244749,
+        "L1_25": -0.00497,
+        "L1_3": -0.084906,
+        "L1_52": 0.272962,
+        "L1_43": 0.281942,
+        "L1_50": -0.269495,
+        "L1_29": 0.179348,
+        "L1_45": -0.477531,
+        "L1_31": -0.050452,
+        "L1_26": -0.463666,
+        "L1_38": 0.396257,
+        "L1_51": -0.030257,
+        "L1_14": 0.262236,
+        "L1_17": -0.057702,
+        "L1_46": -0.189182,
+        "L1_23": 0.277049,
+        "L1_24": 0.06184,
+        "L1_34": 0.169399,
+        "L1_48": 0.101331,
+        "L1_15": 0.246031,
+        "L1_13": -0.011295,
+        "L1_10": 0.301581,
+        "L1_47": -0.00054,
+        "L1_54": -0.093083,
+        "L1_27": 0.04742,
+        "L1_32": 0.151407,
+        "L1_4": 0.140059,
+        "L1_49": -0.104433,
+        "L1_28": -0.005599,
+        "L1_2": 0.049668,
+        "L1_44": 0.038586
+      },
+      "choose_block_0": {
+        "L1_0": 1.091719,
+        "L1_21": 0.388175,
+        "L1_42": -1.940772,
+        "L1_33": -1.684011,
+        "L1_19": 1.448295,
+        "L1_20": -1.234751,
+        "L1_9": 0.241376,
+        "L1_6": 0.004168,
+        "L1_36": 0.957125,
+        "L1_7": -0.475688,
+        "L1_53": 0.462834,
+        "L1_37": 0.749186,
+        "L1_8": -0.494653,
+        "L1_41": 0.603275,
+        "L1_1": -0.020027,
+        "L1_16": -0.22932,
+        "L1_22": -0.728988,
+        "L1_35": -0.321532,
+        "L1_5": 0.240629,
+        "L1_30": 0.128013,
+        "L1_12": 0.212527,
+        "L1_39": -0.068485,
+        "L1_11": 0.36629,
+        "L1_18": 0.59435,
+        "L1_40": 0.598329,
+        "L1_25": 0.008333,
+        "L1_3": -0.050807,
+        "L1_52": -0.520233,
+        "L1_43": 0.221303,
+        "L1_50": 0.034002,
+        "L1_29": -0.479248,
+        "L1_45": -0.054191,
+        "L1_31": 0.086728,
+        "L1_26": -0.039085,
+        "L1_38": -0.461971,
+        "L1_51": -0.419609,
+        "L1_14": 0.050742,
+        "L1_17": -0.230082,
+        "L1_46": -0.348814,
+        "L1_23": 0.397175,
+        "L1_24": 0.117378,
+        "L1_34": -0.349141,
+        "L1_48": -0.349065,
+        "L1_15": 0.146421,
+        "L1_13": -0.016561,
+        "L1_10": -0.208888,
+        "L1_47": 0.120182,
+        "L1_54": -0.281249,
+        "L1_27": -0.184323,
+        "L1_32": 0.153461,
+        "L1_4": -0.030942,
+        "L1_49": -0.136626,
+        "L1_28": -0.104516,
+        "L1_2": 0.092013,
+        "L1_44": -0.030513
+      },
+      "choose_block_1": {
+        "L1_0": 0.053374,
+        "L1_21": -0.152485,
+        "L1_42": 0.185098,
+        "L1_33": -0.181836,
+        "L1_19": -1.225215,
+        "L1_20": 0.215638,
+        "L1_9": -0.990042,
+        "L1_6": -0.038309,
+        "L1_36": -0.354003,
+        "L1_7": 0.32955,
+        "L1_53": -0.901859,
+        "L1_37": -0.793842,
+        "L1_8": -0.347004,
+        "L1_41": -0.269161,
+        "L1_1": -0.794449,
+        "L1_16": -0.729437,
+        "L1_22": 0.221716,
+        "L1_35": -0.294252,
+        "L1_5": -0.129773,
+        "L1_30": 0.708936,
+        "L1_12": -0.688983,
+        "L1_39": -0.622025,
+        "L1_11": 0.338519,
+        "L1_18": -0.615109,
+        "L1_40": 0.357073,
+        "L1_25": 0.158689,
+        "L1_3": 0.535601,
+        "L1_52": 0.020548,
+        "L1_43": 0.209769,
+        "L1_50": 0.098408,
+        "L1_29": 0.284606,
+        "L1_45": -0.153825,
+        "L1_31": -0.141725,
+        "L1_26": 0.132541,
+        "L1_38": -0.158426,
+        "L1_51": -0.079654,
+        "L1_14": -0.339466,
+        "L1_17": 0.328027,
+        "L1_46": 0.398569,
+        "L1_23": 0.07759,
+        "L1_24": -0.388067,
+        "L1_34": -0.105672,
+        "L1_48": -0.285312,
+        "L1_15": -0.196446,
+        "L1_13": -0.195707,
+        "L1_10": 0.018425,
+        "L1_47": -0.00913,
+        "L1_54": 0.047377,
+        "L1_27": 0.090684,
+        "L1_32": 0.154321,
+        "L1_4": 0.102121,
+        "L1_49": -0.115273,
+        "L1_28": 0.040657,
+        "L1_2": 0.023971,
+        "L1_44": 0.081558
+      },
+      "choose_block_2": {
+        "L1_0": 0.531419,
+        "L1_21": 0.304647,
+        "L1_42": 0.142502,
+        "L1_33": -0.574007,
+        "L1_19": 0.068877,
+        "L1_20": 0.788872,
+        "L1_9": -0.883123,
+        "L1_6": 0.445584,
+        "L1_36": -0.112704,
+        "L1_7": -0.124854,
+        "L1_53": 0.416029,
+        "L1_37": -0.896496,
+        "L1_8": -0.714262,
+        "L1_41": -0.785418,
+        "L1_1": -0.26201,
+        "L1_16": -0.262576,
+        "L1_22": 0.162723,
+        "L1_35": -0.399994,
+        "L1_5": -0.71842,
+        "L1_30": -0.01221,
+        "L1_12": 0.518571,
+        "L1_39": 0.090373,
+        "L1_11": -0.631486,
+        "L1_18": 0.127969,
+        "L1_40": -0.052262,
+        "L1_25": -0.546339,
+        "L1_3": -0.252876,
+        "L1_52": 0.03312,
+        "L1_43": -0.274511,
+        "L1_50": 0.480259,
+        "L1_29": 0.096376,
+        "L1_45": 0.432343,
+        "L1_31": -0.037849,
+        "L1_26": 0.433226,
+        "L1_38": -0.162754,
+        "L1_51": 0.426725,
+        "L1_14": -0.070846,
+        "L1_17": -0.148138,
+        "L1_46": 0.202454,
+        "L1_23": -0.077039,
+        "L1_24": 0.065501,
+        "L1_34": -0.077947,
+        "L1_48": -0.22438,
+        "L1_15": 0.347735,
+        "L1_13": 0.321852,
+        "L1_10": -0.278208,
+        "L1_47": -0.29814,
+        "L1_54": 0.199155,
+        "L1_27": 0.074084,
+        "L1_32": 0.151595,
+        "L1_4": 0.147924,
+        "L1_49": 0.070151,
+        "L1_28": -0.007869,
+        "L1_2": 0.059526,
+        "L1_44": 0.019298
+      },
+      "choose_block_3": {
+        "L1_0": -4.517855,
+        "L1_21": 0.118276,
+        "L1_42": 0.307089,
+        "L1_33": -0.610972,
+        "L1_19": 0.607725,
+        "L1_20": 0.116806,
+        "L1_9": -1.17637,
+        "L1_6": -1.014719,
+        "L1_36": -0.076768,
+        "L1_7": -0.954139,
+        "L1_53": 0.609052,
+        "L1_37": -0.493809,
+        "L1_8": -0.791513,
+        "L1_41": -0.838706,
+        "L1_1": -0.398508,
+        "L1_16": 0.005251,
+        "L1_22": -0.153949,
+        "L1_35": -0.455798,
+        "L1_5": -0.660282,
+        "L1_30": -0.550081,
+        "L1_12": 0.245491,
+        "L1_39": 0.631798,
+        "L1_11": 0.215113,
+        "L1_18": 0.167051,
+        "L1_40": -0.227024,
+        "L1_25": 0.004501,
+        "L1_3": -0.366421,
+        "L1_52": -0.003035,
+        "L1_43": -0.513987,
+        "L1_50": 0.124041,
+        "L1_29": 0.094223,
+        "L1_45": 0.303731,
+        "L1_31": 0.477516,
+        "L1_26": 0.37149,
+        "L1_38": -0.159097,
+        "L1_51": 0.162941,
+        "L1_14": -0.42056,
+        "L1_17": -0.417734,
+        "L1_46": -0.198115,
+        "L1_23": -0.300541,
+        "L1_24": -0.026815,
+        "L1_34": -0.062309,
+        "L1_48": 0.073105,
+        "L1_15": 0.319275,
+        "L1_13": 0.341657,
+        "L1_10": -0.078848,
+        "L1_47": 0.039251,
+        "L1_54": -0.037304,
+        "L1_27": 0.078744,
+        "L1_32": 0.082223,
+        "L1_4": 0.098374,
+        "L1_49": 0.072491,
+        "L1_28": -0.015913,
+        "L1_2": 0.078437,
+        "L1_44": 0.003196
+      }
+    }
+  },
+  "training_dataset": "32_32::blocksworld_ci_4_3::reg",
+  "training_metadata": {
+    "dataset": "32_32::blocksworld_ci_4_3::reg",
+    "run_id": "32_32--blocksworld_ci_4_3--reg__pred__h0x32__kl__T10__lr0p01__s2026__0919202233",
+    "mode": "predicates",
+    "loss": "kl",
+    "distillation_temperature": 10.0,
+    "structure": "0@32",
+    "seed": 2026,
+    "use_skip": false,
+    "clip_linear": false,
+    "quantize_linear": false,
+    "onehot_drop": "none"
+  }
+}

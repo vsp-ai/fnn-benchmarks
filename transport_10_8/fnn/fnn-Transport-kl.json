@@ -1,0 +1,422 @@
+{
+  "atoms": {
+    "type": "onehot",
+    "len": 107,
+    "content": [
+      "location_load_0 eq 0",
+      "location_load_0 eq 1",
+      "location_load_0 eq 2",
+      "location_load_0 eq 3",
+      "location_load_0 eq 4",
+      "location_load_0 eq 5",
+      "location_load_0 eq 6",
+      "location_load_0 eq 7",
+      "location_load_0 eq 8",
+      "location_load_0 eq 9",
+      "location_load_0 eq 10",
+      "location_load_1 eq 0",
+      "location_load_1 eq 1",
+      "location_load_1 eq 2",
+      "location_load_1 eq 3",
+      "location_load_1 eq 4",
+      "location_load_1 eq 5",
+      "location_load_1 eq 6",
+      "location_load_1 eq 7",
+      "location_load_1 eq 8",
+      "location_load_1 eq 9",
+      "location_load_1 eq 10",
+      "location_load_2 eq 0",
+      "location_load_2 eq 1",
+      "location_load_2 eq 2",
+      "location_load_2 eq 3",
+      "location_load_2 eq 4",
+      "location_load_2 eq 5",
+      "location_load_2 eq 6",
+      "location_load_2 eq 7",
+      "location_load_2 eq 8",
+      "location_load_2 eq 9",
+      "location_load_2 eq 10",
+      "location_load_3 eq 0",
+      "location_load_3 eq 1",
+      "location_load_3 eq 2",
+      "location_load_3 eq 3",
+      "location_load_3 eq 4",
+      "location_load_3 eq 5",
+      "location_load_3 eq 6",
+      "location_load_3 eq 7",
+      "location_load_3 eq 8",
+      "location_load_3 eq 9",
+      "location_load_3 eq 10",
+      "location_load_4 eq 0",
+      "location_load_4 eq 1",
+      "location_load_4 eq 2",
+      "location_load_4 eq 3",
+      "location_load_4 eq 4",
+      "location_load_4 eq 5",
+      "location_load_4 eq 6",
+      "location_load_4 eq 7",
+      "location_load_4 eq 8",
+      "location_load_4 eq 9",
+      "location_load_4 eq 10",
+      "location_load_5 eq 0",
+      "location_load_5 eq 1",
+      "location_load_5 eq 2",
+      "location_load_5 eq 3",
+      "location_load_5 eq 4",
+      "location_load_5 eq 5",
+      "location_load_5 eq 6",
+      "location_load_5 eq 7",
+      "location_load_5 eq 8",
+      "location_load_5 eq 9",
+      "location_load_5 eq 10",
+      "location_load_6 eq 0",
+      "location_load_6 eq 1",
+      "location_load_6 eq 2",
+      "location_load_6 eq 3",
+      "location_load_6 eq 4",
+      "location_load_6 eq 5",
+      "location_load_6 eq 6",
+      "location_load_6 eq 7",
+      "location_load_6 eq 8",
+      "location_load_6 eq 9",
+      "location_load_6 eq 10",
+      "location_load_7 eq 0",
+      "location_load_7 eq 1",
+      "location_load_7 eq 2",
+      "location_load_7 eq 3",
+      "location_load_7 eq 4",
+      "location_load_7 eq 5",
+      "location_load_7 eq 6",
+      "location_load_7 eq 7",
+      "location_load_7 eq 8",
+      "location_load_7 eq 9",
+      "location_load_7 eq 10",
+      "truck_0 eq 0",
+      "truck_0 eq 1",
+      "truck_0 eq 2",
+      "truck_0 eq 3",
+      "truck_0 eq 4",
+      "truck_0 eq 5",
+      "truck_0 eq 6",
+      "truck_0 eq 7",
+      "truck_load_0 eq 0",
+      "truck_load_0 eq 1",
+      "truck_load_0 eq 2",
+      "truck_load_0 eq 3",
+      "truck_load_0 eq 4",
+      "truck_load_0 eq 5",
+      "truck_load_0 eq 6",
+      "truck_load_0 eq 7",
+      "truck_load_0 eq 8",
+      "truck_load_0 eq 9",
+      "truck_load_0 eq 10"
+    ]
+  },
+  "rules": {
+    "L1_0": {
+      "AND": [
+        "location_load_5 eq 0",
+        "truck_0 eq 5",
+        "truck_load_0 eq 0"
+      ]
+    },
+    "L1_1": {
+      "AND": [
+        "location_load_0 eq 0",
+        "location_load_1 eq 0",
+        "location_load_7 eq 0",
+        "truck_load_0 eq 0"
+      ]
+    },
+    "L1_2": {
+      "AND": [
+        "truck_0 eq 7",
+        "truck_load_0 eq 0"
+      ]
+    },
+    "L1_3": {
+      "AND": [
+        "location_load_0 eq 0",
+        "location_load_1 eq 0",
+        "location_load_2 eq 0",
+        "location_load_7 eq 0",
+        "truck_0 eq 2",
+        "truck_load_0 eq 0"
+      ]
+    },
+    "L1_4": {
+      "AND": [
+        "truck_0 eq 6"
+      ]
+    },
+    "L1_5": {
+      "AND": [
+        "location_load_2 eq 0",
+        "location_load_4 eq 0",
+        "truck_0 eq 2",
+        "truck_load_0 eq 0"
+      ]
+    },
+    "L1_6": {
+      "AND": [
+        "truck_0 eq 6",
+        "truck_load_0 eq 1"
+      ]
+    },
+    "L1_7": {
+      "AND": [
+        "location_load_6 eq 0",
+        "truck_0 eq 6",
+        "truck_load_0 eq 0"
+      ]
+    },
+    "L1_8": {
+      "AND": [
+        "location_load_0 eq 0",
+        "truck_0 eq 0",
+        "truck_load_0 eq 0"
+      ]
+    },
+    "L1_9": {
+      "AND": [
+        "truck_0 eq 6",
+        "truck_load_0 eq 0"
+      ]
+    },
+    "L1_10": {
+      "AND": [
+        "location_load_1 eq 0",
+        "truck_0 eq 1",
+        "truck_load_0 eq 0"
+      ]
+    },
+    "L1_11": {
+      "AND": [
+        "location_load_0 eq 0",
+        "location_load_1 eq 0",
+        "location_load_2 eq 0",
+        "location_load_3 eq 0",
+        "location_load_4 eq 0",
+        "location_load_7 eq 0",
+        "truck_0 eq 4",
+        "truck_load_0 eq 0"
+      ]
+    },
+    "L1_12": {
+      "AND": [
+        "location_load_0 eq 0",
+        "location_load_1 eq 0",
+        "location_load_2 eq 0",
+        "location_load_7 eq 0",
+        "truck_0 eq 6",
+        "truck_load_0 eq 0"
+      ]
+    },
+    "L1_13": {
+      "AND": [
+        "location_load_0 eq 0",
+        "location_load_1 eq 0",
+        "truck_0 eq 1",
+        "truck_load_0 eq 0"
+      ]
+    },
+    "L1_14": {
+      "AND": [
+        "location_load_0 eq 0",
+        "location_load_1 eq 0",
+        "location_load_2 eq 0",
+        "location_load_7 eq 0",
+        "truck_load_0 eq 0"
+      ]
+    },
+    "L1_15": {
+      "AND": [
+        "location_load_0 eq 0",
+        "location_load_1 eq 0",
+        "location_load_2 eq 0",
+        "location_load_3 eq 0",
+        "location_load_7 eq 0",
+        "truck_0 eq 3",
+        "truck_load_0 eq 0"
+      ]
+    },
+    "L1_16": {
+      "AND": [
+        "location_load_3 eq 0",
+        "truck_0 eq 3",
+        "truck_load_0 eq 0"
+      ]
+    },
+    "L1_17": {
+      "AND": [
+        "location_load_4 eq 0",
+        "truck_0 eq 4",
+        "truck_load_0 eq 0"
+      ]
+    },
+    "L1_18": {
+      "OR": [
+        "location_load_7 eq 10"
+      ]
+    },
+    "L1_19": {
+      "OR": [
+        "location_load_0 eq 10",
+        "truck_0 eq 6",
+        "truck_0 eq 7",
+        "truck_load_0 eq 0"
+      ]
+    },
+    "L1_20": {
+      "OR": [
+        "location_load_0 eq 10",
+        "truck_load_0 eq 0"
+      ]
+    },
+    "L1_21": {
+      "OR": [
+        "location_load_6 eq 10"
+      ]
+    },
+    "L1_22": {
+      "OR": [
+        "location_load_3 eq 10",
+        "truck_0 eq 7",
+        "truck_load_0 eq 0"
+      ]
+    },
+    "L1_23": {
+      "OR": [
+        "truck_0 eq 7"
+      ]
+    }
+  },
+  "linear": {
+    "bias": {
+      "pick_up_truck_0": -0.305023,
+      "drop_truck_0": -0.306186,
+      "drive_forward": 0.694893,
+      "drive_backward": -0.306458
+    },
+    "weights": {
+      "pick_up_truck_0": {
+        "L1_18": 1.61441,
+        "L1_5": -1.241981,
+        "L1_7": -1.22065,
+        "L1_17": -1.216686,
+        "L1_16": -1.214654,
+        "L1_10": -1.191431,
+        "L1_6": -0.183978,
+        "L1_8": -1.132302,
+        "L1_0": -1.02806,
+        "L1_4": 0.006949,
+        "L1_13": 0.110767,
+        "L1_9": 0.030722,
+        "L1_2": -0.605531,
+        "L1_15": 0.261833,
+        "L1_23": -0.59372,
+        "L1_21": 0.166578,
+        "L1_11": 0.14596,
+        "L1_12": 0.40024,
+        "L1_3": 0.291776,
+        "L1_20": 0.430569,
+        "L1_22": 0.461432,
+        "L1_14": 0.197174,
+        "L1_19": 0.163215,
+        "L1_1": 0.111576
+      },
+      "drop_truck_0": {
+        "L1_18": 0.555822,
+        "L1_5": -0.239804,
+        "L1_7": -0.218447,
+        "L1_17": -0.215139,
+        "L1_16": -0.212594,
+        "L1_10": -0.191932,
+        "L1_6": -1.184329,
+        "L1_8": -0.144649,
+        "L1_0": -0.026296,
+        "L1_4": 0.750736,
+        "L1_13": 0.076987,
+        "L1_9": -0.712362,
+        "L1_2": -0.664571,
+        "L1_15": 0.32015,
+        "L1_23": 0.466672,
+        "L1_21": 0.144197,
+        "L1_11": 0.253796,
+        "L1_12": 0.378914,
+        "L1_3": 0.255211,
+        "L1_20": -0.510253,
+        "L1_22": 0.144257,
+        "L1_14": 0.199531,
+        "L1_19": 0.419261,
+        "L1_1": 0.130896
+      },
+      "drive_forward": {
+        "L1_18": -0.174965,
+        "L1_5": -0.227806,
+        "L1_7": -0.218147,
+        "L1_17": -0.212114,
+        "L1_16": -0.211694,
+        "L1_10": -0.176997,
+        "L1_6": 0.817157,
+        "L1_8": 0.741656,
+        "L1_0": -0.01876,
+        "L1_4": -0.436946,
+        "L1_13": 0.721437,
+        "L1_9": 0.480907,
+        "L1_2": -0.027297,
+        "L1_15": 0.665612,
+        "L1_23": -0.163839,
+        "L1_21": 0.587531,
+        "L1_11": 0.544212,
+        "L1_12": -0.019291,
+        "L1_3": 0.520954,
+        "L1_20": -0.146922,
+        "L1_22": -0.411391,
+        "L1_14": 0.448431,
+        "L1_19": -0.390736,
+        "L1_1": 0.320349
+      },
+      "drive_backward": {
+        "L1_18": 0.34215,
+        "L1_5": 0.750177,
+        "L1_7": 0.779365,
+        "L1_17": 0.779343,
+        "L1_16": 0.781521,
+        "L1_10": 0.796183,
+        "L1_6": -0.182257,
+        "L1_8": -0.093764,
+        "L1_0": 0.967047,
+        "L1_4": 0.10706,
+        "L1_13": -0.562121,
+        "L1_9": -0.075139,
+        "L1_2": 0.708011,
+        "L1_15": -0.16822,
+        "L1_23": 0.085695,
+        "L1_21": -0.3351,
+        "L1_11": -0.047715,
+        "L1_12": 0.530807,
+        "L1_3": -0.046156,
+        "L1_20": 0.114622,
+        "L1_22": -0.119168,
+        "L1_14": -0.130144,
+        "L1_19": 0.061029,
+        "L1_1": 0.061634
+      }
+    }
+  },
+  "training_dataset": "Transport::transport_10_8::reg",
+  "training_metadata": {
+    "dataset": "Transport::transport_10_8::reg",
+    "run_id": "Transport--transport_10_8--reg__oh__h0x128__kl__T1__lr0p01__s2026__0917124549",
+    "mode": "onehot",
+    "loss": "kl",
+    "distillation_temperature": 1.0,
+    "structure": "0@128",
+    "seed": 2026,
+    "use_skip": false,
+    "clip_linear": false,
+    "quantize_linear": false,
+    "onehot_drop": "none"
+  }
+}

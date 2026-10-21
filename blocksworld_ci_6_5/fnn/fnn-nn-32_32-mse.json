@@ -1,0 +1,2760 @@
+{
+  "atoms": {
+    "type": "onehot",
+    "len": 63,
+    "content": [
+      "hand-empty eq 0",
+      "hand-empty eq 1",
+      "table-counter eq 0",
+      "table-counter eq 1",
+      "table-counter eq 2",
+      "table-counter eq 3",
+      "table-counter eq 4",
+      "table-counter eq 5",
+      "table-counter eq 6",
+      "block_0 eq 0",
+      "block_0 eq 1",
+      "block_0 eq 2",
+      "block_0 eq 3",
+      "block_0 eq 4",
+      "block_0 eq 5",
+      "block_0 eq 6",
+      "block_1 eq 0",
+      "block_1 eq 1",
+      "block_1 eq 2",
+      "block_1 eq 3",
+      "block_1 eq 4",
+      "block_1 eq 5",
+      "block_1 eq 6",
+      "block_2 eq 0",
+      "block_2 eq 1",
+      "block_2 eq 2",
+      "block_2 eq 3",
+      "block_2 eq 4",
+      "block_2 eq 5",
+      "block_2 eq 6",
+      "block_3 eq 0",
+      "block_3 eq 1",
+      "block_3 eq 2",
+      "block_3 eq 3",
+      "block_3 eq 4",
+      "block_3 eq 5",
+      "block_3 eq 6",
+      "block_4 eq 0",
+      "block_4 eq 1",
+      "block_4 eq 2",
+      "block_4 eq 3",
+      "block_4 eq 4",
+      "block_4 eq 5",
+      "block_4 eq 6",
+      "block_5 eq 0",
+      "block_5 eq 1",
+      "block_5 eq 2",
+      "block_5 eq 3",
+      "block_5 eq 4",
+      "block_5 eq 5",
+      "block_5 eq 6",
+      "clear_0 eq 0",
+      "clear_0 eq 1",
+      "clear_1 eq 0",
+      "clear_1 eq 1",
+      "clear_2 eq 0",
+      "clear_2 eq 1",
+      "clear_3 eq 0",
+      "clear_3 eq 1",
+      "clear_4 eq 0",
+      "clear_4 eq 1",
+      "clear_5 eq 0",
+      "clear_5 eq 1"
+    ]
+  },
+  "rules": {
+    "L1_0": {
+      "AND": [
+        "block_5 eq 1"
+      ]
+    },
+    "L1_1": {
+      "AND": [
+        "block_0 eq 1"
+      ]
+    },
+    "L1_2": {
+      "AND": [
+        "clear_5 eq 0"
+      ]
+    },
+    "L1_3": {
+      "OR": [
+        "table-counter eq 2",
+        "table-counter eq 3",
+        "block_0 eq 3",
+        "block_0 eq 4",
+        "block_0 eq 5",
+        "block_0 eq 6",
+        "block_1 eq 0",
+        "block_1 eq 4",
+        "block_1 eq 5",
+        "block_2 eq 3",
+        "block_2 eq 6",
+        "block_3 eq 4",
+        "block_4 eq 0",
+        "block_4 eq 2",
+        "block_4 eq 5",
+        "block_5 eq 5",
+        "clear_1 eq 0"
+      ]
+    },
+    "L1_4": {
+      "OR": [
+        "hand-empty eq 0",
+        "table-counter eq 5",
+        "block_0 eq 0",
+        "block_0 eq 1",
+        "block_1 eq 0",
+        "block_1 eq 2",
+        "block_2 eq 0",
+        "block_2 eq 3",
+        "block_3 eq 0",
+        "block_3 eq 4",
+        "block_4 eq 0",
+        "block_4 eq 2",
+        "block_4 eq 3",
+        "block_4 eq 5",
+        "block_5 eq 0",
+        "block_5 eq 6"
+      ]
+    },
+    "L1_5": {
+      "OR": [
+        "table-counter eq 1",
+        "block_0 eq 0",
+        "block_0 eq 3",
+        "block_0 eq 5",
+        "block_0 eq 6",
+        "block_1 eq 0",
+        "block_1 eq 1",
+        "block_1 eq 4",
+        "block_2 eq 0",
+        "block_2 eq 6",
+        "block_3 eq 4",
+        "block_4 eq 0"
+      ]
+    },
+    "L1_6": {
+      "OR": [
+        "hand-empty eq 1",
+        "table-counter eq 1",
+        "table-counter eq 5",
+        "block_1 eq 6",
+        "block_2 eq 4",
+        "block_5 eq 5"
+      ]
+    },
+    "L1_7": {
+      "OR": [
+        "block_0 eq 5",
+        "block_0 eq 6",
+        "block_1 eq 3",
+        "block_1 eq 5",
+        "block_1 eq 6",
+        "block_2 eq 2",
+        "block_4 eq 3",
+        "block_4 eq 5",
+        "block_5 eq 0",
+        "block_5 eq 5"
+      ]
+    },
+    "L1_8": {
+      "OR": [
+        "block_0 eq 4",
+        "block_1 eq 0",
+        "block_2 eq 0",
+        "block_3 eq 0",
+        "block_3 eq 4",
+        "block_4 eq 0",
+        "block_4 eq 5",
+        "block_4 eq 6",
+        "block_5 eq 6"
+      ]
+    },
+    "L1_9": {
+      "OR": [
+        "block_0 eq 4",
+        "block_0 eq 5",
+        "block_0 eq 6",
+        "block_1 eq 1",
+        "block_3 eq 5",
+        "block_3 eq 6",
+        "block_5 eq 5",
+        "clear_0 eq 1"
+      ]
+    },
+    "L1_10": {
+      "OR": [
+        "table-counter eq 4",
+        "block_0 eq 3",
+        "block_0 eq 4",
+        "block_1 eq 0",
+        "block_1 eq 4",
+        "block_2 eq 1",
+        "block_2 eq 6",
+        "block_3 eq 0",
+        "block_3 eq 6",
+        "block_4 eq 2",
+        "block_4 eq 6",
+        "block_5 eq 5",
+        "block_5 eq 6"
+      ]
+    },
+    "L1_11": {
+      "OR": [
+        "hand-empty eq 1",
+        "table-counter eq 1",
+        "table-counter eq 2",
+        "table-counter eq 3",
+        "block_0 eq 0",
+        "block_1 eq 0",
+        "block_1 eq 2",
+        "block_1 eq 3",
+        "block_2 eq 3",
+        "block_2 eq 4",
+        "block_2 eq 5",
+        "block_2 eq 6",
+        "block_3 eq 4",
+        "block_4 eq 0",
+        "block_4 eq 5",
+        "block_5 eq 0",
+        "clear_0 eq 0"
+      ]
+    },
+    "L1_12": {
+      "OR": [
+        "table-counter eq 5",
+        "block_0 eq 2",
+        "block_0 eq 3",
+        "block_0 eq 4",
+        "block_0 eq 5",
+        "block_0 eq 6",
+        "block_1 eq 0",
+        "block_1 eq 1",
+        "block_5 eq 5"
+      ]
+    },
+    "L1_13": {
+      "OR": [
+        "table-counter eq 1",
+        "table-counter eq 2",
+        "block_0 eq 2",
+        "block_1 eq 0",
+        "block_1 eq 3",
+        "block_1 eq 6",
+        "block_3 eq 5",
+        "block_3 eq 6",
+        "block_4 eq 0",
+        "block_5 eq 0",
+        "block_5 eq 5"
+      ]
+    },
+    "L1_14": {
+      "OR": [
+        "block_2 eq 0",
+        "block_3 eq 0",
+        "block_4 eq 3",
+        "block_5 eq 6"
+      ]
+    },
+    "L1_15": {
+      "OR": [
+        "table-counter eq 1",
+        "table-counter eq 3",
+        "block_0 eq 2",
+        "block_1 eq 2",
+        "block_1 eq 3",
+        "block_2 eq 0",
+        "block_2 eq 3",
+        "block_2 eq 4",
+        "block_3 eq 4",
+        "block_3 eq 5",
+        "block_3 eq 6",
+        "block_4 eq 0",
+        "block_4 eq 3",
+        "block_4 eq 5",
+        "block_5 eq 0",
+        "block_5 eq 6",
+        "clear_2 eq 0"
+      ]
+    },
+    "L1_16": {
+      "OR": [
+        "table-counter eq 1",
+        "table-counter eq 2",
+        "block_0 eq 1",
+        "block_1 eq 0",
+        "block_1 eq 2",
+        "block_1 eq 5",
+        "block_1 eq 6",
+        "block_2 eq 0",
+        "block_2 eq 3",
+        "block_2 eq 5",
+        "block_3 eq 0",
+        "block_3 eq 4",
+        "block_4 eq 0",
+        "block_4 eq 2",
+        "block_4 eq 5",
+        "block_5 eq 0"
+      ]
+    },
+    "L1_17": {
+      "OR": [
+        "block_0 eq 0",
+        "block_1 eq 1",
+        "block_2 eq 5",
+        "block_2 eq 6",
+        "block_5 eq 6",
+        "clear_1 eq 1"
+      ]
+    },
+    "L1_18": {
+      "OR": [
+        "table-counter eq 4",
+        "table-counter eq 5",
+        "block_0 eq 0",
+        "block_0 eq 1",
+        "block_1 eq 0",
+        "block_1 eq 2",
+        "block_1 eq 4",
+        "block_1 eq 5",
+        "block_2 eq 3",
+        "block_3 eq 4",
+        "block_4 eq 0",
+        "block_4 eq 5",
+        "block_5 eq 0",
+        "clear_0 eq 0",
+        "clear_2 eq 1"
+      ]
+    },
+    "L1_19": {
+      "OR": [
+        "table-counter eq 1",
+        "table-counter eq 4",
+        "block_0 eq 0",
+        "block_1 eq 2",
+        "block_2 eq 1",
+        "block_2 eq 3",
+        "block_3 eq 4",
+        "block_4 eq 0"
+      ]
+    },
+    "L1_20": {
+      "OR": [
+        "block_0 eq 0",
+        "block_3 eq 0",
+        "block_5 eq 6",
+        "clear_1 eq 1"
+      ]
+    },
+    "L1_21": {
+      "OR": [
+        "table-counter eq 1",
+        "table-counter eq 2",
+        "block_0 eq 0",
+        "block_0 eq 3",
+        "block_0 eq 5",
+        "block_0 eq 6",
+        "block_1 eq 1",
+        "block_1 eq 4",
+        "block_1 eq 5",
+        "block_1 eq 6",
+        "block_2 eq 0",
+        "block_2 eq 6",
+        "block_3 eq 0",
+        "block_3 eq 5",
+        "block_3 eq 6",
+        "block_4 eq 0",
+        "block_4 eq 5",
+        "block_5 eq 0",
+        "block_5 eq 6",
+        "clear_1 eq 1",
+        "clear_3 eq 0",
+        "clear_4 eq 0"
+      ]
+    },
+    "L1_22": {
+      "OR": [
+        "block_0 eq 3",
+        "block_0 eq 4",
+        "block_0 eq 5",
+        "block_0 eq 6",
+        "block_1 eq 0",
+        "block_1 eq 1",
+        "block_1 eq 3",
+        "block_1 eq 6",
+        "block_2 eq 0",
+        "block_2 eq 4",
+        "block_2 eq 5",
+        "block_3 eq 0",
+        "block_4 eq 6",
+        "clear_0 eq 1"
+      ]
+    },
+    "L1_23": {
+      "OR": [
+        "block_0 eq 0",
+        "block_0 eq 6",
+        "block_3 eq 4",
+        "block_4 eq 0",
+        "block_4 eq 3"
+      ]
+    },
+    "L1_24": {
+      "OR": [
+        "table-counter eq 4",
+        "block_0 eq 0",
+        "block_0 eq 3",
+        "block_0 eq 5",
+        "block_0 eq 6",
+        "block_1 eq 1",
+        "block_1 eq 5",
+        "block_5 eq 6",
+        "clear_1 eq 1"
+      ]
+    },
+    "L1_25": {
+      "OR": [
+        "block_0 eq 0",
+        "block_0 eq 4",
+        "block_0 eq 5",
+        "block_0 eq 6",
+        "block_3 eq 0",
+        "block_4 eq 0",
+        "block_5 eq 5",
+        "block_5 eq 6",
+        "clear_2 eq 1"
+      ]
+    },
+    "L1_26": {
+      "OR": [
+        "block_2 eq 0",
+        "block_3 eq 0",
+        "block_4 eq 3",
+        "block_4 eq 6",
+        "block_5 eq 6"
+      ]
+    },
+    "L1_27": {
+      "OR": [
+        "table-counter eq 1",
+        "table-counter eq 4",
+        "block_0 eq 3",
+        "block_0 eq 4",
+        "block_1 eq 0",
+        "block_1 eq 1",
+        "block_2 eq 0",
+        "block_4 eq 0",
+        "block_5 eq 6"
+      ]
+    },
+    "L1_28": {
+      "OR": [
+        "block_0 eq 3",
+        "block_0 eq 5",
+        "block_0 eq 6",
+        "block_1 eq 1",
+        "block_3 eq 4",
+        "block_5 eq 5",
+        "clear_0 eq 1"
+      ]
+    },
+    "L1_29": {
+      "OR": [
+        "hand-empty eq 1",
+        "block_1 eq 0",
+        "block_2 eq 2",
+        "block_2 eq 5",
+        "block_4 eq 6",
+        "block_5 eq 0",
+        "block_5 eq 5"
+      ]
+    },
+    "L1_30": {
+      "OR": [
+        "hand-empty eq 1",
+        "table-counter eq 1",
+        "block_2 eq 2",
+        "block_2 eq 4",
+        "block_2 eq 5",
+        "block_5 eq 5"
+      ]
+    },
+    "L1_31": {
+      "OR": [
+        "table-counter eq 1",
+        "block_0 eq 2",
+        "block_2 eq 0",
+        "block_2 eq 1",
+        "block_3 eq 0",
+        "block_3 eq 5",
+        "block_3 eq 6",
+        "block_4 eq 5",
+        "block_4 eq 6"
+      ]
+    },
+    "L1_32": {
+      "OR": [
+        "block_2 eq 2",
+        "block_2 eq 5",
+        "block_3 eq 5"
+      ]
+    },
+    "L1_33": {
+      "OR": [
+        "block_0 eq 6",
+        "block_2 eq 2",
+        "block_4 eq 0",
+        "block_5 eq 0"
+      ]
+    },
+    "L1_34": {
+      "OR": [
+        "table-counter eq 4",
+        "block_0 eq 3",
+        "block_1 eq 1",
+        "block_2 eq 0",
+        "block_2 eq 4",
+        "block_2 eq 5",
+        "block_4 eq 0",
+        "block_5 eq 6",
+        "clear_4 eq 0"
+      ]
+    },
+    "L1_35": {
+      "OR": [
+        "block_0 eq 4",
+        "block_0 eq 5",
+        "block_1 eq 0",
+        "block_3 eq 0",
+        "block_4 eq 0",
+        "block_4 eq 2",
+        "block_5 eq 5"
+      ]
+    },
+    "L1_36": {
+      "OR": [
+        "block_0 eq 4",
+        "block_0 eq 5",
+        "block_0 eq 6",
+        "block_1 eq 0",
+        "block_1 eq 1",
+        "block_2 eq 6"
+      ]
+    },
+    "L1_37": {
+      "OR": [
+        "table-counter eq 5",
+        "block_0 eq 0",
+        "block_0 eq 5",
+        "block_0 eq 6",
+        "block_1 eq 0",
+        "block_1 eq 6",
+        "block_5 eq 5",
+        "clear_2 eq 1"
+      ]
+    },
+    "L1_38": {
+      "OR": [
+        "table-counter eq 1",
+        "table-counter eq 5",
+        "block_0 eq 0",
+        "block_0 eq 3",
+        "block_0 eq 4",
+        "block_0 eq 5",
+        "block_0 eq 6",
+        "block_1 eq 1",
+        "block_1 eq 2",
+        "block_1 eq 4",
+        "block_2 eq 3",
+        "block_3 eq 4",
+        "block_4 eq 5",
+        "block_5 eq 0"
+      ]
+    },
+    "L1_39": {
+      "OR": [
+        "block_0 eq 3",
+        "block_0 eq 4",
+        "block_0 eq 6",
+        "block_1 eq 0",
+        "block_1 eq 3",
+        "block_1 eq 6",
+        "block_2 eq 0",
+        "block_3 eq 4",
+        "block_4 eq 0",
+        "block_5 eq 6",
+        "clear_0 eq 1",
+        "clear_2 eq 0"
+      ]
+    },
+    "L1_40": {
+      "OR": [
+        "table-counter eq 1",
+        "table-counter eq 5",
+        "block_0 eq 1",
+        "block_0 eq 6",
+        "block_1 eq 0",
+        "block_1 eq 2",
+        "block_2 eq 3",
+        "block_3 eq 4",
+        "block_3 eq 5",
+        "block_4 eq 0",
+        "block_4 eq 5",
+        "block_5 eq 0",
+        "clear_3 eq 1"
+      ]
+    },
+    "L1_41": {
+      "OR": [
+        "block_0 eq 1",
+        "block_1 eq 0",
+        "block_1 eq 2",
+        "block_2 eq 0",
+        "block_2 eq 3",
+        "block_3 eq 4",
+        "block_4 eq 0",
+        "block_4 eq 5",
+        "block_5 eq 0",
+        "block_5 eq 6",
+        "clear_5 eq 1"
+      ]
+    },
+    "L1_42": {
+      "OR": [
+        "hand-empty eq 1",
+        "table-counter eq 1",
+        "table-counter eq 4",
+        "block_0 eq 3",
+        "block_2 eq 0",
+        "block_2 eq 6",
+        "block_3 eq 5",
+        "block_3 eq 6",
+        "block_5 eq 0",
+        "block_5 eq 6"
+      ]
+    },
+    "L1_43": {
+      "OR": [
+        "hand-empty eq 1",
+        "table-counter eq 5",
+        "block_0 eq 6",
+        "block_1 eq 2",
+        "block_2 eq 3",
+        "block_2 eq 5",
+        "block_2 eq 6",
+        "block_3 eq 4",
+        "block_4 eq 0",
+        "block_4 eq 5",
+        "block_5 eq 0",
+        "block_5 eq 5",
+        "clear_3 eq 1"
+      ]
+    },
+    "L1_44": {
+      "OR": [
+        "table-counter eq 3",
+        "block_0 eq 0",
+        "block_0 eq 6",
+        "block_1 eq 0",
+        "block_1 eq 1",
+        "block_2 eq 4",
+        "block_2 eq 5",
+        "block_2 eq 6",
+        "block_3 eq 6",
+        "block_4 eq 0",
+        "block_5 eq 6",
+        "clear_2 eq 1"
+      ]
+    },
+    "L1_45": {
+      "OR": [
+        "table-counter eq 1",
+        "table-counter eq 5",
+        "block_0 eq 0",
+        "block_0 eq 4",
+        "block_0 eq 6",
+        "block_1 eq 1",
+        "block_1 eq 2",
+        "block_4 eq 0",
+        "block_4 eq 5",
+        "block_4 eq 6",
+        "block_5 eq 6",
+        "clear_1 eq 1"
+      ]
+    },
+    "L1_46": {
+      "OR": [
+        "block_0 eq 3",
+        "block_1 eq 6",
+        "block_3 eq 0",
+        "clear_2 eq 1"
+      ]
+    },
+    "L1_47": {
+      "OR": [
+        "block_0 eq 2",
+        "block_0 eq 3",
+        "block_0 eq 5",
+        "block_0 eq 6",
+        "block_1 eq 0",
+        "block_1 eq 6",
+        "block_2 eq 5",
+        "block_2 eq 6",
+        "block_3 eq 0",
+        "block_3 eq 6"
+      ]
+    },
+    "L1_48": {
+      "OR": [
+        "block_0 eq 1",
+        "block_1 eq 0",
+        "block_1 eq 2",
+        "block_1 eq 6",
+        "block_2 eq 3",
+        "block_3 eq 4",
+        "block_4 eq 0",
+        "block_4 eq 5",
+        "block_5 eq 0",
+        "clear_2 eq 1"
+      ]
+    },
+    "L1_49": {
+      "OR": [
+        "block_0 eq 0",
+        "block_0 eq 6",
+        "block_1 eq 0",
+        "block_2 eq 1",
+        "block_2 eq 5",
+        "block_2 eq 6",
+        "block_3 eq 5",
+        "block_3 eq 6",
+        "block_4 eq 0",
+        "block_5 eq 6"
+      ]
+    },
+    "L1_50": {
+      "OR": [
+        "table-counter eq 2",
+        "block_0 eq 2",
+        "block_0 eq 3",
+        "block_0 eq 4",
+        "block_0 eq 5",
+        "block_0 eq 6",
+        "block_1 eq 0",
+        "block_2 eq 2",
+        "block_2 eq 4",
+        "block_2 eq 5",
+        "block_2 eq 6",
+        "block_4 eq 5"
+      ]
+    },
+    "L1_51": {
+      "OR": [
+        "table-counter eq 1",
+        "table-counter eq 5",
+        "block_0 eq 0",
+        "block_0 eq 3",
+        "block_0 eq 4",
+        "block_0 eq 5",
+        "block_0 eq 6",
+        "block_1 eq 1",
+        "block_1 eq 4",
+        "block_1 eq 5",
+        "clear_1 eq 1"
+      ]
+    },
+    "L1_52": {
+      "OR": [
+        "block_0 eq 0",
+        "block_0 eq 2",
+        "block_1 eq 1",
+        "block_4 eq 2",
+        "block_5 eq 0"
+      ]
+    },
+    "L1_53": {
+      "OR": [
+        "block_0 eq 1",
+        "block_1 eq 0",
+        "block_1 eq 5",
+        "block_1 eq 6",
+        "block_2 eq 3",
+        "block_3 eq 4",
+        "block_4 eq 0",
+        "block_4 eq 5",
+        "block_5 eq 6",
+        "clear_3 eq 1"
+      ]
+    },
+    "L1_54": {
+      "OR": [
+        "hand-empty eq 1",
+        "table-counter eq 3",
+        "block_0 eq 0",
+        "block_1 eq 3",
+        "block_1 eq 5",
+        "block_2 eq 4",
+        "block_3 eq 6",
+        "block_5 eq 5",
+        "block_5 eq 6"
+      ]
+    },
+    "L1_55": {
+      "OR": [
+        "block_0 eq 6",
+        "block_1 eq 0",
+        "block_1 eq 1",
+        "block_1 eq 4",
+        "block_3 eq 0",
+        "block_4 eq 6"
+      ]
+    },
+    "L1_56": {
+      "OR": [
+        "table-counter eq 1",
+        "block_0 eq 0",
+        "block_1 eq 0",
+        "block_1 eq 1",
+        "block_1 eq 2",
+        "block_2 eq 3",
+        "block_3 eq 4",
+        "block_5 eq 6"
+      ]
+    },
+    "L1_57": {
+      "OR": [
+        "block_0 eq 3",
+        "block_0 eq 4",
+        "block_0 eq 5",
+        "block_0 eq 6",
+        "block_1 eq 0",
+        "block_2 eq 2",
+        "block_3 eq 0",
+        "clear_1 eq 0"
+      ]
+    },
+    "L1_58": {
+      "OR": [
+        "block_0 eq 3",
+        "block_0 eq 4",
+        "block_0 eq 5",
+        "block_0 eq 6",
+        "block_1 eq 1",
+        "block_2 eq 1",
+        "block_3 eq 0",
+        "block_4 eq 0",
+        "block_4 eq 5",
+        "block_5 eq 5",
+        "clear_2 eq 0"
+      ]
+    },
+    "L1_59": {
+      "OR": [
+        "block_0 eq 2",
+        "block_0 eq 6",
+        "block_1 eq 0",
+        "block_1 eq 1",
+        "block_2 eq 6",
+        "block_5 eq 0",
+        "block_5 eq 5",
+        "clear_0 eq 1"
+      ]
+    },
+    "L1_60": {
+      "OR": [
+        "table-counter eq 1",
+        "block_0 eq 3",
+        "block_0 eq 4",
+        "block_0 eq 6",
+        "block_1 eq 1",
+        "block_1 eq 4",
+        "block_3 eq 4",
+        "block_4 eq 0",
+        "block_4 eq 5",
+        "block_5 eq 6",
+        "clear_0 eq 0"
+      ]
+    },
+    "L1_61": {
+      "OR": [
+        "table-counter eq 1",
+        "table-counter eq 2",
+        "block_0 eq 0",
+        "block_0 eq 4",
+        "block_2 eq 0",
+        "block_3 eq 0",
+        "block_4 eq 0",
+        "block_4 eq 3",
+        "block_4 eq 5",
+        "block_5 eq 0",
+        "clear_3 eq 0"
+      ]
+    },
+    "L1_62": {
+      "OR": [
+        "hand-empty eq 1",
+        "block_0 eq 5",
+        "block_1 eq 3",
+        "block_4 eq 0",
+        "block_5 eq 5",
+        "clear_5 eq 1"
+      ]
+    },
+    "L1_63": {
+      "OR": [
+        "block_0 eq 0",
+        "block_0 eq 3",
+        "block_0 eq 4",
+        "block_0 eq 5",
+        "block_0 eq 6",
+        "block_1 eq 1",
+        "block_1 eq 4",
+        "block_2 eq 6",
+        "block_3 eq 0",
+        "block_4 eq 0",
+        "block_5 eq 5"
+      ]
+    },
+    "L1_64": {
+      "OR": [
+        "block_0 eq 0",
+        "block_1 eq 4",
+        "block_1 eq 5",
+        "block_2 eq 0",
+        "block_2 eq 6",
+        "block_3 eq 0",
+        "block_4 eq 6",
+        "block_5 eq 6"
+      ]
+    },
+    "L1_65": {
+      "OR": [
+        "block_1 eq 5",
+        "block_1 eq 6",
+        "block_2 eq 0",
+        "block_3 eq 6",
+        "block_4 eq 3",
+        "block_5 eq 6"
+      ]
+    },
+    "L1_66": {
+      "OR": [
+        "hand-empty eq 1",
+        "table-counter eq 3",
+        "block_0 eq 0",
+        "block_1 eq 5",
+        "block_2 eq 6",
+        "block_3 eq 5",
+        "block_5 eq 5",
+        "block_5 eq 6"
+      ]
+    },
+    "L1_67": {
+      "OR": [
+        "table-counter eq 2",
+        "table-counter eq 5",
+        "block_2 eq 3",
+        "block_3 eq 6",
+        "block_4 eq 0",
+        "block_5 eq 0"
+      ]
+    },
+    "L1_68": {
+      "OR": [
+        "block_0 eq 0",
+        "block_0 eq 3",
+        "block_0 eq 4",
+        "block_0 eq 5",
+        "block_1 eq 3",
+        "block_1 eq 6",
+        "block_2 eq 2",
+        "block_2 eq 5",
+        "block_2 eq 6",
+        "block_5 eq 5"
+      ]
+    },
+    "L1_69": {
+      "OR": [
+        "block_0 eq 4",
+        "block_0 eq 6",
+        "block_1 eq 3",
+        "block_1 eq 4",
+        "block_2 eq 0",
+        "block_2 eq 1",
+        "block_2 eq 3",
+        "block_3 eq 4",
+        "block_3 eq 6",
+        "block_4 eq 0",
+        "block_4 eq 5"
+      ]
+    },
+    "L1_70": {
+      "OR": [
+        "block_4 eq 0",
+        "block_5 eq 0"
+      ]
+    },
+    "L1_71": {
+      "OR": [
+        "table-counter eq 3",
+        "block_0 eq 0",
+        "block_0 eq 3",
+        "block_1 eq 1",
+        "block_4 eq 0"
+      ]
+    },
+    "L1_72": {
+      "OR": [
+        "table-counter eq 5",
+        "block_0 eq 4",
+        "block_1 eq 4",
+        "block_2 eq 1",
+        "block_2 eq 5",
+        "block_3 eq 4",
+        "block_4 eq 0",
+        "block_4 eq 5",
+        "clear_5 eq 1"
+      ]
+    },
+    "L1_73": {
+      "OR": [
+        "table-counter eq 5",
+        "block_1 eq 3",
+        "block_1 eq 4",
+        "block_1 eq 5",
+        "block_1 eq 6",
+        "block_3 eq 5",
+        "block_4 eq 6"
+      ]
+    },
+    "L1_74": {
+      "OR": [
+        "block_0 eq 0",
+        "block_0 eq 2",
+        "block_2 eq 2",
+        "block_2 eq 4",
+        "block_4 eq 2",
+        "block_4 eq 3"
+      ]
+    },
+    "L1_75": {
+      "OR": [
+        "block_0 eq 3",
+        "block_0 eq 4",
+        "block_2 eq 0",
+        "block_4 eq 5",
+        "clear_0 eq 1"
+      ]
+    },
+    "L1_76": {
+      "OR": [
+        "table-counter eq 1",
+        "table-counter eq 2",
+        "block_0 eq 0",
+        "block_2 eq 0",
+        "block_2 eq 2",
+        "block_3 eq 0",
+        "block_3 eq 4",
+        "block_4 eq 0",
+        "block_4 eq 2",
+        "block_4 eq 3"
+      ]
+    },
+    "L1_77": {
+      "OR": [
+        "table-counter eq 5",
+        "block_1 eq 3",
+        "block_2 eq 0",
+        "block_3 eq 6",
+        "block_4 eq 3",
+        "clear_5 eq 0"
+      ]
+    },
+    "L1_78": {
+      "OR": [
+        "table-counter eq 5",
+        "block_0 eq 1",
+        "block_1 eq 0",
+        "block_1 eq 2",
+        "block_1 eq 6",
+        "block_2 eq 0",
+        "block_2 eq 3",
+        "block_3 eq 0",
+        "block_4 eq 0",
+        "block_4 eq 5",
+        "block_5 eq 6",
+        "clear_0 eq 0"
+      ]
+    },
+    "L1_79": {
+      "OR": [
+        "table-counter eq 1",
+        "table-counter eq 5",
+        "block_0 eq 0",
+        "block_0 eq 1",
+        "block_1 eq 0",
+        "block_1 eq 2",
+        "block_2 eq 3",
+        "block_3 eq 4",
+        "block_4 eq 0",
+        "block_4 eq 5",
+        "block_5 eq 0",
+        "clear_0 eq 0",
+        "clear_2 eq 1"
+      ]
+    },
+    "L1_80": {
+      "OR": [
+        "table-counter eq 1",
+        "table-counter eq 5",
+        "block_1 eq 0",
+        "block_2 eq 1",
+        "block_2 eq 6",
+        "block_3 eq 6"
+      ]
+    },
+    "L1_81": {
+      "OR": [
+        "table-counter eq 5",
+        "block_0 eq 0",
+        "block_2 eq 0",
+        "block_3 eq 0",
+        "block_4 eq 2",
+        "block_4 eq 3",
+        "block_5 eq 6"
+      ]
+    },
+    "L1_82": {
+      "OR": [
+        "table-counter eq 1",
+        "block_0 eq 2",
+        "block_1 eq 4",
+        "block_1 eq 6",
+        "block_2 eq 0",
+        "block_4 eq 3",
+        "block_4 eq 5",
+        "block_5 eq 6"
+      ]
+    },
+    "L1_83": {
+      "OR": [
+        "block_0 eq 3",
+        "block_0 eq 6",
+        "block_1 eq 0",
+        "block_3 eq 0",
+        "block_3 eq 5",
+        "block_5 eq 5"
+      ]
+    },
+    "L1_84": {
+      "OR": [
+        "table-counter eq 5",
+        "block_0 eq 3",
+        "block_1 eq 0",
+        "block_1 eq 3",
+        "block_1 eq 4",
+        "block_1 eq 6",
+        "block_3 eq 1",
+        "block_4 eq 2",
+        "block_5 eq 5"
+      ]
+    },
+    "L1_85": {
+      "OR": [
+        "table-counter eq 4",
+        "block_0 eq 0",
+        "block_1 eq 6",
+        "block_3 eq 0",
+        "block_3 eq 1",
+        "block_4 eq 2",
+        "block_5 eq 6"
+      ]
+    },
+    "L1_86": {
+      "OR": [
+        "table-counter eq 4",
+        "table-counter eq 5",
+        "block_0 eq 3",
+        "block_0 eq 4",
+        "block_0 eq 5",
+        "block_0 eq 6",
+        "block_1 eq 1",
+        "block_1 eq 2",
+        "block_1 eq 3",
+        "block_1 eq 4",
+        "block_2 eq 0",
+        "block_2 eq 3",
+        "block_2 eq 6",
+        "block_3 eq 4",
+        "block_4 eq 0",
+        "block_4 eq 5",
+        "block_5 eq 5",
+        "clear_2 eq 0",
+        "clear_5 eq 1"
+      ]
+    },
+    "L1_87": {
+      "OR": [
+        "block_0 eq 3",
+        "block_0 eq 4",
+        "block_0 eq 5",
+        "block_1 eq 0",
+        "block_1 eq 1",
+        "block_1 eq 3",
+        "block_1 eq 5",
+        "block_3 eq 6",
+        "block_4 eq 0",
+        "block_4 eq 6",
+        "block_5 eq 5"
+      ]
+    },
+    "L1_88": {
+      "OR": [
+        "block_0 eq 2",
+        "block_0 eq 3",
+        "block_0 eq 5",
+        "block_1 eq 3",
+        "block_2 eq 2",
+        "block_3 eq 0",
+        "block_4 eq 1",
+        "block_4 eq 2",
+        "block_5 eq 5"
+      ]
+    },
+    "L1_89": {
+      "OR": [
+        "block_0 eq 5",
+        "block_4 eq 0",
+        "block_5 eq 0"
+      ]
+    },
+    "L1_90": {
+      "OR": [
+        "block_0 eq 0",
+        "block_0 eq 1",
+        "block_1 eq 2",
+        "block_2 eq 3",
+        "block_3 eq 1",
+        "block_3 eq 4",
+        "block_4 eq 0",
+        "block_4 eq 5",
+        "block_5 eq 6"
+      ]
+    },
+    "L1_91": {
+      "OR": [
+        "block_0 eq 0",
+        "block_0 eq 3",
+        "block_0 eq 4",
+        "block_1 eq 1",
+        "block_2 eq 0",
+        "block_2 eq 6",
+        "block_3 eq 6",
+        "block_4 eq 0",
+        "block_4 eq 3",
+        "block_5 eq 6"
+      ]
+    },
+    "L1_92": {
+      "OR": [
+        "block_0 eq 2",
+        "block_0 eq 3",
+        "block_0 eq 4",
+        "block_1 eq 0",
+        "block_1 eq 1",
+        "block_3 eq 4",
+        "block_4 eq 0"
+      ]
+    },
+    "L1_93": {
+      "OR": [
+        "table-counter eq 2",
+        "block_0 eq 6",
+        "block_1 eq 0",
+        "block_1 eq 1",
+        "block_1 eq 6",
+        "block_2 eq 6",
+        "block_3 eq 0",
+        "block_3 eq 6",
+        "block_4 eq 0",
+        "block_5 eq 6",
+        "clear_2 eq 1"
+      ]
+    },
+    "L1_94": {
+      "OR": [
+        "table-counter eq 1",
+        "block_1 eq 3",
+        "block_1 eq 5",
+        "block_1 eq 6",
+        "block_2 eq 0",
+        "block_2 eq 4",
+        "block_2 eq 5",
+        "block_3 eq 0",
+        "block_4 eq 3",
+        "block_4 eq 6",
+        "block_5 eq 6"
+      ]
+    },
+    "L1_95": {
+      "OR": [
+        "block_0 eq 0",
+        "block_1 eq 1",
+        "block_3 eq 0",
+        "block_4 eq 0",
+        "block_4 eq 2",
+        "block_4 eq 3",
+        "block_5 eq 6",
+        "clear_2 eq 1"
+      ]
+    },
+    "L1_96": {
+      "OR": [
+        "block_0 eq 4",
+        "block_0 eq 5",
+        "block_0 eq 6",
+        "block_1 eq 1",
+        "block_1 eq 4",
+        "block_2 eq 4",
+        "block_5 eq 6",
+        "clear_1 eq 1"
+      ]
+    },
+    "L1_97": {
+      "OR": [
+        "table-counter eq 4",
+        "block_0 eq 2",
+        "block_0 eq 3",
+        "block_0 eq 4",
+        "block_0 eq 5",
+        "block_1 eq 0",
+        "block_2 eq 0",
+        "block_2 eq 2",
+        "block_3 eq 1",
+        "block_4 eq 5"
+      ]
+    },
+    "L1_98": {
+      "OR": [
+        "table-counter eq 3",
+        "block_0 eq 2",
+        "block_0 eq 3",
+        "block_0 eq 4",
+        "block_0 eq 5",
+        "block_0 eq 6",
+        "block_1 eq 0",
+        "block_1 eq 1",
+        "block_2 eq 0",
+        "block_2 eq 3",
+        "block_3 eq 0",
+        "block_3 eq 4",
+        "block_4 eq 0",
+        "block_4 eq 5",
+        "clear_0 eq 1",
+        "clear_1 eq 0",
+        "clear_5 eq 1"
+      ]
+    },
+    "L1_99": {
+      "OR": [
+        "block_0 eq 6",
+        "block_1 eq 1",
+        "block_2 eq 4",
+        "block_2 eq 5",
+        "block_5 eq 5",
+        "clear_0 eq 1"
+      ]
+    },
+    "L1_100": {
+      "OR": [
+        "table-counter eq 1",
+        "block_2 eq 0",
+        "block_2 eq 5",
+        "block_2 eq 6",
+        "block_3 eq 1",
+        "block_3 eq 4",
+        "block_4 eq 0",
+        "block_4 eq 5",
+        "block_4 eq 6",
+        "block_5 eq 5"
+      ]
+    },
+    "L1_101": {
+      "OR": [
+        "block_2 eq 0",
+        "block_2 eq 1",
+        "block_4 eq 0",
+        "block_4 eq 3",
+        "block_4 eq 5",
+        "block_4 eq 6"
+      ]
+    },
+    "L1_102": {
+      "OR": [
+        "block_0 eq 3",
+        "block_0 eq 4",
+        "block_0 eq 5",
+        "block_0 eq 6",
+        "block_1 eq 0",
+        "block_2 eq 2",
+        "block_4 eq 0",
+        "block_4 eq 5",
+        "block_5 eq 5"
+      ]
+    },
+    "L1_103": {
+      "OR": [
+        "hand-empty eq 1",
+        "table-counter eq 4",
+        "table-counter eq 5",
+        "block_0 eq 3",
+        "block_0 eq 4",
+        "block_0 eq 5",
+        "block_0 eq 6",
+        "block_3 eq 1",
+        "block_4 eq 0",
+        "block_4 eq 5",
+        "clear_5 eq 1"
+      ]
+    },
+    "L1_104": {
+      "OR": [
+        "block_1 eq 0",
+        "block_2 eq 4",
+        "block_2 eq 6",
+        "block_5 eq 0"
+      ]
+    },
+    "L1_105": {
+      "OR": [
+        "block_0 eq 3",
+        "block_0 eq 4",
+        "block_0 eq 5",
+        "block_0 eq 6",
+        "block_1 eq 0",
+        "block_1 eq 1",
+        "block_3 eq 4",
+        "block_3 eq 6",
+        "block_4 eq 0",
+        "block_5 eq 5",
+        "clear_5 eq 1"
+      ]
+    },
+    "L1_106": {
+      "OR": [
+        "block_0 eq 3",
+        "block_0 eq 4",
+        "block_0 eq 6",
+        "block_1 eq 0",
+        "block_2 eq 3",
+        "block_4 eq 0",
+        "block_5 eq 0",
+        "block_5 eq 5"
+      ]
+    },
+    "L1_107": {
+      "OR": [
+        "block_0 eq 0",
+        "block_1 eq 1",
+        "block_1 eq 6",
+        "block_2 eq 3",
+        "block_4 eq 0",
+        "block_4 eq 2",
+        "block_4 eq 3",
+        "block_5 eq 6"
+      ]
+    },
+    "L1_108": {
+      "OR": [
+        "table-counter eq 2",
+        "table-counter eq 5",
+        "block_0 eq 3",
+        "block_1 eq 0",
+        "block_1 eq 6",
+        "block_2 eq 4",
+        "block_2 eq 5",
+        "block_3 eq 0",
+        "block_4 eq 0",
+        "block_5 eq 5",
+        "clear_2 eq 1"
+      ]
+    },
+    "L1_109": {
+      "OR": [
+        "hand-empty eq 1",
+        "table-counter eq 1",
+        "table-counter eq 3",
+        "block_0 eq 4",
+        "block_0 eq 5",
+        "block_1 eq 0",
+        "block_2 eq 6",
+        "block_3 eq 6",
+        "block_4 eq 5"
+      ]
+    },
+    "L1_110": {
+      "OR": [
+        "hand-empty eq 1",
+        "table-counter eq 5",
+        "block_1 eq 0",
+        "block_2 eq 3",
+        "block_2 eq 6",
+        "block_3 eq 5",
+        "block_3 eq 6"
+      ]
+    },
+    "L1_111": {
+      "OR": [
+        "table-counter eq 1",
+        "table-counter eq 2",
+        "block_0 eq 0",
+        "block_2 eq 5",
+        "block_2 eq 6",
+        "block_3 eq 0",
+        "block_3 eq 4",
+        "block_3 eq 6",
+        "block_4 eq 0",
+        "block_4 eq 5",
+        "block_5 eq 0"
+      ]
+    },
+    "L1_112": {
+      "OR": [
+        "block_0 eq 0",
+        "block_2 eq 0",
+        "block_2 eq 2",
+        "block_3 eq 0",
+        "block_3 eq 4",
+        "block_4 eq 2",
+        "block_4 eq 3",
+        "block_5 eq 0"
+      ]
+    },
+    "L1_113": {
+      "OR": [
+        "table-counter eq 3",
+        "block_0 eq 2",
+        "block_0 eq 3",
+        "block_0 eq 5",
+        "block_0 eq 6",
+        "block_2 eq 2",
+        "block_4 eq 2",
+        "block_5 eq 5",
+        "clear_5 eq 1"
+      ]
+    },
+    "L1_114": {
+      "OR": [
+        "block_0 eq 4",
+        "block_1 eq 5",
+        "block_2 eq 5",
+        "block_2 eq 6",
+        "block_5 eq 6",
+        "clear_0 eq 1"
+      ]
+    },
+    "L1_115": {
+      "OR": [
+        "table-counter eq 3",
+        "block_0 eq 0",
+        "block_0 eq 3",
+        "block_0 eq 4",
+        "block_0 eq 5",
+        "block_1 eq 0",
+        "block_1 eq 1",
+        "block_1 eq 3",
+        "block_1 eq 4",
+        "block_2 eq 4",
+        "block_3 eq 5",
+        "block_3 eq 6",
+        "block_4 eq 0"
+      ]
+    },
+    "L1_116": {
+      "OR": [
+        "table-counter eq 1",
+        "block_0 eq 0",
+        "block_0 eq 2",
+        "block_2 eq 2",
+        "block_4 eq 2",
+        "block_4 eq 3",
+        "block_5 eq 0",
+        "clear_2 eq 0"
+      ]
+    },
+    "L1_117": {
+      "OR": [
+        "table-counter eq 4",
+        "block_0 eq 4",
+        "block_0 eq 5",
+        "block_0 eq 6",
+        "block_1 eq 1",
+        "block_3 eq 0",
+        "block_4 eq 6",
+        "block_5 eq 6"
+      ]
+    },
+    "L1_118": {
+      "OR": [
+        "block_0 eq 2",
+        "block_0 eq 3",
+        "block_0 eq 5",
+        "block_0 eq 6",
+        "block_1 eq 5",
+        "block_2 eq 6",
+        "block_4 eq 0",
+        "block_5 eq 6",
+        "clear_0 eq 1",
+        "clear_3 eq 1"
+      ]
+    },
+    "L1_119": {
+      "OR": [
+        "table-counter eq 1",
+        "block_0 eq 0",
+        "block_2 eq 0",
+        "block_2 eq 2",
+        "block_2 eq 5",
+        "block_2 eq 6",
+        "block_3 eq 5",
+        "block_3 eq 6",
+        "block_4 eq 3",
+        "block_4 eq 5"
+      ]
+    },
+    "L1_120": {
+      "OR": [
+        "table-counter eq 5",
+        "block_0 eq 0",
+        "block_0 eq 3",
+        "block_0 eq 5",
+        "block_0 eq 6",
+        "block_1 eq 0",
+        "block_2 eq 5",
+        "block_3 eq 0",
+        "block_5 eq 6",
+        "clear_1 eq 1"
+      ]
+    },
+    "L1_121": {
+      "OR": [
+        "block_0 eq 2",
+        "block_0 eq 3",
+        "block_0 eq 4",
+        "block_0 eq 5",
+        "block_0 eq 6",
+        "block_1 eq 0",
+        "block_1 eq 2",
+        "block_2 eq 3",
+        "block_3 eq 4",
+        "block_3 eq 5",
+        "block_3 eq 6",
+        "block_4 eq 0",
+        "block_4 eq 5",
+        "block_5 eq 0",
+        "clear_1 eq 0",
+        "clear_5 eq 1"
+      ]
+    },
+    "L1_122": {
+      "OR": [
+        "table-counter eq 3",
+        "table-counter eq 5",
+        "block_0 eq 5",
+        "block_0 eq 6",
+        "block_1 eq 0",
+        "block_1 eq 4",
+        "block_2 eq 4",
+        "block_2 eq 5",
+        "block_2 eq 6",
+        "block_3 eq 0",
+        "block_4 eq 0",
+        "block_5 eq 6"
+      ]
+    },
+    "L1_123": {
+      "OR": [
+        "block_0 eq 3",
+        "block_0 eq 4",
+        "block_0 eq 5",
+        "block_0 eq 6",
+        "block_1 eq 6",
+        "block_2 eq 4",
+        "block_2 eq 6",
+        "block_3 eq 1",
+        "block_4 eq 2",
+        "block_4 eq 3",
+        "block_5 eq 0"
+      ]
+    },
+    "L1_124": {
+      "OR": [
+        "table-counter eq 1",
+        "block_0 eq 5",
+        "block_1 eq 2",
+        "block_1 eq 5",
+        "block_2 eq 3",
+        "block_2 eq 6",
+        "block_3 eq 4",
+        "block_3 eq 6",
+        "block_4 eq 0",
+        "block_4 eq 5",
+        "block_4 eq 6",
+        "clear_0 eq 0",
+        "clear_4 eq 1"
+      ]
+    },
+    "L1_125": {
+      "OR": [
+        "block_0 eq 6",
+        "block_1 eq 3",
+        "block_1 eq 4",
+        "block_2 eq 2",
+        "block_3 eq 0",
+        "block_4 eq 0",
+        "block_4 eq 2",
+        "block_4 eq 3",
+        "block_5 eq 6",
+        "clear_5 eq 1"
+      ]
+    },
+    "L1_126": {
+      "OR": [
+        "table-counter eq 2",
+        "table-counter eq 5",
+        "block_0 eq 4",
+        "block_0 eq 5",
+        "block_0 eq 6",
+        "block_1 eq 3",
+        "block_3 eq 0",
+        "block_5 eq 6"
+      ]
+    },
+    "L1_127": {
+      "OR": [
+        "table-counter eq 4",
+        "block_0 eq 3",
+        "block_0 eq 4",
+        "block_0 eq 5",
+        "block_0 eq 6",
+        "block_1 eq 0",
+        "block_1 eq 1",
+        "block_2 eq 5",
+        "block_3 eq 0",
+        "block_3 eq 4",
+        "block_4 eq 0",
+        "block_5 eq 5",
+        "clear_0 eq 1"
+      ]
+    },
+    "L1_128": {
+      "OR": [
+        "table-counter eq 4",
+        "block_0 eq 6",
+        "block_1 eq 0",
+        "block_1 eq 1",
+        "block_1 eq 5",
+        "block_2 eq 2",
+        "block_2 eq 4",
+        "block_2 eq 6",
+        "block_4 eq 2",
+        "block_4 eq 6",
+        "block_5 eq 5",
+        "block_5 eq 6"
+      ]
+    },
+    "L1_129": {
+      "OR": [
+        "table-counter eq 5",
+        "block_0 eq 2",
+        "block_0 eq 3",
+        "block_1 eq 2",
+        "block_1 eq 3",
+        "block_1 eq 4",
+        "block_1 eq 5",
+        "block_2 eq 1",
+        "block_3 eq 0",
+        "block_3 eq 4",
+        "block_3 eq 6",
+        "block_4 eq 0",
+        "block_4 eq 5"
+      ]
+    },
+    "L1_130": {
+      "OR": [
+        "table-counter eq 4",
+        "table-counter eq 5",
+        "block_0 eq 2",
+        "block_1 eq 1",
+        "block_2 eq 1",
+        "block_3 eq 0"
+      ]
+    }
+  },
+  "linear": {
+    "bias": {
+      "choose_table": 136.87593,
+      "choose_block_0": 98.824218,
+      "choose_block_1": 105.479888,
+      "choose_block_2": 114.418457,
+      "choose_block_3": 117.869888,
+      "choose_block_4": 122.632446,
+      "choose_block_5": 107.433738
+    },
+    "weights": {
+      "choose_table": {
+        "L1_0": 5.122017,
+        "L1_70": 9.459387,
+        "L1_14": -2.73597,
+        "L1_12": 0.334116,
+        "L1_1": 6.440724,
+        "L1_23": 6.130103,
+        "L1_81": 1.110708,
+        "L1_4": 0.848381,
+        "L1_89": 2.700178,
+        "L1_57": -6.501104,
+        "L1_20": 2.909158,
+        "L1_59": -0.063905,
+        "L1_75": 2.40914,
+        "L1_112": -0.837271,
+        "L1_32": -3.137228,
+        "L1_9": 1.003074,
+        "L1_24": 6.056643,
+        "L1_17": 1.028758,
+        "L1_33": 0.111253,
+        "L1_95": 1.591126,
+        "L1_78": 1.594718,
+        "L1_52": 4.387566,
+        "L1_114": -0.818961,
+        "L1_116": 1.338993,
+        "L1_6": -0.815478,
+        "L1_29": -2.631405,
+        "L1_46": -0.151808,
+        "L1_99": -0.903041,
+        "L1_28": 0.453369,
+        "L1_82": 1.728141,
+        "L1_79": 3.415503,
+        "L1_107": 4.819349,
+        "L1_121": 0.276696,
+        "L1_48": 1.511889,
+        "L1_31": 0.211688,
+        "L1_51": -0.844702,
+        "L1_120": -1.704276,
+        "L1_92": -1.11958,
+        "L1_58": -0.381509,
+        "L1_21": 3.745788,
+        "L1_76": -0.598197,
+        "L1_66": 4.011996,
+        "L1_16": -0.502185,
+        "L1_50": -0.485351,
+        "L1_36": 1.263404,
+        "L1_84": -0.903332,
+        "L1_18": 3.914145,
+        "L1_109": 2.297951,
+        "L1_2": 2.281134,
+        "L1_90": 1.470105,
+        "L1_85": -0.601161,
+        "L1_37": 1.060034,
+        "L1_106": -0.879825,
+        "L1_30": 1.760501,
+        "L1_124": 0.532485,
+        "L1_11": -0.012772,
+        "L1_25": -0.345697,
+        "L1_74": -2.685981,
+        "L1_63": 2.696795,
+        "L1_43": -0.398873,
+        "L1_103": 1.222919,
+        "L1_88": -1.652101,
+        "L1_22": 0.594724,
+        "L1_115": 1.108706,
+        "L1_13": 0.874254,
+        "L1_127": -1.522314,
+        "L1_119": -0.213145,
+        "L1_61": 0.185878,
+        "L1_68": 2.144915,
+        "L1_97": -1.013622,
+        "L1_15": 0.73387,
+        "L1_40": 0.878602,
+        "L1_19": 1.394228,
+        "L1_102": -1.374654,
+        "L1_105": 1.086448,
+        "L1_27": 0.244373,
+        "L1_108": 0.597657,
+        "L1_94": 0.87188,
+        "L1_38": -0.599641,
+        "L1_26": 1.252476,
+        "L1_35": -1.054666,
+        "L1_77": 0.573799,
+        "L1_129": -0.823652,
+        "L1_42": 0.306042,
+        "L1_104": -1.223835,
+        "L1_47": 0.989542,
+        "L1_110": -0.093172,
+        "L1_10": 0.723886,
+        "L1_86": 0.196962,
+        "L1_123": -0.391637,
+        "L1_130": -0.534779,
+        "L1_72": 1.868376,
+        "L1_45": 1.688862,
+        "L1_5": -0.400472,
+        "L1_49": 2.04356,
+        "L1_53": 1.90938,
+        "L1_64": 1.517105,
+        "L1_8": -1.713734,
+        "L1_93": 0.479913,
+        "L1_62": 1.926499,
+        "L1_91": 1.895784,
+        "L1_101": 0.795979,
+        "L1_55": -0.306611,
+        "L1_98": 0.6782,
+        "L1_65": -0.579262,
+        "L1_122": 0.805982,
+        "L1_96": 0.384399,
+        "L1_73": 1.77195,
+        "L1_118": 0.540454,
+        "L1_41": 1.734658,
+        "L1_83": -1.444004,
+        "L1_39": 0.209325,
+        "L1_34": 0.470184,
+        "L1_69": 0.913456,
+        "L1_56": -0.295183,
+        "L1_87": 0.325688,
+        "L1_67": -0.193543,
+        "L1_3": 0.112138,
+        "L1_71": 1.176541,
+        "L1_125": -0.745447,
+        "L1_117": 0.469001,
+        "L1_7": 0.283857,
+        "L1_111": 0.516902,
+        "L1_44": 0.831946,
+        "L1_100": 1.006395,
+        "L1_126": 0.867256,
+        "L1_60": 0.189413,
+        "L1_113": -0.962483,
+        "L1_128": -0.706413,
+        "L1_80": 0.47629,
+        "L1_54": 0.60975
+      },
+      "choose_block_0": {
+        "L1_0": 6.224508,
+        "L1_70": 2.185301,
+        "L1_14": -15.302191,
+        "L1_12": 11.479467,
+        "L1_1": 4.186187,
+        "L1_23": -5.643849,
+        "L1_81": -10.317114,
+        "L1_4": -9.750203,
+        "L1_89": 1.823194,
+        "L1_57": 7.685843,
+        "L1_20": -9.265175,
+        "L1_59": 9.126869,
+        "L1_75": 8.869366,
+        "L1_112": -8.104237,
+        "L1_32": 3.934114,
+        "L1_9": 3.812361,
+        "L1_24": -0.479851,
+        "L1_17": -6.034403,
+        "L1_33": 1.100524,
+        "L1_95": -5.36508,
+        "L1_78": -5.768362,
+        "L1_52": -5.689236,
+        "L1_114": 2.013382,
+        "L1_116": -2.319658,
+        "L1_6": 5.448137,
+        "L1_29": 5.326069,
+        "L1_46": 4.639015,
+        "L1_99": 5.157443,
+        "L1_28": 5.030461,
+        "L1_82": -4.90731,
+        "L1_79": 3.352438,
+        "L1_107": -4.151967,
+        "L1_121": 2.227854,
+        "L1_48": 4.637094,
+        "L1_31": 0.826404,
+        "L1_51": -0.188881,
+        "L1_120": 0.689412,
+        "L1_92": 4.355071,
+        "L1_58": 2.62497,
+        "L1_21": 0.087539,
+        "L1_76": -4.095744,
+        "L1_66": 2.003703,
+        "L1_16": -4.001984,
+        "L1_50": 3.948025,
+        "L1_36": 3.932974,
+        "L1_84": -0.12413,
+        "L1_18": 0.215699,
+        "L1_109": 2.880876,
+        "L1_2": 3.451025,
+        "L1_90": 1.173088,
+        "L1_85": -0.021352,
+        "L1_37": -0.706543,
+        "L1_106": 2.525753,
+        "L1_30": 3.589671,
+        "L1_124": 0.846646,
+        "L1_11": 3.569109,
+        "L1_25": -3.139255,
+        "L1_74": -0.014495,
+        "L1_63": 0.567218,
+        "L1_43": 3.263457,
+        "L1_103": 1.37456,
+        "L1_88": 1.560025,
+        "L1_22": 3.107958,
+        "L1_115": -0.403345,
+        "L1_13": 1.801395,
+        "L1_127": 2.913252,
+        "L1_119": -0.30543,
+        "L1_61": -0.837403,
+        "L1_68": 2.803995,
+        "L1_97": 0.49711,
+        "L1_15": -2.751615,
+        "L1_40": 2.044208,
+        "L1_19": -0.39961,
+        "L1_102": 2.581233,
+        "L1_105": 0.941881,
+        "L1_27": -0.260574,
+        "L1_108": 2.461726,
+        "L1_94": -0.653722,
+        "L1_38": 0.822097,
+        "L1_26": -2.398378,
+        "L1_35": -0.184424,
+        "L1_77": 1.342859,
+        "L1_129": 2.39121,
+        "L1_42": -1.354835,
+        "L1_104": 2.345243,
+        "L1_47": 2.293762,
+        "L1_110": 2.260879,
+        "L1_10": -0.358771,
+        "L1_86": 0.415756,
+        "L1_123": 0.433565,
+        "L1_130": 1.406625,
+        "L1_72": 1.420415,
+        "L1_45": 0.353615,
+        "L1_5": 0.869941,
+        "L1_49": -0.697043,
+        "L1_53": 0.924122,
+        "L1_64": -0.22893,
+        "L1_8": -1.797433,
+        "L1_93": -0.118067,
+        "L1_62": 1.194388,
+        "L1_91": -0.044702,
+        "L1_101": -0.55114,
+        "L1_55": 0.850794,
+        "L1_98": 1.351862,
+        "L1_65": -0.63305,
+        "L1_122": -1.544804,
+        "L1_96": -0.971313,
+        "L1_73": 1.686332,
+        "L1_118": -0.867939,
+        "L1_41": -0.199505,
+        "L1_83": 0.305524,
+        "L1_39": 0.45505,
+        "L1_34": -0.265776,
+        "L1_69": -0.982885,
+        "L1_56": -1.650418,
+        "L1_87": 0.404395,
+        "L1_67": 0.705238,
+        "L1_3": 0.104079,
+        "L1_71": -1.195198,
+        "L1_125": -0.812629,
+        "L1_117": 0.5707,
+        "L1_7": -0.235443,
+        "L1_111": 0.05068,
+        "L1_44": -1.155606,
+        "L1_100": 1.149718,
+        "L1_126": -1.063838,
+        "L1_60": -0.529003,
+        "L1_113": 0.990133,
+        "L1_128": 0.31985,
+        "L1_80": 0.584528,
+        "L1_54": 0.339258
+      },
+      "choose_block_1": {
+        "L1_0": 9.415871,
+        "L1_70": -18.022012,
+        "L1_14": 2.098859,
+        "L1_12": 2.087969,
+        "L1_1": 11.033776,
+        "L1_23": -10.392482,
+        "L1_81": 2.777397,
+        "L1_4": 1.539506,
+        "L1_89": -9.612217,
+        "L1_57": -9.478476,
+        "L1_20": 7.858653,
+        "L1_59": 2.265841,
+        "L1_75": 6.523811,
+        "L1_112": -0.670857,
+        "L1_32": 3.230931,
+        "L1_9": -0.870806,
+        "L1_24": 3.342174,
+        "L1_17": 4.57585,
+        "L1_33": -6.02458,
+        "L1_95": -0.964453,
+        "L1_78": 1.385124,
+        "L1_52": 0.105493,
+        "L1_114": 2.91098,
+        "L1_116": 1.484306,
+        "L1_6": 1.487968,
+        "L1_29": -2.19961,
+        "L1_46": 0.127835,
+        "L1_99": 0.405567,
+        "L1_28": -1.055753,
+        "L1_82": 1.178923,
+        "L1_79": 4.89538,
+        "L1_107": -2.668542,
+        "L1_121": 0.041635,
+        "L1_48": 1.015398,
+        "L1_31": 0.586153,
+        "L1_51": 4.478444,
+        "L1_120": 1.300908,
+        "L1_92": -2.171136,
+        "L1_58": -1.425453,
+        "L1_21": 4.127758,
+        "L1_76": -1.057526,
+        "L1_66": 2.555023,
+        "L1_16": 2.045669,
+        "L1_50": -3.28994,
+        "L1_36": 2.066505,
+        "L1_84": 1.249328,
+        "L1_18": 3.765206,
+        "L1_109": 1.680561,
+        "L1_2": 3.895294,
+        "L1_90": -0.792665,
+        "L1_85": -0.847717,
+        "L1_37": 1.101647,
+        "L1_106": -3.669083,
+        "L1_30": -1.007515,
+        "L1_124": 0.549174,
+        "L1_11": 1.036905,
+        "L1_25": -1.572008,
+        "L1_74": 2.676183,
+        "L1_63": -1.0116,
+        "L1_43": 0.946847,
+        "L1_103": -0.084341,
+        "L1_88": 0.895716,
+        "L1_22": 3.099885,
+        "L1_115": -1.220773,
+        "L1_13": -0.25271,
+        "L1_127": 0.168368,
+        "L1_119": 1.186235,
+        "L1_61": 1.682162,
+        "L1_68": -0.294567,
+        "L1_97": 1.473788,
+        "L1_15": 2.61614,
+        "L1_40": 1.182661,
+        "L1_19": 0.552241,
+        "L1_102": -2.349606,
+        "L1_105": 1.402687,
+        "L1_27": 0.686488,
+        "L1_108": 0.157627,
+        "L1_94": 2.457384,
+        "L1_38": 1.026289,
+        "L1_26": 1.099742,
+        "L1_35": -2.398063,
+        "L1_77": 2.392431,
+        "L1_129": 1.246642,
+        "L1_42": 2.380436,
+        "L1_104": 1.002328,
+        "L1_47": -0.136143,
+        "L1_110": -0.142446,
+        "L1_10": 0.901159,
+        "L1_86": -1.02896,
+        "L1_123": 0.273495,
+        "L1_130": -1.286695,
+        "L1_72": 1.331087,
+        "L1_45": 0.825813,
+        "L1_5": 1.889107,
+        "L1_49": 0.293391,
+        "L1_53": 0.183587,
+        "L1_64": 2.00824,
+        "L1_8": -1.424137,
+        "L1_93": 0.405226,
+        "L1_62": 1.162372,
+        "L1_91": -0.377749,
+        "L1_101": -1.73017,
+        "L1_55": -0.154729,
+        "L1_98": -0.737949,
+        "L1_65": 1.299512,
+        "L1_122": -1.158811,
+        "L1_96": 1.829552,
+        "L1_73": 1.529961,
+        "L1_118": 1.423931,
+        "L1_41": -1.365506,
+        "L1_83": -0.735926,
+        "L1_39": 1.276502,
+        "L1_34": -0.767709,
+        "L1_69": 0.057132,
+        "L1_56": 0.707271,
+        "L1_87": 0.667326,
+        "L1_67": -0.943606,
+        "L1_3": -0.94243,
+        "L1_71": 0.412033,
+        "L1_125": -1.001205,
+        "L1_117": 0.778087,
+        "L1_7": 0.091038,
+        "L1_111": -0.037184,
+        "L1_44": -0.205671,
+        "L1_100": -0.86004,
+        "L1_126": 0.905084,
+        "L1_60": 0.848464,
+        "L1_113": -0.610958,
+        "L1_128": 0.504853,
+        "L1_80": 0.692712,
+        "L1_54": 0.609107
+      },
+      "choose_block_2": {
+        "L1_0": 21.017271,
+        "L1_70": -8.553869,
+        "L1_14": 0.399064,
+        "L1_12": -1.634832,
+        "L1_1": 2.334172,
+        "L1_23": -7.599612,
+        "L1_81": 2.322767,
+        "L1_4": 2.887963,
+        "L1_89": -5.646847,
+        "L1_57": 1.809297,
+        "L1_20": 6.373994,
+        "L1_59": -2.096512,
+        "L1_75": -8.606378,
+        "L1_112": -1.816215,
+        "L1_32": -2.77786,
+        "L1_9": 6.114885,
+        "L1_24": 4.731463,
+        "L1_17": 4.110986,
+        "L1_33": -2.302789,
+        "L1_95": 5.905414,
+        "L1_78": 4.174043,
+        "L1_52": -1.289304,
+        "L1_114": 5.64921,
+        "L1_116": -5.377289,
+        "L1_6": 0.019348,
+        "L1_29": 1.824114,
+        "L1_46": 5.217955,
+        "L1_99": 0.040935,
+        "L1_28": -1.223054,
+        "L1_82": -0.664388,
+        "L1_79": -3.380815,
+        "L1_107": -0.791129,
+        "L1_121": 4.760615,
+        "L1_48": -1.195175,
+        "L1_31": 1.822325,
+        "L1_51": -0.205961,
+        "L1_120": 4.461674,
+        "L1_92": -1.52819,
+        "L1_58": 1.839217,
+        "L1_21": -2.143165,
+        "L1_76": -2.148877,
+        "L1_66": 0.150084,
+        "L1_16": 0.809676,
+        "L1_50": 1.255416,
+        "L1_36": -0.279899,
+        "L1_84": 0.545853,
+        "L1_18": 1.823009,
+        "L1_109": 3.905628,
+        "L1_2": 0.350066,
+        "L1_90": 3.855698,
+        "L1_85": 3.801151,
+        "L1_37": 3.156806,
+        "L1_106": 0.84631,
+        "L1_30": 0.110811,
+        "L1_124": -0.603387,
+        "L1_11": -1.113962,
+        "L1_25": 2.655931,
+        "L1_74": -0.389252,
+        "L1_63": 2.376929,
+        "L1_43": 0.580949,
+        "L1_103": -3.178368,
+        "L1_88": 0.956393,
+        "L1_22": -0.835329,
+        "L1_115": -0.150562,
+        "L1_13": -0.870123,
+        "L1_127": 0.576163,
+        "L1_119": -2.852041,
+        "L1_61": -2.129079,
+        "L1_68": -2.4222,
+        "L1_97": -2.789762,
+        "L1_15": -0.30532,
+        "L1_40": 2.677082,
+        "L1_19": 1.058416,
+        "L1_102": -0.130499,
+        "L1_105": 0.962258,
+        "L1_27": -0.076602,
+        "L1_108": 0.27991,
+        "L1_94": 0.141716,
+        "L1_38": 0.746087,
+        "L1_26": 0.20648,
+        "L1_35": 0.295289,
+        "L1_77": -1.12464,
+        "L1_129": 0.702849,
+        "L1_42": 0.215756,
+        "L1_104": 0.089562,
+        "L1_47": 1.594861,
+        "L1_110": 1.662872,
+        "L1_10": 2.250785,
+        "L1_86": 1.495631,
+        "L1_123": -0.229854,
+        "L1_130": 2.078688,
+        "L1_72": 1.113362,
+        "L1_45": 0.672934,
+        "L1_5": -1.290661,
+        "L1_49": -0.520957,
+        "L1_53": 2.036671,
+        "L1_64": -0.481936,
+        "L1_8": 0.193144,
+        "L1_93": 1.945391,
+        "L1_62": -1.194182,
+        "L1_91": -1.775476,
+        "L1_101": -0.567815,
+        "L1_55": 1.856704,
+        "L1_98": -1.855214,
+        "L1_65": -1.846469,
+        "L1_122": 1.842889,
+        "L1_96": -0.792294,
+        "L1_73": 0.200939,
+        "L1_118": -1.751735,
+        "L1_41": -0.873515,
+        "L1_83": 0.42114,
+        "L1_39": -1.694915,
+        "L1_34": 0.079441,
+        "L1_69": -0.672776,
+        "L1_56": 0.14156,
+        "L1_87": 0.707067,
+        "L1_67": 1.070738,
+        "L1_3": 1.520066,
+        "L1_71": 0.073783,
+        "L1_125": 1.283773,
+        "L1_117": 0.323828,
+        "L1_7": -1.226902,
+        "L1_111": -0.967054,
+        "L1_44": 0.752704,
+        "L1_100": -0.21672,
+        "L1_126": -0.084288,
+        "L1_60": 0.994019,
+        "L1_113": -0.656466,
+        "L1_128": 0.167156,
+        "L1_80": 0.183763,
+        "L1_54": -0.071082
+      },
+      "choose_block_3": {
+        "L1_0": 31.299235,
+        "L1_70": -1.873164,
+        "L1_14": 1.449355,
+        "L1_12": -2.802979,
+        "L1_1": 2.063752,
+        "L1_23": -2.240514,
+        "L1_81": 1.967001,
+        "L1_4": 3.349641,
+        "L1_89": -1.072233,
+        "L1_57": 5.587999,
+        "L1_20": -3.270396,
+        "L1_59": -2.308637,
+        "L1_75": -0.715211,
+        "L1_112": -0.930538,
+        "L1_32": -2.262599,
+        "L1_9": 1.726788,
+        "L1_24": -0.429911,
+        "L1_17": 1.707714,
+        "L1_33": -0.632164,
+        "L1_95": 3.468632,
+        "L1_78": 4.864766,
+        "L1_52": -3.192363,
+        "L1_114": -1.067171,
+        "L1_116": -5.628144,
+        "L1_6": -1.677591,
+        "L1_29": -3.099586,
+        "L1_46": 0.989745,
+        "L1_99": -0.354621,
+        "L1_28": -0.288106,
+        "L1_82": 1.361196,
+        "L1_79": 0.884256,
+        "L1_107": 1.904358,
+        "L1_121": 2.694568,
+        "L1_48": -1.632001,
+        "L1_31": -1.528262,
+        "L1_51": -2.113195,
+        "L1_120": 0.752738,
+        "L1_92": -0.843226,
+        "L1_58": 4.295514,
+        "L1_21": -2.023842,
+        "L1_76": 1.17984,
+        "L1_66": 1.438559,
+        "L1_16": 0.852625,
+        "L1_50": -3.065283,
+        "L1_36": -0.025304,
+        "L1_84": -0.045576,
+        "L1_18": -0.188216,
+        "L1_109": -0.22336,
+        "L1_2": -0.738474,
+        "L1_90": 2.465141,
+        "L1_85": -0.036821,
+        "L1_37": 3.726141,
+        "L1_106": 2.075577,
+        "L1_30": -1.537951,
+        "L1_124": 1.667116,
+        "L1_11": -0.950706,
+        "L1_25": 3.562306,
+        "L1_74": -0.674097,
+        "L1_63": 3.296407,
+        "L1_43": -0.526635,
+        "L1_103": -0.556078,
+        "L1_88": 0.757251,
+        "L1_22": 0.459545,
+        "L1_115": 1.939375,
+        "L1_13": 0.132285,
+        "L1_127": 0.47463,
+        "L1_119": -0.114253,
+        "L1_61": -0.788555,
+        "L1_68": -2.33123,
+        "L1_97": -0.070028,
+        "L1_15": 1.737749,
+        "L1_40": 0.747869,
+        "L1_19": 0.394504,
+        "L1_102": 0.123255,
+        "L1_105": 2.531309,
+        "L1_27": 2.474063,
+        "L1_108": -0.494254,
+        "L1_94": -0.464229,
+        "L1_38": 1.613911,
+        "L1_26": 1.035211,
+        "L1_35": 0.389172,
+        "L1_77": -1.13503,
+        "L1_129": 0.329799,
+        "L1_42": 0.21133,
+        "L1_104": -0.721542,
+        "L1_47": -0.009377,
+        "L1_110": -0.196029,
+        "L1_10": -0.023013,
+        "L1_86": 2.245882,
+        "L1_123": -2.220964,
+        "L1_130": -2.177611,
+        "L1_72": 0.673635,
+        "L1_45": 1.278088,
+        "L1_5": 1.743472,
+        "L1_49": 0.374141,
+        "L1_53": 1.464195,
+        "L1_64": 0.858763,
+        "L1_8": 1.725465,
+        "L1_93": 0.945888,
+        "L1_62": 1.480508,
+        "L1_91": 0.509862,
+        "L1_101": 0.203853,
+        "L1_55": 0.712917,
+        "L1_98": 0.993798,
+        "L1_65": -0.263032,
+        "L1_122": 0.497217,
+        "L1_96": 0.11364,
+        "L1_73": -0.400649,
+        "L1_118": 0.322664,
+        "L1_41": 0.154382,
+        "L1_83": 1.079563,
+        "L1_39": -0.109682,
+        "L1_34": 1.665089,
+        "L1_69": 1.658042,
+        "L1_56": -0.094021,
+        "L1_87": 1.555505,
+        "L1_67": 0.88241,
+        "L1_3": 1.140071,
+        "L1_71": 1.389679,
+        "L1_125": -0.244351,
+        "L1_117": 1.235959,
+        "L1_7": -0.215051,
+        "L1_111": 0.567224,
+        "L1_44": 0.936025,
+        "L1_100": 0.984997,
+        "L1_126": 0.816489,
+        "L1_60": 0.893583,
+        "L1_113": 0.895036,
+        "L1_128": 0.28559,
+        "L1_80": -0.42902,
+        "L1_54": 0.619464
+      },
+      "choose_block_4": {
+        "L1_0": 13.209246,
+        "L1_70": 9.976815,
+        "L1_14": 3.84473,
+        "L1_12": -1.300002,
+        "L1_1": 9.520721,
+        "L1_23": 5.924807,
+        "L1_81": 0.953052,
+        "L1_4": 2.525998,
+        "L1_89": 4.686729,
+        "L1_57": -0.539847,
+        "L1_20": 0.709883,
+        "L1_59": 0.72602,
+        "L1_75": 0.087149,
+        "L1_112": 2.694033,
+        "L1_32": -0.834573,
+        "L1_9": 3.615503,
+        "L1_24": -3.278323,
+        "L1_17": -2.678678,
+        "L1_33": 1.361353,
+        "L1_95": 1.744234,
+        "L1_78": 5.312695,
+        "L1_52": 1.151862,
+        "L1_114": -0.829728,
+        "L1_116": -1.769624,
+        "L1_6": -0.19282,
+        "L1_29": -1.829236,
+        "L1_46": -3.529361,
+        "L1_99": 1.236518,
+        "L1_28": 2.058346,
+        "L1_82": 0.441175,
+        "L1_79": 3.888301,
+        "L1_107": -0.636014,
+        "L1_121": 1.151421,
+        "L1_48": 0.209255,
+        "L1_31": -2.036371,
+        "L1_51": 1.880687,
+        "L1_120": -0.375254,
+        "L1_92": 2.727411,
+        "L1_58": 3.373154,
+        "L1_21": -1.443563,
+        "L1_76": 2.996472,
+        "L1_66": -2.439578,
+        "L1_16": 0.902571,
+        "L1_50": 1.481102,
+        "L1_36": 2.70556,
+        "L1_84": -3.920263,
+        "L1_18": 3.21639,
+        "L1_109": 2.157898,
+        "L1_2": 0.261119,
+        "L1_90": -0.547328,
+        "L1_85": -2.683397,
+        "L1_37": -0.908975,
+        "L1_106": 0.410739,
+        "L1_30": -1.450839,
+        "L1_124": 3.583462,
+        "L1_11": 0.007878,
+        "L1_25": -1.751856,
+        "L1_74": -1.666485,
+        "L1_63": 0.749913,
+        "L1_43": -0.518433,
+        "L1_103": 1.307208,
+        "L1_88": -0.900873,
+        "L1_22": 0.832998,
+        "L1_115": 3.003073,
+        "L1_13": -0.127879,
+        "L1_127": 1.167244,
+        "L1_119": -1.173376,
+        "L1_61": 1.772852,
+        "L1_68": 0.55169,
+        "L1_97": 0.248193,
+        "L1_15": -0.508607,
+        "L1_40": -0.28655,
+        "L1_19": 1.075686,
+        "L1_102": 0.938898,
+        "L1_105": 0.908015,
+        "L1_27": 1.778654,
+        "L1_108": -0.90008,
+        "L1_94": -0.856,
+        "L1_38": 2.420716,
+        "L1_26": 0.856802,
+        "L1_35": 1.259067,
+        "L1_77": 0.957212,
+        "L1_129": 0.345815,
+        "L1_42": -0.471419,
+        "L1_104": -0.60331,
+        "L1_47": 2.084718,
+        "L1_110": 0.526921,
+        "L1_10": -1.320468,
+        "L1_86": 1.26442,
+        "L1_123": -1.987846,
+        "L1_130": -0.176571,
+        "L1_72": 0.746856,
+        "L1_45": 2.118893,
+        "L1_5": 1.54056,
+        "L1_49": 2.006252,
+        "L1_53": 0.791551,
+        "L1_64": 1.078928,
+        "L1_8": 1.999614,
+        "L1_93": 0.198172,
+        "L1_62": 1.077631,
+        "L1_91": 0.814476,
+        "L1_101": 0.659071,
+        "L1_55": 0.465606,
+        "L1_98": -0.41652,
+        "L1_65": -0.137702,
+        "L1_122": 0.573453,
+        "L1_96": 1.169415,
+        "L1_73": 0.53539,
+        "L1_118": 0.750561,
+        "L1_41": 0.393577,
+        "L1_83": 1.695152,
+        "L1_39": 1.431807,
+        "L1_34": 0.280113,
+        "L1_69": 0.527044,
+        "L1_56": 1.201341,
+        "L1_87": 1.44041,
+        "L1_67": -0.016685,
+        "L1_3": 0.422547,
+        "L1_71": 0.330839,
+        "L1_125": 0.02076,
+        "L1_117": -0.857156,
+        "L1_7": -0.789445,
+        "L1_111": 1.224497,
+        "L1_44": 0.928105,
+        "L1_100": 1.040859,
+        "L1_126": 0.664426,
+        "L1_60": 0.921509,
+        "L1_113": -0.839067,
+        "L1_128": -0.44177,
+        "L1_80": 0.597476,
+        "L1_54": -0.504752
+      },
+      "choose_block_5": {
+        "L1_0": 11.027807,
+        "L1_70": 3.379624,
+        "L1_14": 0.01253,
+        "L1_12": -1.008503,
+        "L1_1": 7.990469,
+        "L1_23": 7.629699,
+        "L1_81": 0.050684,
+        "L1_4": 1.381417,
+        "L1_89": 2.462731,
+        "L1_57": 1.345009,
+        "L1_20": -1.958221,
+        "L1_59": 0.037797,
+        "L1_75": 4.820518,
+        "L1_112": 0.805251,
+        "L1_32": -6.542312,
+        "L1_9": -2.212827,
+        "L1_24": 1.62901,
+        "L1_17": -0.687839,
+        "L1_33": -0.46151,
+        "L1_95": 1.540667,
+        "L1_78": 3.848838,
+        "L1_52": -0.72014,
+        "L1_114": -0.048267,
+        "L1_116": -1.601594,
+        "L1_6": -0.719176,
+        "L1_29": -3.557161,
+        "L1_46": -3.263043,
+        "L1_99": -0.594138,
+        "L1_28": 0.338833,
+        "L1_82": 3.510127,
+        "L1_79": 1.530915,
+        "L1_107": 0.40062,
+        "L1_121": 1.75413,
+        "L1_48": -0.831159,
+        "L1_31": 4.481613,
+        "L1_51": 1.133098,
+        "L1_120": 0.706098,
+        "L1_92": 0.277815,
+        "L1_58": 1.643059,
+        "L1_21": 4.117049,
+        "L1_76": 0.344828,
+        "L1_66": 0.616039,
+        "L1_16": -0.319097,
+        "L1_50": 2.58586,
+        "L1_36": 2.270676,
+        "L1_84": -0.689293,
+        "L1_18": 1.729016,
+        "L1_109": 2.477698,
+        "L1_2": -0.747576,
+        "L1_90": 1.127023,
+        "L1_85": 0.040086,
+        "L1_37": 0.694544,
+        "L1_106": 1.709968,
+        "L1_30": -1.494053,
+        "L1_124": 1.468303,
+        "L1_11": -0.408154,
+        "L1_25": -0.352945,
+        "L1_74": -3.501339,
+        "L1_63": 0.078664,
+        "L1_43": 0.744913,
+        "L1_103": 1.544404,
+        "L1_88": -3.134689,
+        "L1_22": 1.744926,
+        "L1_115": 0.473664,
+        "L1_13": 2.98366,
+        "L1_127": 0.39947,
+        "L1_119": 1.041436,
+        "L1_61": 2.836014,
+        "L1_68": -0.503552,
+        "L1_97": 0.036202,
+        "L1_15": 2.086381,
+        "L1_40": 0.71754,
+        "L1_19": 2.59431,
+        "L1_102": 2.217554,
+        "L1_105": 1.582836,
+        "L1_27": 1.201833,
+        "L1_108": -0.819121,
+        "L1_94": 0.91964,
+        "L1_38": 2.172339,
+        "L1_26": 1.785004,
+        "L1_35": -0.335858,
+        "L1_77": 1.233725,
+        "L1_129": -0.081328,
+        "L1_42": 0.004968,
+        "L1_104": -0.253664,
+        "L1_47": 0.329101,
+        "L1_110": -0.986152,
+        "L1_10": 0.020231,
+        "L1_86": 1.516624,
+        "L1_123": 0.021955,
+        "L1_130": -0.50871,
+        "L1_72": 2.167354,
+        "L1_45": 1.797367,
+        "L1_5": 2.106949,
+        "L1_49": 1.532248,
+        "L1_53": 1.613618,
+        "L1_64": 1.26166,
+        "L1_8": 1.329271,
+        "L1_93": 0.453953,
+        "L1_62": 0.78463,
+        "L1_91": 0.370755,
+        "L1_101": 1.867329,
+        "L1_55": 0.557386,
+        "L1_98": 0.372705,
+        "L1_65": -0.361351,
+        "L1_122": -1.718459,
+        "L1_96": 0.365305,
+        "L1_73": 0.568703,
+        "L1_118": -0.216191,
+        "L1_41": 0.896645,
+        "L1_83": 0.188036,
+        "L1_39": 0.852285,
+        "L1_34": 0.239627,
+        "L1_69": 1.257099,
+        "L1_56": 1.644449,
+        "L1_87": 0.157281,
+        "L1_67": -1.542425,
+        "L1_3": 0.319108,
+        "L1_71": -0.088776,
+        "L1_125": -1.108611,
+        "L1_117": 0.010977,
+        "L1_7": -0.188839,
+        "L1_111": 0.023005,
+        "L1_44": 0.165173,
+        "L1_100": 0.428129,
+        "L1_126": 0.762379,
+        "L1_60": 0.942987,
+        "L1_113": 0.444214,
+        "L1_128": 0.000562,
+        "L1_80": 0.029277,
+        "L1_54": -0.196002
+      }
+    }
+  },
+  "training_dataset": "32_32::blocksworld_ci_6_5::reg",
+  "training_metadata": {
+    "dataset": "32_32::blocksworld_ci_6_5::reg",
+    "run_id": "32_32--blocksworld_ci_6_5--reg__oh__h0x128__mse__lr0p01__s1998__0919225857",
+    "mode": "onehot",
+    "loss": "mse",
+    "distillation_temperature": null,
+    "structure": "0@128",
+    "seed": 1998,
+    "use_skip": false,
+    "clip_linear": false,
+    "quantize_linear": false,
+    "onehot_drop": "none"
+  }
+}

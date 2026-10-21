@@ -1,0 +1,252 @@
+{
+  "atoms": {
+    "type": "predicates",
+    "len": 40,
+    "content": [
+      "goal:location_load_0 eq 0",
+      "goal:location_load_1 eq 0",
+      "goal:location_load_2 eq 0",
+      "goal:location_load_3 eq 0",
+      "goal:location_load_4 eq 0",
+      "goal:location_load_5 eq 0",
+      "goal:location_load_6 eq 0",
+      "goal:location_load_7 eq 0",
+      "goal:location_load_8 eq 0",
+      "goal:location_load_9 eq 15",
+      "guard:truck_0 eq 0",
+      "guard:truck_0 eq 1",
+      "guard:truck_0 eq 2",
+      "guard:truck_0 eq 3",
+      "guard:truck_0 eq 4",
+      "guard:truck_0 eq 5",
+      "guard:truck_0 eq 6",
+      "guard:truck_0 eq 7",
+      "guard:truck_0 eq 8",
+      "goal+guard:truck_0 eq 9",
+      "guard:location_load_0 geq 1",
+      "guard:location_load_1 geq 1",
+      "guard:location_load_2 geq 1",
+      "guard:location_load_3 geq 1",
+      "guard:location_load_4 geq 1",
+      "guard:location_load_5 geq 1",
+      "guard:location_load_6 geq 1",
+      "guard:location_load_7 geq 1",
+      "guard:location_load_8 geq 1",
+      "guard:truck_load_0 geq 1",
+      "guard:truck_vel_0 geq 1",
+      "guard:truck_vel_0 geq 2",
+      "guard:truck_vel_0 geq 3",
+      "guard:parked_0 leq 0",
+      "guard:truck_load_0 leq 0",
+      "guard:truck_load_0 leq 14",
+      "guard:truck_vel_0 leq 0",
+      "guard:truck_vel_0 leq 1",
+      "guard:truck_vel_0 leq 2",
+      "guard:truck_vel_0 leq 3"
+    ]
+  },
+  "rules": {
+    "L1_0": {
+      "AND": [
+        "goal:location_load_1 eq 0",
+        "goal+guard:truck_0 eq 9",
+        "guard:location_load_4 geq 1",
+        "guard:truck_load_0 leq 0",
+        "guard:truck_load_0 leq 14",
+        "guard:truck_vel_0 leq 0"
+      ]
+    },
+    "L1_1": {
+      "AND": [
+        "goal:location_load_2 eq 0",
+        "goal:location_load_3 eq 0",
+        "goal:location_load_5 eq 0",
+        "goal:location_load_6 eq 0",
+        "goal+guard:truck_0 eq 9",
+        "guard:truck_vel_0 leq 0"
+      ]
+    },
+    "L1_2": {
+      "AND": [
+        "goal:location_load_2 eq 0",
+        "goal:location_load_6 eq 0",
+        "guard:truck_0 eq 6"
+      ]
+    },
+    "L1_3": {
+      "AND": [
+        "goal:location_load_0 eq 0",
+        "guard:truck_0 eq 2",
+        "guard:location_load_2 geq 1",
+        "guard:truck_vel_0 leq 0"
+      ]
+    },
+    "L1_4": {
+      "AND": [
+        "guard:truck_0 eq 5",
+        "guard:location_load_5 geq 1",
+        "guard:truck_vel_0 leq 0"
+      ]
+    },
+    "L1_5": {
+      "AND": [
+        "goal:location_load_1 eq 0",
+        "guard:truck_0 eq 7",
+        "guard:location_load_7 geq 1",
+        "guard:truck_vel_0 leq 0"
+      ]
+    },
+    "L1_6": {
+      "AND": [
+        "guard:truck_0 eq 1",
+        "guard:location_load_1 geq 1",
+        "guard:truck_vel_0 leq 0"
+      ]
+    },
+    "L1_7": {
+      "AND": [
+        "guard:truck_0 eq 8",
+        "guard:location_load_8 geq 1"
+      ]
+    },
+    "L1_8": {
+      "AND": [
+        "goal:location_load_1 eq 0",
+        "goal:location_load_3 eq 0",
+        "guard:truck_0 eq 4",
+        "guard:location_load_4 geq 1",
+        "guard:truck_load_0 leq 14",
+        "guard:truck_vel_0 leq 0"
+      ]
+    },
+    "L1_9": {
+      "AND": [
+        "goal:location_load_0 eq 0",
+        "goal:location_load_3 eq 0",
+        "guard:truck_0 eq 3"
+      ]
+    },
+    "L1_10": {
+      "OR": [
+        "guard:truck_0 eq 3",
+        "guard:truck_0 eq 6",
+        "guard:location_load_0 geq 1"
+      ]
+    },
+    "L1_11": {
+      "OR": [
+        "guard:truck_vel_0 geq 1"
+      ]
+    }
+  },
+  "linear": {
+    "bias": {
+      "pick_up_truck_0": -0.040682,
+      "drop_truck_0": -0.040621,
+      "acc_truck_0": 0.159351,
+      "dec_truck_0": -0.040488,
+      "move_truck_0": -0.040809,
+      "park_truck_0": -0.040626
+    },
+    "weights": {
+      "pick_up_truck_0": {
+        "L1_2": -0.156335,
+        "L1_8": 0.239292,
+        "L1_10": 0.183617,
+        "L1_7": 0.211984,
+        "L1_0": -0.012408,
+        "L1_1": 0.011624,
+        "L1_3": 0.208545,
+        "L1_5": 0.194256,
+        "L1_11": -0.004535,
+        "L1_6": 0.196318,
+        "L1_4": 0.198942,
+        "L1_9": -0.200637
+      },
+      "drop_truck_0": {
+        "L1_2": 0.043575,
+        "L1_8": 0.039317,
+        "L1_10": -0.016401,
+        "L1_7": 0.011978,
+        "L1_0": -0.211663,
+        "L1_1": 0.21165,
+        "L1_3": 0.008383,
+        "L1_5": -0.005993,
+        "L1_11": -0.004419,
+        "L1_6": -0.003598,
+        "L1_4": -0.001089,
+        "L1_9": -0.000766
+      },
+      "acc_truck_0": {
+        "L1_2": 0.243426,
+        "L1_8": -0.160655,
+        "L1_10": -0.216425,
+        "L1_7": -0.187995,
+        "L1_0": -0.013086,
+        "L1_1": -0.188335,
+        "L1_3": -0.191248,
+        "L1_5": -0.205852,
+        "L1_11": -0.204546,
+        "L1_6": -0.203586,
+        "L1_4": -0.201109,
+        "L1_9": 0.199366
+      },
+      "dec_truck_0": {
+        "L1_2": 0.043247,
+        "L1_8": 0.03836,
+        "L1_10": -0.015964,
+        "L1_7": 0.011081,
+        "L1_0": -0.012009,
+        "L1_1": 0.012025,
+        "L1_3": 0.008989,
+        "L1_5": -0.006203,
+        "L1_11": 0.195851,
+        "L1_6": -0.003823,
+        "L1_4": -0.000268,
+        "L1_9": -0.0005
+      },
+      "move_truck_0": {
+        "L1_2": 0.043327,
+        "L1_8": 0.040318,
+        "L1_10": -0.016938,
+        "L1_7": 0.013491,
+        "L1_0": -0.013899,
+        "L1_1": 0.01142,
+        "L1_3": 0.007621,
+        "L1_5": -0.004719,
+        "L1_11": -0.005039,
+        "L1_6": -0.003344,
+        "L1_4": -0.002233,
+        "L1_9": -0.000752
+      },
+      "park_truck_0": {
+        "L1_2": 0.043477,
+        "L1_8": 0.039535,
+        "L1_10": -0.01644,
+        "L1_7": 0.012153,
+        "L1_0": 0.187691,
+        "L1_1": 0.011598,
+        "L1_3": 0.008507,
+        "L1_5": -0.005804,
+        "L1_11": -0.004509,
+        "L1_6": -0.003601,
+        "L1_4": -0.000931,
+        "L1_9": -0.000688
+      }
+    }
+  },
+  "training_dataset": "OneWayLinePark::owl_icy-fixed_park_15_10::reg",
+  "training_metadata": {
+    "dataset": "OneWayLinePark::owl_icy-fixed_park_15_10::reg",
+    "run_id": "OneWayLinePark--owl_icy-fixed_park_15_10--reg__pred__h0x64__kl__T10__lr0p01__s1998__0920020004",
+    "mode": "predicates",
+    "loss": "kl",
+    "distillation_temperature": 10.0,
+    "structure": "0@64",
+    "seed": 1998,
+    "use_skip": false,
+    "clip_linear": false,
+    "quantize_linear": false,
+    "onehot_drop": "none"
+  }
+}

@@ -1,0 +1,861 @@
+{
+  "atoms": {
+    "type": "onehot",
+    "len": 98,
+    "content": [
+      "location_load_0 eq 0",
+      "location_load_0 eq 1",
+      "location_load_0 eq 2",
+      "location_load_0 eq 3",
+      "location_load_0 eq 4",
+      "location_load_0 eq 5",
+      "location_load_0 eq 6",
+      "location_load_0 eq 7",
+      "location_load_0 eq 8",
+      "location_load_1 eq 0",
+      "location_load_1 eq 1",
+      "location_load_1 eq 2",
+      "location_load_1 eq 3",
+      "location_load_1 eq 4",
+      "location_load_1 eq 5",
+      "location_load_1 eq 6",
+      "location_load_1 eq 7",
+      "location_load_1 eq 8",
+      "location_load_2 eq 0",
+      "location_load_2 eq 1",
+      "location_load_2 eq 2",
+      "location_load_2 eq 3",
+      "location_load_2 eq 4",
+      "location_load_2 eq 5",
+      "location_load_2 eq 6",
+      "location_load_2 eq 7",
+      "location_load_2 eq 8",
+      "location_load_3 eq 0",
+      "location_load_3 eq 1",
+      "location_load_3 eq 2",
+      "location_load_3 eq 3",
+      "location_load_3 eq 4",
+      "location_load_3 eq 5",
+      "location_load_3 eq 6",
+      "location_load_3 eq 7",
+      "location_load_3 eq 8",
+      "location_load_4 eq 0",
+      "location_load_4 eq 1",
+      "location_load_4 eq 2",
+      "location_load_4 eq 3",
+      "location_load_4 eq 4",
+      "location_load_4 eq 5",
+      "location_load_4 eq 6",
+      "location_load_4 eq 7",
+      "location_load_4 eq 8",
+      "location_load_5 eq 0",
+      "location_load_5 eq 1",
+      "location_load_5 eq 2",
+      "location_load_5 eq 3",
+      "location_load_5 eq 4",
+      "location_load_5 eq 5",
+      "location_load_5 eq 6",
+      "location_load_5 eq 7",
+      "location_load_5 eq 8",
+      "location_load_6 eq 0",
+      "location_load_6 eq 1",
+      "location_load_6 eq 2",
+      "location_load_6 eq 3",
+      "location_load_6 eq 4",
+      "location_load_6 eq 5",
+      "location_load_6 eq 6",
+      "location_load_6 eq 7",
+      "location_load_6 eq 8",
+      "location_load_7 eq 0",
+      "location_load_7 eq 1",
+      "location_load_7 eq 2",
+      "location_load_7 eq 3",
+      "location_load_7 eq 4",
+      "location_load_7 eq 5",
+      "location_load_7 eq 6",
+      "location_load_7 eq 7",
+      "location_load_7 eq 8",
+      "truck_0 eq 0",
+      "truck_0 eq 1",
+      "truck_0 eq 2",
+      "truck_0 eq 3",
+      "truck_0 eq 4",
+      "truck_0 eq 5",
+      "truck_0 eq 6",
+      "truck_0 eq 7",
+      "truck_load_0 eq 0",
+      "truck_load_0 eq 1",
+      "truck_load_0 eq 2",
+      "truck_load_0 eq 3",
+      "truck_load_0 eq 4",
+      "truck_load_0 eq 5",
+      "truck_load_0 eq 6",
+      "truck_load_0 eq 7",
+      "truck_load_0 eq 8",
+      "num_packages_before_truck eq 0",
+      "num_packages_before_truck eq 1",
+      "num_packages_before_truck eq 2",
+      "num_packages_before_truck eq 3",
+      "num_packages_before_truck eq 4",
+      "num_packages_before_truck eq 5",
+      "num_packages_before_truck eq 6",
+      "num_packages_before_truck eq 7",
+      "num_packages_before_truck eq 8"
+    ]
+  },
+  "rules": {
+    "L1_0": {
+      "AND": [
+        "location_load_2 eq 6",
+        "truck_load_0 eq 1",
+        "num_packages_before_truck eq 0"
+      ]
+    },
+    "L1_1": {
+      "AND": [
+        "location_load_1 eq 0",
+        "truck_0 eq 1"
+      ]
+    },
+    "L1_2": {
+      "AND": [
+        "location_load_2 eq 0",
+        "truck_0 eq 2"
+      ]
+    },
+    "L1_3": {
+      "AND": [
+        "truck_0 eq 6",
+        "truck_load_0 eq 1"
+      ]
+    },
+    "L1_4": {
+      "AND": [
+        "location_load_3 eq 0",
+        "truck_0 eq 3"
+      ]
+    },
+    "L1_5": {
+      "AND": [
+        "location_load_4 eq 0",
+        "truck_0 eq 4"
+      ]
+    },
+    "L1_6": {
+      "AND": [
+        "truck_0 eq 6"
+      ]
+    },
+    "L1_7": {
+      "AND": [
+        "location_load_3 eq 0",
+        "truck_0 eq 3",
+        "truck_load_0 eq 0"
+      ]
+    },
+    "L1_8": {
+      "AND": [
+        "location_load_0 eq 0",
+        "location_load_7 eq 0",
+        "num_packages_before_truck eq 0"
+      ]
+    },
+    "L1_9": {
+      "AND": [
+        "truck_load_0 eq 0"
+      ]
+    },
+    "L1_10": {
+      "AND": [
+        "location_load_6 eq 0",
+        "truck_0 eq 6"
+      ]
+    },
+    "L1_11": {
+      "AND": [
+        "truck_0 eq 7"
+      ]
+    },
+    "L1_12": {
+      "AND": [
+        "location_load_5 eq 0",
+        "truck_0 eq 5",
+        "truck_load_0 eq 0"
+      ]
+    },
+    "L1_13": {
+      "AND": [
+        "location_load_1 eq 0",
+        "location_load_2 eq 0",
+        "location_load_4 eq 0",
+        "location_load_5 eq 0",
+        "location_load_6 eq 0",
+        "location_load_7 eq 6",
+        "truck_load_0 eq 0"
+      ]
+    },
+    "L1_14": {
+      "AND": [
+        "location_load_5 eq 0",
+        "truck_0 eq 5"
+      ]
+    },
+    "L1_15": {
+      "AND": [
+        "location_load_1 eq 3",
+        "location_load_2 eq 0",
+        "location_load_3 eq 0",
+        "location_load_6 eq 0",
+        "truck_load_0 eq 0",
+        "num_packages_before_truck eq 3"
+      ]
+    },
+    "L1_16": {
+      "OR": [
+        "location_load_1 eq 2",
+        "location_load_6 eq 8",
+        "truck_0 eq 0",
+        "truck_load_0 eq 1",
+        "num_packages_before_truck eq 0"
+      ]
+    },
+    "L1_17": {
+      "OR": [
+        "location_load_6 eq 3",
+        "location_load_7 eq 1",
+        "location_load_7 eq 4",
+        "location_load_7 eq 8",
+        "truck_0 eq 0",
+        "truck_load_0 eq 5",
+        "truck_load_0 eq 7",
+        "num_packages_before_truck eq 6"
+      ]
+    },
+    "L1_18": {
+      "OR": [
+        "location_load_3 eq 8",
+        "location_load_5 eq 8",
+        "location_load_6 eq 8",
+        "location_load_7 eq 0",
+        "location_load_7 eq 8",
+        "truck_load_0 eq 1",
+        "truck_load_0 eq 2",
+        "truck_load_0 eq 3",
+        "truck_load_0 eq 5",
+        "truck_load_0 eq 6",
+        "truck_load_0 eq 7",
+        "truck_load_0 eq 8"
+      ]
+    },
+    "L1_19": {
+      "OR": [
+        "location_load_1 eq 8",
+        "location_load_2 eq 6",
+        "location_load_4 eq 5",
+        "location_load_5 eq 8",
+        "location_load_6 eq 2",
+        "location_load_6 eq 6",
+        "location_load_7 eq 5",
+        "location_load_7 eq 8",
+        "truck_0 eq 5",
+        "truck_load_0 eq 6",
+        "truck_load_0 eq 7",
+        "num_packages_before_truck eq 3"
+      ]
+    },
+    "L1_20": {
+      "OR": [
+        "location_load_0 eq 3",
+        "location_load_0 eq 4",
+        "location_load_0 eq 5",
+        "location_load_0 eq 7",
+        "location_load_7 eq 7",
+        "truck_0 eq 0",
+        "num_packages_before_truck eq 3"
+      ]
+    },
+    "L1_21": {
+      "OR": [
+        "location_load_0 eq 7",
+        "location_load_4 eq 8",
+        "location_load_7 eq 5",
+        "location_load_7 eq 6",
+        "location_load_7 eq 8",
+        "truck_0 eq 0",
+        "truck_0 eq 4",
+        "truck_load_0 eq 1"
+      ]
+    },
+    "L1_22": {
+      "OR": [
+        "location_load_3 eq 8",
+        "location_load_6 eq 8",
+        "location_load_7 eq 8",
+        "truck_load_0 eq 1",
+        "truck_load_0 eq 2",
+        "truck_load_0 eq 4",
+        "truck_load_0 eq 5",
+        "truck_load_0 eq 6",
+        "truck_load_0 eq 7"
+      ]
+    },
+    "L1_23": {
+      "OR": [
+        "location_load_0 eq 3",
+        "location_load_0 eq 8",
+        "location_load_1 eq 4",
+        "location_load_3 eq 4",
+        "location_load_3 eq 6",
+        "location_load_4 eq 4",
+        "location_load_5 eq 4",
+        "location_load_6 eq 2",
+        "location_load_6 eq 5",
+        "location_load_7 eq 3",
+        "truck_0 eq 7",
+        "truck_load_0 eq 4"
+      ]
+    },
+    "L1_24": {
+      "OR": [
+        "location_load_6 eq 8",
+        "location_load_7 eq 8",
+        "truck_0 eq 0",
+        "truck_load_0 eq 1",
+        "truck_load_0 eq 2",
+        "truck_load_0 eq 4",
+        "truck_load_0 eq 5",
+        "truck_load_0 eq 6",
+        "truck_load_0 eq 7",
+        "truck_load_0 eq 8"
+      ]
+    },
+    "L1_25": {
+      "OR": [
+        "location_load_5 eq 8",
+        "location_load_6 eq 7",
+        "location_load_7 eq 8",
+        "truck_0 eq 0",
+        "truck_0 eq 1",
+        "truck_0 eq 2",
+        "truck_0 eq 5"
+      ]
+    },
+    "L1_26": {
+      "OR": [
+        "location_load_0 eq 8",
+        "location_load_3 eq 8",
+        "truck_0 eq 6",
+        "truck_0 eq 7",
+        "truck_load_0 eq 0",
+        "num_packages_before_truck eq 8"
+      ]
+    },
+    "L1_27": {
+      "OR": [
+        "location_load_0 eq 4",
+        "location_load_0 eq 5",
+        "location_load_0 eq 8",
+        "location_load_7 eq 7",
+        "location_load_7 eq 8",
+        "truck_0 eq 1",
+        "truck_0 eq 3",
+        "truck_0 eq 4",
+        "truck_0 eq 5"
+      ]
+    },
+    "L1_28": {
+      "OR": [
+        "location_load_0 eq 2",
+        "location_load_0 eq 6",
+        "location_load_0 eq 7",
+        "location_load_7 eq 3",
+        "location_load_7 eq 5",
+        "location_load_7 eq 6",
+        "truck_0 eq 7",
+        "truck_load_0 eq 6",
+        "truck_load_0 eq 8",
+        "num_packages_before_truck eq 1",
+        "num_packages_before_truck eq 4",
+        "num_packages_before_truck eq 6",
+        "num_packages_before_truck eq 7",
+        "num_packages_before_truck eq 8"
+      ]
+    },
+    "L1_29": {
+      "OR": [
+        "location_load_2 eq 6",
+        "location_load_7 eq 0",
+        "truck_0 eq 7",
+        "truck_load_0 eq 2",
+        "truck_load_0 eq 4",
+        "truck_load_0 eq 5",
+        "truck_load_0 eq 6",
+        "truck_load_0 eq 7",
+        "num_packages_before_truck eq 7"
+      ]
+    },
+    "L1_30": {
+      "OR": [
+        "location_load_3 eq 8",
+        "location_load_4 eq 8",
+        "location_load_5 eq 4",
+        "location_load_5 eq 8",
+        "location_load_6 eq 8",
+        "location_load_7 eq 0",
+        "location_load_7 eq 8",
+        "truck_load_0 eq 1",
+        "truck_load_0 eq 2",
+        "truck_load_0 eq 4",
+        "truck_load_0 eq 5",
+        "truck_load_0 eq 6",
+        "truck_load_0 eq 7",
+        "truck_load_0 eq 8"
+      ]
+    },
+    "L1_31": {
+      "OR": [
+        "location_load_6 eq 8",
+        "location_load_7 eq 8",
+        "truck_0 eq 0",
+        "truck_load_0 eq 1",
+        "truck_load_0 eq 2",
+        "truck_load_0 eq 3",
+        "truck_load_0 eq 4",
+        "truck_load_0 eq 5",
+        "truck_load_0 eq 6",
+        "truck_load_0 eq 7",
+        "num_packages_before_truck eq 0"
+      ]
+    },
+    "L1_32": {
+      "OR": [
+        "location_load_1 eq 6",
+        "location_load_3 eq 8",
+        "truck_0 eq 1",
+        "truck_0 eq 2",
+        "truck_0 eq 3",
+        "truck_0 eq 4",
+        "truck_0 eq 5",
+        "truck_load_0 eq 0"
+      ]
+    },
+    "L1_33": {
+      "OR": [
+        "location_load_0 eq 8",
+        "location_load_2 eq 5",
+        "location_load_3 eq 3",
+        "location_load_4 eq 7",
+        "location_load_5 eq 1",
+        "location_load_6 eq 7",
+        "location_load_7 eq 2",
+        "location_load_7 eq 7",
+        "truck_0 eq 7",
+        "truck_load_0 eq 5",
+        "truck_load_0 eq 8",
+        "num_packages_before_truck eq 2",
+        "num_packages_before_truck eq 3",
+        "num_packages_before_truck eq 8"
+      ]
+    },
+    "L1_34": {
+      "OR": [
+        "location_load_1 eq 8",
+        "location_load_7 eq 7",
+        "truck_0 eq 7",
+        "truck_load_0 eq 2",
+        "truck_load_0 eq 6",
+        "truck_load_0 eq 7",
+        "num_packages_before_truck eq 8"
+      ]
+    },
+    "L1_35": {
+      "OR": [
+        "location_load_0 eq 8",
+        "location_load_3 eq 7",
+        "location_load_3 eq 8",
+        "location_load_4 eq 4",
+        "truck_0 eq 5",
+        "truck_0 eq 6",
+        "truck_load_0 eq 2",
+        "truck_load_0 eq 3",
+        "truck_load_0 eq 4",
+        "truck_load_0 eq 5"
+      ]
+    },
+    "L1_36": {
+      "OR": [
+        "location_load_3 eq 8",
+        "location_load_7 eq 8",
+        "truck_0 eq 5",
+        "truck_0 eq 6"
+      ]
+    },
+    "L1_37": {
+      "OR": [
+        "location_load_0 eq 0",
+        "location_load_6 eq 8",
+        "truck_load_0 eq 1",
+        "truck_load_0 eq 2",
+        "truck_load_0 eq 3",
+        "truck_load_0 eq 4",
+        "truck_load_0 eq 5",
+        "truck_load_0 eq 6"
+      ]
+    },
+    "L1_38": {
+      "OR": [
+        "location_load_0 eq 3",
+        "location_load_4 eq 3",
+        "location_load_5 eq 2",
+        "location_load_5 eq 4",
+        "location_load_5 eq 5",
+        "location_load_5 eq 8",
+        "location_load_6 eq 1",
+        "location_load_6 eq 3",
+        "location_load_6 eq 4",
+        "location_load_6 eq 5",
+        "location_load_7 eq 0",
+        "location_load_7 eq 1",
+        "truck_0 eq 0",
+        "truck_0 eq 1",
+        "truck_load_0 eq 1",
+        "truck_load_0 eq 4",
+        "num_packages_before_truck eq 0",
+        "num_packages_before_truck eq 1"
+      ]
+    },
+    "L1_39": {
+      "OR": [
+        "location_load_7 eq 8",
+        "truck_load_0 eq 1",
+        "truck_load_0 eq 2",
+        "truck_load_0 eq 3",
+        "truck_load_0 eq 4",
+        "truck_load_0 eq 5",
+        "truck_load_0 eq 6",
+        "truck_load_0 eq 7"
+      ]
+    },
+    "L1_40": {
+      "OR": [
+        "location_load_0 eq 7",
+        "truck_0 eq 4",
+        "truck_0 eq 6",
+        "truck_0 eq 7",
+        "truck_load_0 eq 2",
+        "truck_load_0 eq 8",
+        "num_packages_before_truck eq 8"
+      ]
+    },
+    "L1_41": {
+      "OR": [
+        "location_load_5 eq 7",
+        "location_load_6 eq 3",
+        "location_load_6 eq 7",
+        "location_load_7 eq 2",
+        "location_load_7 eq 5",
+        "location_load_7 eq 7",
+        "num_packages_before_truck eq 2",
+        "num_packages_before_truck eq 5",
+        "num_packages_before_truck eq 7",
+        "num_packages_before_truck eq 8"
+      ]
+    },
+    "L1_42": {
+      "OR": [
+        "location_load_7 eq 8",
+        "truck_0 eq 0",
+        "truck_load_0 eq 1",
+        "truck_load_0 eq 2",
+        "truck_load_0 eq 3",
+        "truck_load_0 eq 6",
+        "truck_load_0 eq 7"
+      ]
+    },
+    "L1_43": {
+      "OR": [
+        "location_load_0 eq 6",
+        "location_load_0 eq 7",
+        "location_load_4 eq 5",
+        "location_load_4 eq 6",
+        "location_load_7 eq 6",
+        "location_load_7 eq 7",
+        "truck_0 eq 5",
+        "num_packages_before_truck eq 3",
+        "num_packages_before_truck eq 5",
+        "num_packages_before_truck eq 6",
+        "num_packages_before_truck eq 7",
+        "num_packages_before_truck eq 8"
+      ]
+    },
+    "L1_44": {
+      "OR": [
+        "location_load_6 eq 6",
+        "truck_0 eq 6",
+        "truck_0 eq 7",
+        "truck_load_0 eq 0"
+      ]
+    },
+    "L1_45": {
+      "OR": [
+        "location_load_1 eq 1",
+        "location_load_1 eq 3",
+        "location_load_1 eq 4",
+        "location_load_1 eq 5",
+        "location_load_1 eq 6",
+        "location_load_1 eq 7",
+        "location_load_1 eq 8",
+        "location_load_6 eq 8",
+        "truck_0 eq 0",
+        "truck_0 eq 2",
+        "truck_0 eq 3",
+        "truck_0 eq 4"
+      ]
+    },
+    "L1_46": {
+      "OR": [
+        "location_load_0 eq 8",
+        "location_load_3 eq 7",
+        "location_load_3 eq 8",
+        "truck_load_0 eq 0"
+      ]
+    },
+    "L1_47": {
+      "OR": [
+        "location_load_0 eq 5",
+        "location_load_1 eq 6",
+        "location_load_3 eq 5",
+        "location_load_6 eq 3",
+        "location_load_7 eq 1",
+        "location_load_7 eq 8",
+        "truck_0 eq 2",
+        "num_packages_before_truck eq 0",
+        "num_packages_before_truck eq 7"
+      ]
+    }
+  },
+  "linear": {
+    "bias": {
+      "pick_up_truck_0": 0.305628,
+      "drop_truck_0": -0.238543,
+      "drive_forward": -0.22056,
+      "drive_backward": -0.121893
+    },
+    "weights": {
+      "pick_up_truck_0": {
+        "L1_5": -5.270809,
+        "L1_10": -5.17492,
+        "L1_3": -0.070268,
+        "L1_9": 0.975064,
+        "L1_2": -3.532391,
+        "L1_1": -3.405957,
+        "L1_11": -2.998036,
+        "L1_14": -3.005836,
+        "L1_4": -2.762809,
+        "L1_8": -1.087246,
+        "L1_12": -2.500773,
+        "L1_31": 0.04604,
+        "L1_32": 0.373342,
+        "L1_7": -1.770033,
+        "L1_26": 0.391493,
+        "L1_6": 0.111725,
+        "L1_25": 0.081882,
+        "L1_37": -1.103633,
+        "L1_27": 0.734483,
+        "L1_44": 0.589349,
+        "L1_46": 0.706814,
+        "L1_45": 0.930203,
+        "L1_22": -0.273501,
+        "L1_39": -0.904641,
+        "L1_21": -0.391534,
+        "L1_17": -0.342542,
+        "L1_42": -0.255124,
+        "L1_30": -0.453833,
+        "L1_24": -0.703376,
+        "L1_18": -0.581039,
+        "L1_29": -0.70632,
+        "L1_34": -0.677829,
+        "L1_40": 0.671484,
+        "L1_20": -0.450266,
+        "L1_0": -0.462797,
+        "L1_15": 0.15307,
+        "L1_36": 0.524608,
+        "L1_35": 0.259224,
+        "L1_13": -0.022346,
+        "L1_28": -0.098226,
+        "L1_33": -0.266032,
+        "L1_38": 0.383208,
+        "L1_47": 0.223017,
+        "L1_19": 0.222378,
+        "L1_16": 0.292059,
+        "L1_43": -0.113826,
+        "L1_23": -0.165264,
+        "L1_41": -0.161979
+      },
+      "drop_truck_0": {
+        "L1_5": -0.557525,
+        "L1_10": 0.539042,
+        "L1_3": -5.153824,
+        "L1_9": -4.57988,
+        "L1_2": -0.431043,
+        "L1_1": -0.376765,
+        "L1_11": 1.557705,
+        "L1_14": -0.536713,
+        "L1_4": -0.276926,
+        "L1_8": 0.102777,
+        "L1_12": -0.114105,
+        "L1_31": 0.032866,
+        "L1_32": -1.917394,
+        "L1_7": -0.196152,
+        "L1_26": 1.356541,
+        "L1_6": 1.334269,
+        "L1_25": -1.277024,
+        "L1_37": 0.157267,
+        "L1_27": -1.192049,
+        "L1_44": 0.863046,
+        "L1_46": -0.938547,
+        "L1_45": -0.848949,
+        "L1_22": 0.278613,
+        "L1_39": 0.199867,
+        "L1_21": -0.64126,
+        "L1_17": 0.815149,
+        "L1_42": 0.215461,
+        "L1_30": 0.243317,
+        "L1_24": 0.236691,
+        "L1_18": 0.187552,
+        "L1_29": 0.47955,
+        "L1_34": 0.636743,
+        "L1_40": 0.345523,
+        "L1_20": 0.01638,
+        "L1_0": 0.121194,
+        "L1_15": -0.117255,
+        "L1_36": -0.233192,
+        "L1_35": -0.484395,
+        "L1_13": -0.358651,
+        "L1_28": -0.400723,
+        "L1_33": 0.387319,
+        "L1_38": -0.274736,
+        "L1_47": 0.155739,
+        "L1_19": -0.062998,
+        "L1_16": -0.035866,
+        "L1_43": 0.191841,
+        "L1_23": 0.084922,
+        "L1_41": 0.037615
+      },
+      "drive_forward": {
+        "L1_5": 1.017304,
+        "L1_10": -0.050702,
+        "L1_3": 5.091582,
+        "L1_9": -1.259318,
+        "L1_2": 1.721273,
+        "L1_1": 2.007964,
+        "L1_11": -3.014286,
+        "L1_14": 0.848194,
+        "L1_4": 1.406361,
+        "L1_8": 1.374708,
+        "L1_12": 0.489072,
+        "L1_31": 0.397685,
+        "L1_32": 0.320691,
+        "L1_7": 1.104621,
+        "L1_26": -1.435074,
+        "L1_6": -1.154693,
+        "L1_25": 0.531788,
+        "L1_37": 1.192774,
+        "L1_27": -0.084611,
+        "L1_44": -1.067746,
+        "L1_46": -0.814419,
+        "L1_45": -0.124979,
+        "L1_22": 0.426899,
+        "L1_39": 0.354074,
+        "L1_21": 0.820947,
+        "L1_17": -0.00789,
+        "L1_42": 0.678985,
+        "L1_30": 0.457241,
+        "L1_24": 0.783212,
+        "L1_18": 0.534905,
+        "L1_29": -0.364211,
+        "L1_34": -0.60648,
+        "L1_40": -0.454605,
+        "L1_20": 0.667284,
+        "L1_0": 0.510447,
+        "L1_15": -0.190343,
+        "L1_36": 0.251198,
+        "L1_35": 0.075083,
+        "L1_13": -0.030612,
+        "L1_28": -0.345031,
+        "L1_33": -0.324578,
+        "L1_38": -0.361898,
+        "L1_47": -0.350096,
+        "L1_19": 0.278072,
+        "L1_16": -0.096426,
+        "L1_43": -0.245113,
+        "L1_23": -0.217532,
+        "L1_41": -0.143373
+      },
+      "drive_backward": {
+        "L1_5": 3.447769,
+        "L1_10": 4.641619,
+        "L1_3": -0.044267,
+        "L1_9": 0.355343,
+        "L1_2": 3.366737,
+        "L1_1": 2.311509,
+        "L1_11": 2.904322,
+        "L1_14": 1.531345,
+        "L1_4": 2.006389,
+        "L1_8": -2.513824,
+        "L1_12": 1.272634,
+        "L1_31": -1.998557,
+        "L1_32": -0.051723,
+        "L1_7": 1.728529,
+        "L1_26": 0.066404,
+        "L1_6": -0.407505,
+        "L1_25": 0.257142,
+        "L1_37": -0.371783,
+        "L1_27": -0.044812,
+        "L1_44": 0.059225,
+        "L1_46": 0.247593,
+        "L1_45": -0.233467,
+        "L1_22": -0.90913,
+        "L1_39": -0.243921,
+        "L1_21": 0.024397,
+        "L1_17": 0.161921,
+        "L1_42": -0.808659,
+        "L1_30": -0.794827,
+        "L1_24": -0.725323,
+        "L1_18": -0.740903,
+        "L1_29": 0.433359,
+        "L1_34": 0.621201,
+        "L1_40": -0.556377,
+        "L1_20": 0.31719,
+        "L1_0": -0.592499,
+        "L1_15": 0.571188,
+        "L1_36": -0.04625,
+        "L1_35": -0.160482,
+        "L1_13": 0.461892,
+        "L1_28": 0.248668,
+        "L1_33": -0.193156,
+        "L1_38": 0.017944,
+        "L1_47": -0.340725,
+        "L1_19": -0.345637,
+        "L1_16": -0.086937,
+        "L1_43": -0.050925,
+        "L1_23": 0.237106,
+        "L1_41": 0.157797
+      }
+    }
+  },
+  "training_dataset": "Transport_Feat::transport_feat_8_8::cls",
+  "training_metadata": {
+    "dataset": "Transport_Feat::transport_feat_8_8::cls",
+    "run_id": "Transport_Feat--transport_feat_8_8--cls__oh__h0x32__ce__lr0p01__s2026__0919225942",
+    "mode": "onehot",
+    "loss": "ce",
+    "distillation_temperature": null,
+    "structure": "0@32",
+    "seed": 2026,
+    "use_skip": false,
+    "clip_linear": false,
+    "quantize_linear": false,
+    "onehot_drop": "none"
+  }
+}

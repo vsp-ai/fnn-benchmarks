@@ -1,0 +1,494 @@
+{
+  "atoms": {
+    "type": "onehot",
+    "len": 95,
+    "content": [
+      "location_load_0 eq 0",
+      "location_load_0 eq 1",
+      "location_load_0 eq 2",
+      "location_load_0 eq 3",
+      "location_load_0 eq 4",
+      "location_load_0 eq 5",
+      "location_load_0 eq 6",
+      "location_load_0 eq 7",
+      "location_load_0 eq 8",
+      "location_load_1 eq 0",
+      "location_load_1 eq 1",
+      "location_load_1 eq 2",
+      "location_load_1 eq 3",
+      "location_load_1 eq 4",
+      "location_load_1 eq 5",
+      "location_load_1 eq 6",
+      "location_load_1 eq 7",
+      "location_load_1 eq 8",
+      "location_load_2 eq 0",
+      "location_load_2 eq 1",
+      "location_load_2 eq 2",
+      "location_load_2 eq 3",
+      "location_load_2 eq 4",
+      "location_load_2 eq 5",
+      "location_load_2 eq 6",
+      "location_load_2 eq 7",
+      "location_load_2 eq 8",
+      "location_load_3 eq 0",
+      "location_load_3 eq 1",
+      "location_load_3 eq 2",
+      "location_load_3 eq 3",
+      "location_load_3 eq 4",
+      "location_load_3 eq 5",
+      "location_load_3 eq 6",
+      "location_load_3 eq 7",
+      "location_load_3 eq 8",
+      "location_load_4 eq 0",
+      "location_load_4 eq 1",
+      "location_load_4 eq 2",
+      "location_load_4 eq 3",
+      "location_load_4 eq 4",
+      "location_load_4 eq 5",
+      "location_load_4 eq 6",
+      "location_load_4 eq 7",
+      "location_load_4 eq 8",
+      "location_load_5 eq 0",
+      "location_load_5 eq 1",
+      "location_load_5 eq 2",
+      "location_load_5 eq 3",
+      "location_load_5 eq 4",
+      "location_load_5 eq 5",
+      "location_load_5 eq 6",
+      "location_load_5 eq 7",
+      "location_load_5 eq 8",
+      "location_load_6 eq 0",
+      "location_load_6 eq 1",
+      "location_load_6 eq 2",
+      "location_load_6 eq 3",
+      "location_load_6 eq 4",
+      "location_load_6 eq 5",
+      "location_load_6 eq 6",
+      "location_load_6 eq 7",
+      "location_load_6 eq 8",
+      "location_load_7 eq 0",
+      "location_load_7 eq 1",
+      "location_load_7 eq 2",
+      "location_load_7 eq 3",
+      "location_load_7 eq 4",
+      "location_load_7 eq 5",
+      "location_load_7 eq 6",
+      "location_load_7 eq 7",
+      "location_load_7 eq 8",
+      "truck_0 eq 0",
+      "truck_0 eq 1",
+      "truck_0 eq 2",
+      "truck_0 eq 3",
+      "truck_0 eq 4",
+      "truck_0 eq 5",
+      "truck_0 eq 6",
+      "truck_0 eq 7",
+      "truck_load_0 eq 0",
+      "truck_load_0 eq 1",
+      "truck_load_0 eq 2",
+      "truck_load_0 eq 3",
+      "truck_load_0 eq 4",
+      "truck_load_0 eq 5",
+      "truck_load_0 eq 6",
+      "truck_load_0 eq 7",
+      "truck_load_0 eq 8",
+      "truck_vel_0 eq 0",
+      "truck_vel_0 eq 1",
+      "truck_vel_0 eq 2",
+      "truck_vel_0 eq 3",
+      "parked_0 eq 0",
+      "parked_0 eq 1"
+    ]
+  },
+  "rules": {
+    "L1_0": {
+      "AND": [
+        "location_load_0 eq 0",
+        "parked_0 eq 0"
+      ]
+    },
+    "L1_1": {
+      "AND": [
+        "location_load_4 eq 0",
+        "location_load_7 eq 0",
+        "truck_0 eq 4",
+        "truck_vel_0 eq 0"
+      ]
+    },
+    "L1_2": {
+      "AND": [
+        "location_load_0 eq 0",
+        "location_load_2 eq 0",
+        "location_load_7 eq 0",
+        "truck_0 eq 2",
+        "parked_0 eq 0"
+      ]
+    },
+    "L1_3": {
+      "AND": [
+        "location_load_1 eq 0",
+        "truck_0 eq 7",
+        "truck_load_0 eq 0",
+        "truck_vel_0 eq 0"
+      ]
+    },
+    "L1_4": {
+      "AND": [
+        "location_load_1 eq 0",
+        "location_load_3 eq 0",
+        "location_load_5 eq 0",
+        "location_load_7 eq 0",
+        "truck_0 eq 5"
+      ]
+    },
+    "L1_5": {
+      "AND": [
+        "location_load_4 eq 0",
+        "location_load_6 eq 5",
+        "truck_0 eq 6"
+      ]
+    },
+    "L1_6": {
+      "AND": [
+        "truck_0 eq 0"
+      ]
+    },
+    "L1_7": {
+      "AND": [
+        "location_load_5 eq 0",
+        "location_load_6 eq 0",
+        "truck_0 eq 6"
+      ]
+    },
+    "L1_8": {
+      "AND": [
+        "location_load_5 eq 0",
+        "truck_0 eq 7",
+        "truck_vel_0 eq 0"
+      ]
+    },
+    "L1_9": {
+      "AND": [
+        "location_load_0 eq 0",
+        "location_load_1 eq 0",
+        "location_load_3 eq 0",
+        "truck_0 eq 3"
+      ]
+    },
+    "L1_10": {
+      "AND": [
+        "location_load_0 eq 0",
+        "location_load_1 eq 0",
+        "location_load_7 eq 0",
+        "truck_0 eq 1"
+      ]
+    },
+    "L1_11": {
+      "AND": [
+        "truck_0 eq 4",
+        "truck_vel_0 eq 1"
+      ]
+    },
+    "L1_12": {
+      "AND": [
+        "location_load_3 eq 0",
+        "truck_0 eq 7",
+        "truck_vel_0 eq 0"
+      ]
+    },
+    "L1_13": {
+      "AND": [
+        "location_load_0 eq 0",
+        "truck_vel_0 eq 1"
+      ]
+    },
+    "L1_14": {
+      "OR": [
+        "truck_vel_0 eq 2",
+        "parked_0 eq 1"
+      ]
+    },
+    "L1_15": {
+      "OR": [
+        "location_load_0 eq 1",
+        "location_load_0 eq 2",
+        "location_load_0 eq 3",
+        "location_load_0 eq 5",
+        "location_load_0 eq 6",
+        "location_load_0 eq 7",
+        "location_load_0 eq 8",
+        "parked_0 eq 1"
+      ]
+    },
+    "L1_16": {
+      "OR": [
+        "location_load_7 eq 2",
+        "location_load_7 eq 3",
+        "location_load_7 eq 4",
+        "location_load_7 eq 7",
+        "truck_0 eq 7",
+        "parked_0 eq 1"
+      ]
+    },
+    "L1_17": {
+      "OR": [
+        "parked_0 eq 1"
+      ]
+    },
+    "L1_18": {
+      "OR": [
+        "truck_vel_0 eq 1"
+      ]
+    },
+    "L1_19": {
+      "OR": [
+        "location_load_0 eq 1",
+        "location_load_0 eq 2",
+        "location_load_0 eq 3",
+        "location_load_0 eq 4",
+        "location_load_0 eq 5",
+        "location_load_0 eq 7",
+        "location_load_0 eq 8"
+      ]
+    },
+    "L1_20": {
+      "OR": [
+        "location_load_0 eq 1",
+        "location_load_0 eq 4",
+        "location_load_0 eq 5",
+        "location_load_0 eq 6",
+        "location_load_0 eq 7",
+        "location_load_0 eq 8",
+        "parked_0 eq 1"
+      ]
+    },
+    "L1_21": {
+      "OR": [
+        "location_load_7 eq 2",
+        "location_load_7 eq 4",
+        "location_load_7 eq 5",
+        "location_load_7 eq 7",
+        "truck_0 eq 4",
+        "truck_0 eq 7",
+        "truck_vel_0 eq 0",
+        "truck_vel_0 eq 3"
+      ]
+    },
+    "L1_22": {
+      "OR": [
+        "location_load_0 eq 2",
+        "location_load_0 eq 3",
+        "location_load_0 eq 4",
+        "location_load_0 eq 5",
+        "location_load_0 eq 6"
+      ]
+    },
+    "L1_23": {
+      "OR": [
+        "location_load_0 eq 1",
+        "location_load_0 eq 4",
+        "location_load_0 eq 8",
+        "truck_vel_0 eq 1",
+        "parked_0 eq 1"
+      ]
+    },
+    "L1_24": {
+      "OR": [
+        "location_load_0 eq 2",
+        "location_load_0 eq 3",
+        "location_load_0 eq 4",
+        "location_load_0 eq 6",
+        "location_load_0 eq 7",
+        "parked_0 eq 1"
+      ]
+    }
+  },
+  "linear": {
+    "bias": {
+      "pick_up_truck_0": 2.349205,
+      "drop_truck_0": -1.002091,
+      "acc_truck_0": -2.40473,
+      "dec_truck_0": -0.971003,
+      "move_truck_0": -0.991762,
+      "park_truck_0": -0.993675
+    },
+    "weights": {
+      "pick_up_truck_0": {
+        "L1_13": -0.79684,
+        "L1_1": -1.999999,
+        "L1_7": -2.0,
+        "L1_6": -1.999999,
+        "L1_4": -1.999999,
+        "L1_9": -1.999999,
+        "L1_2": -1.999999,
+        "L1_10": -1.999999,
+        "L1_3": 2.2e-05,
+        "L1_11": -1.59015,
+        "L1_12": -0.775985,
+        "L1_17": -0.95643,
+        "L1_0": -0.939357,
+        "L1_8": -0.498365,
+        "L1_16": -0.725648,
+        "L1_15": 0.424277,
+        "L1_21": -0.409849,
+        "L1_14": -0.154143,
+        "L1_18": 0.174822,
+        "L1_23": 0.212169,
+        "L1_22": 0.212147,
+        "L1_24": 0.212128,
+        "L1_20": 0.21211,
+        "L1_19": 0.212091,
+        "L1_5": 1e-06
+      },
+      "drop_truck_0": {
+        "L1_13": 0.003682,
+        "L1_1": -1e-06,
+        "L1_7": -4e-05,
+        "L1_6": -2.3e-05,
+        "L1_4": -1.3e-05,
+        "L1_9": -2.5e-05,
+        "L1_2": 1.6e-05,
+        "L1_10": -2.6e-05,
+        "L1_3": -1.999976,
+        "L1_11": -0.00534,
+        "L1_12": 1.157388,
+        "L1_17": -0.483004,
+        "L1_0": -0.00331,
+        "L1_8": 0.853651,
+        "L1_16": -0.011079,
+        "L1_15": -0.001309,
+        "L1_21": 0.005342,
+        "L1_14": 0.025181,
+        "L1_18": 0.002285,
+        "L1_23": -0.000673,
+        "L1_22": -0.000664,
+        "L1_24": -0.000656,
+        "L1_20": -0.000656,
+        "L1_19": -0.00065,
+        "L1_5": -1.7e-05
+      },
+      "acc_truck_0": {
+        "L1_13": -1.253719,
+        "L1_1": 2.000001,
+        "L1_7": 2.0,
+        "L1_6": 2.0,
+        "L1_4": 1.999999,
+        "L1_9": 1.999999,
+        "L1_2": 1.999998,
+        "L1_10": 1.999999,
+        "L1_3": 8.8e-05,
+        "L1_11": 1.657164,
+        "L1_12": -0.248769,
+        "L1_17": -0.861841,
+        "L1_0": 1.061896,
+        "L1_8": -0.08645,
+        "L1_16": 0.335219,
+        "L1_15": -0.375266,
+        "L1_21": 0.342835,
+        "L1_14": 0.250287,
+        "L1_18": -0.215776,
+        "L1_23": -0.187669,
+        "L1_22": -0.187642,
+        "L1_24": -0.187621,
+        "L1_20": -0.187598,
+        "L1_19": -0.187575,
+        "L1_5": -4e-06
+      },
+      "dec_truck_0": {
+        "L1_13": 2.094995,
+        "L1_1": -1.5e-05,
+        "L1_7": 1.6e-05,
+        "L1_6": 9e-06,
+        "L1_4": 2.2e-05,
+        "L1_9": -1.2e-05,
+        "L1_2": -7e-06,
+        "L1_10": 4e-06,
+        "L1_3": 0.000313,
+        "L1_11": -0.078659,
+        "L1_12": -0.256591,
+        "L1_17": 1.083111,
+        "L1_0": -0.107632,
+        "L1_8": -0.219288,
+        "L1_16": 0.475879,
+        "L1_15": -0.043069,
+        "L1_21": 0.078636,
+        "L1_14": -0.231122,
+        "L1_18": 0.005178,
+        "L1_23": -0.021516,
+        "L1_22": -0.021527,
+        "L1_24": -0.021526,
+        "L1_20": -0.021517,
+        "L1_19": -0.021528,
+        "L1_5": 1.8e-05
+      },
+      "move_truck_0": {
+        "L1_13": 0.01537,
+        "L1_1": 5e-06,
+        "L1_7": -1e-05,
+        "L1_6": -8e-06,
+        "L1_4": -2.2e-05,
+        "L1_9": -7e-06,
+        "L1_2": 1.4e-05,
+        "L1_10": -7e-06,
+        "L1_3": 0.000112,
+        "L1_11": -0.008382,
+        "L1_12": -0.017241,
+        "L1_17": 0.495706,
+        "L1_0": -0.01663,
+        "L1_8": -0.006086,
+        "L1_16": 0.023327,
+        "L1_15": -0.006652,
+        "L1_21": 0.008385,
+        "L1_14": -0.025848,
+        "L1_18": -0.003658,
+        "L1_23": -0.003327,
+        "L1_22": -0.003333,
+        "L1_24": -0.003324,
+        "L1_20": -0.003318,
+        "L1_19": -0.003323,
+        "L1_5": -2.4e-05
+      },
+      "park_truck_0": {
+        "L1_13": 0.00661,
+        "L1_1": 8e-06,
+        "L1_7": -2e-06,
+        "L1_6": -5e-06,
+        "L1_4": 5e-05,
+        "L1_9": -2.8e-05,
+        "L1_2": 2.1e-05,
+        "L1_10": -8e-06,
+        "L1_3": 1.999947,
+        "L1_11": -0.003565,
+        "L1_12": 0.022649,
+        "L1_17": 0.457121,
+        "L1_0": -0.009926,
+        "L1_8": -0.056638,
+        "L1_16": 0.033957,
+        "L1_15": -0.00398,
+        "L1_21": 0.003594,
+        "L1_14": -0.029255,
+        "L1_18": -0.001043,
+        "L1_23": -0.001988,
+        "L1_22": -0.001995,
+        "L1_24": -0.001986,
+        "L1_20": -0.001976,
+        "L1_19": -0.001982,
+        "L1_5": -9.8e-05
+      }
+    }
+  },
+  "training_dataset": "OneWayLinePark::owl_icy-fixed_park_8_8::reg",
+  "training_metadata": {
+    "dataset": "OneWayLinePark::owl_icy-fixed_park_8_8::reg",
+    "run_id": "OneWayLinePark--owl_icy-fixed_park_8_8--reg__oh__h0x32__mse__lr0p01__s2026__0917055852",
+    "mode": "onehot",
+    "loss": "mse",
+    "distillation_temperature": null,
+    "structure": "0@32",
+    "seed": 2026,
+    "use_skip": false,
+    "clip_linear": false,
+    "quantize_linear": false,
+    "onehot_drop": "none"
+  }
+}

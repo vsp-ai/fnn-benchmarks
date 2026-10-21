@@ -1,0 +1,113 @@
+{
+  "accumulate": [
+    "steps"
+  ],
+  "goal": {
+    "exp": {
+      "left": {
+        "left": {
+          "left": "block_4",
+          "op": "=",
+          "right": 5
+        },
+        "op": "∧",
+        "right": {
+          "left": "block_3",
+          "op": "=",
+          "right": 4
+        }
+      },
+      "op": "∧",
+      "right": {
+        "left": {
+          "left": "block_2",
+          "op": "=",
+          "right": 3
+        },
+        "op": "∧",
+        "right": {
+          "left": {
+            "left": "block_1",
+            "op": "=",
+            "right": 2
+          },
+          "op": "∧",
+          "right": {
+            "left": "block_0",
+            "op": "=",
+            "right": 1
+          }
+        }
+      }
+    },
+    "op": "state-condition"
+  },
+  "op": "objective",
+  "step-reward": {
+    "op": "*",
+    "left": 0.01,
+    "right": "step_cost"
+  },
+  "goal-reward": {
+    "left": {
+      "else": 0,
+      "if": {
+        "left": "block_0",
+        "op": "=",
+        "right": 1
+      },
+      "op": "ite",
+      "then": 10
+    },
+    "op": "+",
+    "right": {
+      "left": {
+        "else": 0,
+        "if": {
+          "left": "block_1",
+          "op": "=",
+          "right": 2
+        },
+        "op": "ite",
+        "then": 10
+      },
+      "op": "+",
+      "right": {
+        "left": {
+          "else": 0,
+          "if": {
+            "left": "block_2",
+            "op": "=",
+            "right": 3
+          },
+          "op": "ite",
+          "then": 10
+        },
+        "op": "+",
+        "right": {
+          "left": {
+            "else": 0,
+            "if": {
+              "left": "block_3",
+              "op": "=",
+              "right": 4
+            },
+            "op": "ite",
+            "then": 10
+          },
+          "op": "+",
+          "right": {
+            "else": 0,
+            "if": {
+              "left": "block_4",
+              "op": "=",
+              "right": 5
+            },
+            "op": "ite",
+            "then": 10
+          }
+        }
+      }
+    }
+  }
+}

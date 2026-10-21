@@ -1,0 +1,3847 @@
+{
+  "actions": [
+    {
+      "name": "pop_beluga"
+    },
+    {
+      "name": "push_rack_0"
+    },
+    {
+      "name": "push_rack_1"
+    },
+    {
+      "name": "push_rack_2"
+    },
+    {
+      "name": "pop_rack_0"
+    },
+    {
+      "name": "pop_rack_1"
+    },
+    {
+      "name": "pop_rack_2"
+    },
+    {
+      "name": "deliver"
+    },
+    {
+      "name": "send_back"
+    },
+    {
+      "name": "no_op"
+    }
+  ],
+  "automata": [
+    {
+      "edges": [
+        {
+          "action": "no_op",
+          "destinations": [
+            {
+              "assignments": [
+                {
+                  "ref": "next_line",
+                  "value": 2
+                }
+              ],
+              "location": "loc_0",
+              "probability": {
+                "exp": 0.5
+              }
+            },
+            {
+              "assignments": [
+                {
+                  "ref": "next_line",
+                  "value": 3
+                }
+              ],
+              "location": "loc_0",
+              "probability": {
+                "exp": 0.5
+              }
+            }
+          ],
+          "guard": {
+            "exp": {
+              "op": "∧",
+              "left": {
+                "left": {
+                  "left": "next_line",
+                  "op": "=",
+                  "right": 1
+                },
+                "op": "∧",
+                "right": {
+                  "left": "line_1",
+                  "op": "≤",
+                  "right": 0
+                }
+              },
+              "right": {
+                "op": "=",
+                "left": "rack_overload",
+                "right": 0
+              }
+            }
+          },
+          "location": "loc_0"
+        },
+        {
+          "action": "no_op",
+          "destinations": [
+            {
+              "assignments": [
+                {
+                  "ref": "next_line",
+                  "value": 1
+                }
+              ],
+              "location": "loc_0",
+              "probability": {
+                "exp": 0.5
+              }
+            },
+            {
+              "assignments": [
+                {
+                  "ref": "next_line",
+                  "value": 3
+                }
+              ],
+              "location": "loc_0",
+              "probability": {
+                "exp": 0.5
+              }
+            }
+          ],
+          "guard": {
+            "exp": {
+              "op": "∧",
+              "left": {
+                "left": {
+                  "left": "next_line",
+                  "op": "=",
+                  "right": 2
+                },
+                "op": "∧",
+                "right": {
+                  "left": "line_2",
+                  "op": "≤",
+                  "right": 0
+                }
+              },
+              "right": {
+                "op": "=",
+                "left": "rack_overload",
+                "right": 0
+              }
+            }
+          },
+          "location": "loc_0"
+        },
+        {
+          "action": "no_op",
+          "destinations": [
+            {
+              "assignments": [
+                {
+                  "ref": "next_line",
+                  "value": 1
+                }
+              ],
+              "location": "loc_0",
+              "probability": {
+                "exp": 0.5
+              }
+            },
+            {
+              "assignments": [
+                {
+                  "ref": "next_line",
+                  "value": 2
+                }
+              ],
+              "location": "loc_0",
+              "probability": {
+                "exp": 0.5
+              }
+            }
+          ],
+          "guard": {
+            "exp": {
+              "op": "∧",
+              "left": {
+                "left": {
+                  "left": "next_line",
+                  "op": "=",
+                  "right": 3
+                },
+                "op": "∧",
+                "right": {
+                  "left": "line_3",
+                  "op": "≤",
+                  "right": 0
+                }
+              },
+              "right": {
+                "op": "=",
+                "left": "rack_overload",
+                "right": 0
+              }
+            }
+          },
+          "location": "loc_0"
+        },
+        {
+          "action": "send_back",
+          "destinations": [
+            {
+              "assignments": [
+                {
+                  "ref": "trailer_0",
+                  "value": "truck"
+                },
+                {
+                  "ref": "truck",
+                  "value": 0
+                }
+              ],
+              "location": "loc_0"
+            }
+          ],
+          "guard": {
+            "exp": {
+              "op": "∧",
+              "left": {
+                "left": {
+                  "left": "trailer_0",
+                  "op": "≤",
+                  "right": 0
+                },
+                "op": "∧",
+                "right": {
+                  "left": 0,
+                  "op": "<",
+                  "right": "truck"
+                }
+              },
+              "right": {
+                "op": "=",
+                "left": "rack_overload",
+                "right": 0
+              }
+            }
+          },
+          "location": "loc_0"
+        },
+        {
+          "action": "pop_beluga",
+          "destinations": [
+            {
+              "assignments": [
+                {
+                  "ref": "trailer_0",
+                  "value": "beluga_1"
+                },
+                {
+                  "ref": "beluga_1",
+                  "value": "beluga_2"
+                },
+                {
+                  "ref": "beluga_2",
+                  "value": "beluga_3"
+                },
+                {
+                  "ref": "beluga_3",
+                  "value": "beluga_4"
+                },
+                {
+                  "ref": "beluga_4",
+                  "value": "beluga_5"
+                },
+                {
+                  "ref": "beluga_5",
+                  "value": "beluga_6"
+                },
+                {
+                  "ref": "beluga_6",
+                  "value": 0
+                }
+              ],
+              "location": "loc_0"
+            }
+          ],
+          "guard": {
+            "exp": {
+              "op": "∧",
+              "left": {
+                "left": {
+                  "left": "trailer_0",
+                  "op": "≤",
+                  "right": 0
+                },
+                "op": "∧",
+                "right": {
+                  "left": 0,
+                  "op": "<",
+                  "right": "beluga_1"
+                }
+              },
+              "right": {
+                "op": "=",
+                "left": "rack_overload",
+                "right": 0
+              }
+            }
+          },
+          "location": "loc_0"
+        },
+        {
+          "action": "deliver",
+          "destinations": [
+            {
+              "assignments": [
+                {
+                  "ref": "truck",
+                  "value": 0
+                },
+                {
+                  "ref": "line_1",
+                  "value": 6
+                },
+                {
+                  "ref": "next_line",
+                  "value": 1
+                }
+              ],
+              "location": "loc_0",
+              "probability": {
+                "exp": 0.3333333333333333
+              }
+            },
+            {
+              "assignments": [
+                {
+                  "ref": "truck",
+                  "value": 0
+                },
+                {
+                  "ref": "line_1",
+                  "value": 6
+                },
+                {
+                  "ref": "next_line",
+                  "value": 2
+                }
+              ],
+              "location": "loc_0",
+              "probability": {
+                "exp": 0.3333333333333333
+              }
+            },
+            {
+              "assignments": [
+                {
+                  "ref": "truck",
+                  "value": 0
+                },
+                {
+                  "ref": "line_1",
+                  "value": 6
+                },
+                {
+                  "ref": "next_line",
+                  "value": 3
+                }
+              ],
+              "location": "loc_0",
+              "probability": {
+                "exp": 0.3333333333333333
+              }
+            }
+          ],
+          "guard": {
+            "exp": {
+              "op": "∧",
+              "left": {
+                "op": "∧",
+                "left": {
+                  "left": {
+                    "left": "next_line",
+                    "op": "=",
+                    "right": 1
+                  },
+                  "op": "∧",
+                  "right": {
+                    "left": {
+                      "left": "line_1",
+                      "op": "=",
+                      "right": 5
+                    },
+                    "op": "∧",
+                    "right": {
+                      "left": "truck",
+                      "op": "=",
+                      "right": 5
+                    }
+                  }
+                },
+                "right": {
+                  "op": "=",
+                  "left": "truck",
+                  "right": "line_1"
+                }
+              },
+              "right": {
+                "op": "=",
+                "left": "rack_overload",
+                "right": 0
+              }
+            }
+          },
+          "location": "loc_0"
+        },
+        {
+          "action": "deliver",
+          "destinations": [
+            {
+              "assignments": [
+                {
+                  "ref": "truck",
+                  "value": 0
+                },
+                {
+                  "ref": "line_1",
+                  "value": 0
+                },
+                {
+                  "ref": "next_line",
+                  "value": 1
+                }
+              ],
+              "location": "loc_0",
+              "probability": {
+                "exp": 0.3333333333333333
+              }
+            },
+            {
+              "assignments": [
+                {
+                  "ref": "truck",
+                  "value": 0
+                },
+                {
+                  "ref": "line_1",
+                  "value": 0
+                },
+                {
+                  "ref": "next_line",
+                  "value": 2
+                }
+              ],
+              "location": "loc_0",
+              "probability": {
+                "exp": 0.3333333333333333
+              }
+            },
+            {
+              "assignments": [
+                {
+                  "ref": "truck",
+                  "value": 0
+                },
+                {
+                  "ref": "line_1",
+                  "value": 0
+                },
+                {
+                  "ref": "next_line",
+                  "value": 3
+                }
+              ],
+              "location": "loc_0",
+              "probability": {
+                "exp": 0.3333333333333333
+              }
+            }
+          ],
+          "guard": {
+            "exp": {
+              "op": "∧",
+              "left": {
+                "op": "∧",
+                "left": {
+                  "left": {
+                    "left": "next_line",
+                    "op": "=",
+                    "right": 1
+                  },
+                  "op": "∧",
+                  "right": {
+                    "left": {
+                      "left": "line_1",
+                      "op": "=",
+                      "right": 6
+                    },
+                    "op": "∧",
+                    "right": {
+                      "left": "truck",
+                      "op": "=",
+                      "right": 6
+                    }
+                  }
+                },
+                "right": {
+                  "op": "=",
+                  "left": "truck",
+                  "right": "line_1"
+                }
+              },
+              "right": {
+                "op": "=",
+                "left": "rack_overload",
+                "right": 0
+              }
+            }
+          },
+          "location": "loc_0"
+        },
+        {
+          "action": "deliver",
+          "destinations": [
+            {
+              "assignments": [
+                {
+                  "ref": "truck",
+                  "value": 0
+                },
+                {
+                  "ref": "line_2",
+                  "value": 4
+                },
+                {
+                  "ref": "next_line",
+                  "value": 1
+                }
+              ],
+              "location": "loc_0",
+              "probability": {
+                "exp": 0.3333333333333333
+              }
+            },
+            {
+              "assignments": [
+                {
+                  "ref": "truck",
+                  "value": 0
+                },
+                {
+                  "ref": "line_2",
+                  "value": 4
+                },
+                {
+                  "ref": "next_line",
+                  "value": 2
+                }
+              ],
+              "location": "loc_0",
+              "probability": {
+                "exp": 0.3333333333333333
+              }
+            },
+            {
+              "assignments": [
+                {
+                  "ref": "truck",
+                  "value": 0
+                },
+                {
+                  "ref": "line_2",
+                  "value": 4
+                },
+                {
+                  "ref": "next_line",
+                  "value": 3
+                }
+              ],
+              "location": "loc_0",
+              "probability": {
+                "exp": 0.3333333333333333
+              }
+            }
+          ],
+          "guard": {
+            "exp": {
+              "op": "∧",
+              "left": {
+                "op": "∧",
+                "left": {
+                  "left": {
+                    "left": "next_line",
+                    "op": "=",
+                    "right": 2
+                  },
+                  "op": "∧",
+                  "right": {
+                    "left": {
+                      "left": "line_2",
+                      "op": "=",
+                      "right": 3
+                    },
+                    "op": "∧",
+                    "right": {
+                      "left": "truck",
+                      "op": "=",
+                      "right": 3
+                    }
+                  }
+                },
+                "right": {
+                  "op": "=",
+                  "left": "truck",
+                  "right": "line_2"
+                }
+              },
+              "right": {
+                "op": "=",
+                "left": "rack_overload",
+                "right": 0
+              }
+            }
+          },
+          "location": "loc_0"
+        },
+        {
+          "action": "deliver",
+          "destinations": [
+            {
+              "assignments": [
+                {
+                  "ref": "truck",
+                  "value": 0
+                },
+                {
+                  "ref": "line_2",
+                  "value": 0
+                },
+                {
+                  "ref": "next_line",
+                  "value": 1
+                }
+              ],
+              "location": "loc_0",
+              "probability": {
+                "exp": 0.3333333333333333
+              }
+            },
+            {
+              "assignments": [
+                {
+                  "ref": "truck",
+                  "value": 0
+                },
+                {
+                  "ref": "line_2",
+                  "value": 0
+                },
+                {
+                  "ref": "next_line",
+                  "value": 2
+                }
+              ],
+              "location": "loc_0",
+              "probability": {
+                "exp": 0.3333333333333333
+              }
+            },
+            {
+              "assignments": [
+                {
+                  "ref": "truck",
+                  "value": 0
+                },
+                {
+                  "ref": "line_2",
+                  "value": 0
+                },
+                {
+                  "ref": "next_line",
+                  "value": 3
+                }
+              ],
+              "location": "loc_0",
+              "probability": {
+                "exp": 0.3333333333333333
+              }
+            }
+          ],
+          "guard": {
+            "exp": {
+              "op": "∧",
+              "left": {
+                "op": "∧",
+                "left": {
+                  "left": {
+                    "left": "next_line",
+                    "op": "=",
+                    "right": 2
+                  },
+                  "op": "∧",
+                  "right": {
+                    "left": {
+                      "left": "line_2",
+                      "op": "=",
+                      "right": 4
+                    },
+                    "op": "∧",
+                    "right": {
+                      "left": "truck",
+                      "op": "=",
+                      "right": 4
+                    }
+                  }
+                },
+                "right": {
+                  "op": "=",
+                  "left": "truck",
+                  "right": "line_2"
+                }
+              },
+              "right": {
+                "op": "=",
+                "left": "rack_overload",
+                "right": 0
+              }
+            }
+          },
+          "location": "loc_0"
+        },
+        {
+          "action": "deliver",
+          "destinations": [
+            {
+              "assignments": [
+                {
+                  "ref": "truck",
+                  "value": 0
+                },
+                {
+                  "ref": "line_3",
+                  "value": 2
+                },
+                {
+                  "ref": "next_line",
+                  "value": 1
+                }
+              ],
+              "location": "loc_0",
+              "probability": {
+                "exp": 0.3333333333333333
+              }
+            },
+            {
+              "assignments": [
+                {
+                  "ref": "truck",
+                  "value": 0
+                },
+                {
+                  "ref": "line_3",
+                  "value": 2
+                },
+                {
+                  "ref": "next_line",
+                  "value": 2
+                }
+              ],
+              "location": "loc_0",
+              "probability": {
+                "exp": 0.3333333333333333
+              }
+            },
+            {
+              "assignments": [
+                {
+                  "ref": "truck",
+                  "value": 0
+                },
+                {
+                  "ref": "line_3",
+                  "value": 2
+                },
+                {
+                  "ref": "next_line",
+                  "value": 3
+                }
+              ],
+              "location": "loc_0",
+              "probability": {
+                "exp": 0.3333333333333333
+              }
+            }
+          ],
+          "guard": {
+            "exp": {
+              "op": "∧",
+              "left": {
+                "op": "∧",
+                "left": {
+                  "left": {
+                    "left": "next_line",
+                    "op": "=",
+                    "right": 3
+                  },
+                  "op": "∧",
+                  "right": {
+                    "left": {
+                      "left": "line_3",
+                      "op": "=",
+                      "right": 1
+                    },
+                    "op": "∧",
+                    "right": {
+                      "left": "truck",
+                      "op": "=",
+                      "right": 1
+                    }
+                  }
+                },
+                "right": {
+                  "op": "=",
+                  "left": "truck",
+                  "right": "line_3"
+                }
+              },
+              "right": {
+                "op": "=",
+                "left": "rack_overload",
+                "right": 0
+              }
+            }
+          },
+          "location": "loc_0"
+        },
+        {
+          "action": "deliver",
+          "destinations": [
+            {
+              "assignments": [
+                {
+                  "ref": "truck",
+                  "value": 0
+                },
+                {
+                  "ref": "line_3",
+                  "value": 0
+                },
+                {
+                  "ref": "next_line",
+                  "value": 1
+                }
+              ],
+              "location": "loc_0",
+              "probability": {
+                "exp": 0.3333333333333333
+              }
+            },
+            {
+              "assignments": [
+                {
+                  "ref": "truck",
+                  "value": 0
+                },
+                {
+                  "ref": "line_3",
+                  "value": 0
+                },
+                {
+                  "ref": "next_line",
+                  "value": 2
+                }
+              ],
+              "location": "loc_0",
+              "probability": {
+                "exp": 0.3333333333333333
+              }
+            },
+            {
+              "assignments": [
+                {
+                  "ref": "truck",
+                  "value": 0
+                },
+                {
+                  "ref": "line_3",
+                  "value": 0
+                },
+                {
+                  "ref": "next_line",
+                  "value": 3
+                }
+              ],
+              "location": "loc_0",
+              "probability": {
+                "exp": 0.3333333333333333
+              }
+            }
+          ],
+          "guard": {
+            "exp": {
+              "op": "∧",
+              "left": {
+                "op": "∧",
+                "left": {
+                  "left": {
+                    "left": "next_line",
+                    "op": "=",
+                    "right": 3
+                  },
+                  "op": "∧",
+                  "right": {
+                    "left": {
+                      "left": "line_3",
+                      "op": "=",
+                      "right": 2
+                    },
+                    "op": "∧",
+                    "right": {
+                      "left": "truck",
+                      "op": "=",
+                      "right": 2
+                    }
+                  }
+                },
+                "right": {
+                  "op": "=",
+                  "left": "truck",
+                  "right": "line_3"
+                }
+              },
+              "right": {
+                "op": "=",
+                "left": "rack_overload",
+                "right": 0
+              }
+            }
+          },
+          "location": "loc_0"
+        },
+        {
+          "action": "pop_rack_0",
+          "location": "loc_0",
+          "guard": {
+            "exp": {
+              "op": "∧",
+              "left": {
+                "op": "∧",
+                "left": {
+                  "op": "=",
+                  "left": "truck",
+                  "right": 0
+                },
+                "right": {
+                  "op": ">",
+                  "left": "num_jigs_on_rack_0",
+                  "right": 0
+                }
+              },
+              "right": {
+                "op": "=",
+                "left": "rack_overload",
+                "right": 0
+              }
+            }
+          },
+          "destinations": [
+            {
+              "location": "loc_0",
+              "assignments": [
+                {
+                  "ref": "truck",
+                  "value": "rack_0_0"
+                },
+                {
+                  "ref": "rack_0_0",
+                  "value": "rack_0_1"
+                },
+                {
+                  "ref": "rack_0_1",
+                  "value": "rack_0_2"
+                },
+                {
+                  "ref": "rack_0_2",
+                  "value": "rack_0_3"
+                },
+                {
+                  "ref": "rack_0_3",
+                  "value": "rack_0_4"
+                },
+                {
+                  "ref": "rack_0_4",
+                  "value": "rack_0_5"
+                },
+                {
+                  "ref": "rack_0_5",
+                  "value": 0
+                },
+                {
+                  "ref": "num_jigs_on_rack_0",
+                  "value": {
+                    "op": "-",
+                    "left": "num_jigs_on_rack_0",
+                    "right": 1
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "action": "push_rack_0",
+          "location": "loc_0",
+          "guard": {
+            "exp": {
+              "op": "∧",
+              "left": {
+                "op": "∧",
+                "left": {
+                  "op": "∧",
+                  "left": {
+                    "op": "∧",
+                    "left": {
+                      "op": ">",
+                      "left": "trailer_0",
+                      "right": 0
+                    },
+                    "right": {
+                      "op": "=",
+                      "left": "num_jigs_on_rack_0",
+                      "right": 0
+                    }
+                  },
+                  "right": {
+                    "op": "<",
+                    "left": "num_jigs_on_rack_0",
+                    "right": 6
+                  }
+                },
+                "right": {
+                  "op": "=",
+                  "left": "rack_overload",
+                  "right": 0
+                }
+              },
+              "right": {
+                "op": "∨",
+                "left": {
+                  "op": "≠",
+                  "left": "restricted_rack",
+                  "right": 0
+                },
+                "right": {
+                  "op": "<",
+                  "left": "num_jigs_on_rack_0",
+                  "right": "rack_limit"
+                }
+              }
+            }
+          },
+          "destinations": [
+            {
+              "location": "loc_0",
+              "assignments": [
+                {
+                  "ref": "trailer_0",
+                  "value": 0
+                },
+                {
+                  "ref": "rack_0_0",
+                  "value": "trailer_0"
+                },
+                {
+                  "ref": "num_jigs_on_rack_0",
+                  "value": {
+                    "op": "+",
+                    "left": "num_jigs_on_rack_0",
+                    "right": 1
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "action": "push_rack_0",
+          "location": "loc_0",
+          "guard": {
+            "exp": {
+              "op": "∧",
+              "left": {
+                "op": "∧",
+                "left": {
+                  "op": "∧",
+                  "left": {
+                    "op": "∧",
+                    "left": {
+                      "op": ">",
+                      "left": "trailer_0",
+                      "right": 0
+                    },
+                    "right": {
+                      "op": "=",
+                      "left": "num_jigs_on_rack_0",
+                      "right": 1
+                    }
+                  },
+                  "right": {
+                    "op": "<",
+                    "left": "num_jigs_on_rack_0",
+                    "right": 6
+                  }
+                },
+                "right": {
+                  "op": "=",
+                  "left": "rack_overload",
+                  "right": 0
+                }
+              },
+              "right": {
+                "op": "∨",
+                "left": {
+                  "op": "≠",
+                  "left": "restricted_rack",
+                  "right": 0
+                },
+                "right": {
+                  "op": "<",
+                  "left": "num_jigs_on_rack_0",
+                  "right": "rack_limit"
+                }
+              }
+            }
+          },
+          "destinations": [
+            {
+              "location": "loc_0",
+              "assignments": [
+                {
+                  "ref": "trailer_0",
+                  "value": 0
+                },
+                {
+                  "ref": "rack_0_1",
+                  "value": "trailer_0"
+                },
+                {
+                  "ref": "num_jigs_on_rack_0",
+                  "value": {
+                    "op": "+",
+                    "left": "num_jigs_on_rack_0",
+                    "right": 1
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "action": "push_rack_0",
+          "location": "loc_0",
+          "guard": {
+            "exp": {
+              "op": "∧",
+              "left": {
+                "op": "∧",
+                "left": {
+                  "op": "∧",
+                  "left": {
+                    "op": "∧",
+                    "left": {
+                      "op": ">",
+                      "left": "trailer_0",
+                      "right": 0
+                    },
+                    "right": {
+                      "op": "=",
+                      "left": "num_jigs_on_rack_0",
+                      "right": 2
+                    }
+                  },
+                  "right": {
+                    "op": "<",
+                    "left": "num_jigs_on_rack_0",
+                    "right": 6
+                  }
+                },
+                "right": {
+                  "op": "=",
+                  "left": "rack_overload",
+                  "right": 0
+                }
+              },
+              "right": {
+                "op": "∨",
+                "left": {
+                  "op": "≠",
+                  "left": "restricted_rack",
+                  "right": 0
+                },
+                "right": {
+                  "op": "<",
+                  "left": "num_jigs_on_rack_0",
+                  "right": "rack_limit"
+                }
+              }
+            }
+          },
+          "destinations": [
+            {
+              "location": "loc_0",
+              "assignments": [
+                {
+                  "ref": "trailer_0",
+                  "value": 0
+                },
+                {
+                  "ref": "rack_0_2",
+                  "value": "trailer_0"
+                },
+                {
+                  "ref": "num_jigs_on_rack_0",
+                  "value": {
+                    "op": "+",
+                    "left": "num_jigs_on_rack_0",
+                    "right": 1
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "action": "push_rack_0",
+          "location": "loc_0",
+          "guard": {
+            "exp": {
+              "op": "∧",
+              "left": {
+                "op": "∧",
+                "left": {
+                  "op": "∧",
+                  "left": {
+                    "op": "∧",
+                    "left": {
+                      "op": ">",
+                      "left": "trailer_0",
+                      "right": 0
+                    },
+                    "right": {
+                      "op": "=",
+                      "left": "num_jigs_on_rack_0",
+                      "right": 3
+                    }
+                  },
+                  "right": {
+                    "op": "<",
+                    "left": "num_jigs_on_rack_0",
+                    "right": 6
+                  }
+                },
+                "right": {
+                  "op": "=",
+                  "left": "rack_overload",
+                  "right": 0
+                }
+              },
+              "right": {
+                "op": "∨",
+                "left": {
+                  "op": "≠",
+                  "left": "restricted_rack",
+                  "right": 0
+                },
+                "right": {
+                  "op": "<",
+                  "left": "num_jigs_on_rack_0",
+                  "right": "rack_limit"
+                }
+              }
+            }
+          },
+          "destinations": [
+            {
+              "location": "loc_0",
+              "assignments": [
+                {
+                  "ref": "trailer_0",
+                  "value": 0
+                },
+                {
+                  "ref": "rack_0_3",
+                  "value": "trailer_0"
+                },
+                {
+                  "ref": "num_jigs_on_rack_0",
+                  "value": {
+                    "op": "+",
+                    "left": "num_jigs_on_rack_0",
+                    "right": 1
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "action": "push_rack_0",
+          "location": "loc_0",
+          "guard": {
+            "exp": {
+              "op": "∧",
+              "left": {
+                "op": "∧",
+                "left": {
+                  "op": "∧",
+                  "left": {
+                    "op": "∧",
+                    "left": {
+                      "op": ">",
+                      "left": "trailer_0",
+                      "right": 0
+                    },
+                    "right": {
+                      "op": "=",
+                      "left": "num_jigs_on_rack_0",
+                      "right": 4
+                    }
+                  },
+                  "right": {
+                    "op": "<",
+                    "left": "num_jigs_on_rack_0",
+                    "right": 6
+                  }
+                },
+                "right": {
+                  "op": "=",
+                  "left": "rack_overload",
+                  "right": 0
+                }
+              },
+              "right": {
+                "op": "∨",
+                "left": {
+                  "op": "≠",
+                  "left": "restricted_rack",
+                  "right": 0
+                },
+                "right": {
+                  "op": "<",
+                  "left": "num_jigs_on_rack_0",
+                  "right": "rack_limit"
+                }
+              }
+            }
+          },
+          "destinations": [
+            {
+              "location": "loc_0",
+              "assignments": [
+                {
+                  "ref": "trailer_0",
+                  "value": 0
+                },
+                {
+                  "ref": "rack_0_4",
+                  "value": "trailer_0"
+                },
+                {
+                  "ref": "num_jigs_on_rack_0",
+                  "value": {
+                    "op": "+",
+                    "left": "num_jigs_on_rack_0",
+                    "right": 1
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "action": "push_rack_0",
+          "location": "loc_0",
+          "guard": {
+            "exp": {
+              "op": "∧",
+              "left": {
+                "op": "∧",
+                "left": {
+                  "op": "∧",
+                  "left": {
+                    "op": "∧",
+                    "left": {
+                      "op": ">",
+                      "left": "trailer_0",
+                      "right": 0
+                    },
+                    "right": {
+                      "op": "=",
+                      "left": "num_jigs_on_rack_0",
+                      "right": 5
+                    }
+                  },
+                  "right": {
+                    "op": "<",
+                    "left": "num_jigs_on_rack_0",
+                    "right": 6
+                  }
+                },
+                "right": {
+                  "op": "=",
+                  "left": "rack_overload",
+                  "right": 0
+                }
+              },
+              "right": {
+                "op": "∨",
+                "left": {
+                  "op": "≠",
+                  "left": "restricted_rack",
+                  "right": 0
+                },
+                "right": {
+                  "op": "<",
+                  "left": "num_jigs_on_rack_0",
+                  "right": "rack_limit"
+                }
+              }
+            }
+          },
+          "destinations": [
+            {
+              "location": "loc_0",
+              "assignments": [
+                {
+                  "ref": "trailer_0",
+                  "value": 0
+                },
+                {
+                  "ref": "rack_0_5",
+                  "value": "trailer_0"
+                },
+                {
+                  "ref": "num_jigs_on_rack_0",
+                  "value": {
+                    "op": "+",
+                    "left": "num_jigs_on_rack_0",
+                    "right": 1
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "action": "pop_rack_1",
+          "location": "loc_0",
+          "guard": {
+            "exp": {
+              "op": "∧",
+              "left": {
+                "op": "∧",
+                "left": {
+                  "op": "=",
+                  "left": "truck",
+                  "right": 0
+                },
+                "right": {
+                  "op": ">",
+                  "left": "num_jigs_on_rack_1",
+                  "right": 0
+                }
+              },
+              "right": {
+                "op": "=",
+                "left": "rack_overload",
+                "right": 0
+              }
+            }
+          },
+          "destinations": [
+            {
+              "location": "loc_0",
+              "assignments": [
+                {
+                  "ref": "truck",
+                  "value": "rack_1_0"
+                },
+                {
+                  "ref": "rack_1_0",
+                  "value": "rack_1_1"
+                },
+                {
+                  "ref": "rack_1_1",
+                  "value": "rack_1_2"
+                },
+                {
+                  "ref": "rack_1_2",
+                  "value": "rack_1_3"
+                },
+                {
+                  "ref": "rack_1_3",
+                  "value": "rack_1_4"
+                },
+                {
+                  "ref": "rack_1_4",
+                  "value": "rack_1_5"
+                },
+                {
+                  "ref": "rack_1_5",
+                  "value": 0
+                },
+                {
+                  "ref": "num_jigs_on_rack_1",
+                  "value": {
+                    "op": "-",
+                    "left": "num_jigs_on_rack_1",
+                    "right": 1
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "action": "push_rack_1",
+          "location": "loc_0",
+          "guard": {
+            "exp": {
+              "op": "∧",
+              "left": {
+                "op": "∧",
+                "left": {
+                  "op": "∧",
+                  "left": {
+                    "op": "∧",
+                    "left": {
+                      "op": ">",
+                      "left": "trailer_0",
+                      "right": 0
+                    },
+                    "right": {
+                      "op": "=",
+                      "left": "num_jigs_on_rack_1",
+                      "right": 0
+                    }
+                  },
+                  "right": {
+                    "op": "<",
+                    "left": "num_jigs_on_rack_1",
+                    "right": 6
+                  }
+                },
+                "right": {
+                  "op": "=",
+                  "left": "rack_overload",
+                  "right": 0
+                }
+              },
+              "right": {
+                "op": "∨",
+                "left": {
+                  "op": "≠",
+                  "left": "restricted_rack",
+                  "right": 1
+                },
+                "right": {
+                  "op": "<",
+                  "left": "num_jigs_on_rack_1",
+                  "right": "rack_limit"
+                }
+              }
+            }
+          },
+          "destinations": [
+            {
+              "location": "loc_0",
+              "assignments": [
+                {
+                  "ref": "trailer_0",
+                  "value": 0
+                },
+                {
+                  "ref": "rack_1_0",
+                  "value": "trailer_0"
+                },
+                {
+                  "ref": "num_jigs_on_rack_1",
+                  "value": {
+                    "op": "+",
+                    "left": "num_jigs_on_rack_1",
+                    "right": 1
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "action": "push_rack_1",
+          "location": "loc_0",
+          "guard": {
+            "exp": {
+              "op": "∧",
+              "left": {
+                "op": "∧",
+                "left": {
+                  "op": "∧",
+                  "left": {
+                    "op": "∧",
+                    "left": {
+                      "op": ">",
+                      "left": "trailer_0",
+                      "right": 0
+                    },
+                    "right": {
+                      "op": "=",
+                      "left": "num_jigs_on_rack_1",
+                      "right": 1
+                    }
+                  },
+                  "right": {
+                    "op": "<",
+                    "left": "num_jigs_on_rack_1",
+                    "right": 6
+                  }
+                },
+                "right": {
+                  "op": "=",
+                  "left": "rack_overload",
+                  "right": 0
+                }
+              },
+              "right": {
+                "op": "∨",
+                "left": {
+                  "op": "≠",
+                  "left": "restricted_rack",
+                  "right": 1
+                },
+                "right": {
+                  "op": "<",
+                  "left": "num_jigs_on_rack_1",
+                  "right": "rack_limit"
+                }
+              }
+            }
+          },
+          "destinations": [
+            {
+              "location": "loc_0",
+              "assignments": [
+                {
+                  "ref": "trailer_0",
+                  "value": 0
+                },
+                {
+                  "ref": "rack_1_1",
+                  "value": "trailer_0"
+                },
+                {
+                  "ref": "num_jigs_on_rack_1",
+                  "value": {
+                    "op": "+",
+                    "left": "num_jigs_on_rack_1",
+                    "right": 1
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "action": "push_rack_1",
+          "location": "loc_0",
+          "guard": {
+            "exp": {
+              "op": "∧",
+              "left": {
+                "op": "∧",
+                "left": {
+                  "op": "∧",
+                  "left": {
+                    "op": "∧",
+                    "left": {
+                      "op": ">",
+                      "left": "trailer_0",
+                      "right": 0
+                    },
+                    "right": {
+                      "op": "=",
+                      "left": "num_jigs_on_rack_1",
+                      "right": 2
+                    }
+                  },
+                  "right": {
+                    "op": "<",
+                    "left": "num_jigs_on_rack_1",
+                    "right": 6
+                  }
+                },
+                "right": {
+                  "op": "=",
+                  "left": "rack_overload",
+                  "right": 0
+                }
+              },
+              "right": {
+                "op": "∨",
+                "left": {
+                  "op": "≠",
+                  "left": "restricted_rack",
+                  "right": 1
+                },
+                "right": {
+                  "op": "<",
+                  "left": "num_jigs_on_rack_1",
+                  "right": "rack_limit"
+                }
+              }
+            }
+          },
+          "destinations": [
+            {
+              "location": "loc_0",
+              "assignments": [
+                {
+                  "ref": "trailer_0",
+                  "value": 0
+                },
+                {
+                  "ref": "rack_1_2",
+                  "value": "trailer_0"
+                },
+                {
+                  "ref": "num_jigs_on_rack_1",
+                  "value": {
+                    "op": "+",
+                    "left": "num_jigs_on_rack_1",
+                    "right": 1
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "action": "push_rack_1",
+          "location": "loc_0",
+          "guard": {
+            "exp": {
+              "op": "∧",
+              "left": {
+                "op": "∧",
+                "left": {
+                  "op": "∧",
+                  "left": {
+                    "op": "∧",
+                    "left": {
+                      "op": ">",
+                      "left": "trailer_0",
+                      "right": 0
+                    },
+                    "right": {
+                      "op": "=",
+                      "left": "num_jigs_on_rack_1",
+                      "right": 3
+                    }
+                  },
+                  "right": {
+                    "op": "<",
+                    "left": "num_jigs_on_rack_1",
+                    "right": 6
+                  }
+                },
+                "right": {
+                  "op": "=",
+                  "left": "rack_overload",
+                  "right": 0
+                }
+              },
+              "right": {
+                "op": "∨",
+                "left": {
+                  "op": "≠",
+                  "left": "restricted_rack",
+                  "right": 1
+                },
+                "right": {
+                  "op": "<",
+                  "left": "num_jigs_on_rack_1",
+                  "right": "rack_limit"
+                }
+              }
+            }
+          },
+          "destinations": [
+            {
+              "location": "loc_0",
+              "assignments": [
+                {
+                  "ref": "trailer_0",
+                  "value": 0
+                },
+                {
+                  "ref": "rack_1_3",
+                  "value": "trailer_0"
+                },
+                {
+                  "ref": "num_jigs_on_rack_1",
+                  "value": {
+                    "op": "+",
+                    "left": "num_jigs_on_rack_1",
+                    "right": 1
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "action": "push_rack_1",
+          "location": "loc_0",
+          "guard": {
+            "exp": {
+              "op": "∧",
+              "left": {
+                "op": "∧",
+                "left": {
+                  "op": "∧",
+                  "left": {
+                    "op": "∧",
+                    "left": {
+                      "op": ">",
+                      "left": "trailer_0",
+                      "right": 0
+                    },
+                    "right": {
+                      "op": "=",
+                      "left": "num_jigs_on_rack_1",
+                      "right": 4
+                    }
+                  },
+                  "right": {
+                    "op": "<",
+                    "left": "num_jigs_on_rack_1",
+                    "right": 6
+                  }
+                },
+                "right": {
+                  "op": "=",
+                  "left": "rack_overload",
+                  "right": 0
+                }
+              },
+              "right": {
+                "op": "∨",
+                "left": {
+                  "op": "≠",
+                  "left": "restricted_rack",
+                  "right": 1
+                },
+                "right": {
+                  "op": "<",
+                  "left": "num_jigs_on_rack_1",
+                  "right": "rack_limit"
+                }
+              }
+            }
+          },
+          "destinations": [
+            {
+              "location": "loc_0",
+              "assignments": [
+                {
+                  "ref": "trailer_0",
+                  "value": 0
+                },
+                {
+                  "ref": "rack_1_4",
+                  "value": "trailer_0"
+                },
+                {
+                  "ref": "num_jigs_on_rack_1",
+                  "value": {
+                    "op": "+",
+                    "left": "num_jigs_on_rack_1",
+                    "right": 1
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "action": "push_rack_1",
+          "location": "loc_0",
+          "guard": {
+            "exp": {
+              "op": "∧",
+              "left": {
+                "op": "∧",
+                "left": {
+                  "op": "∧",
+                  "left": {
+                    "op": "∧",
+                    "left": {
+                      "op": ">",
+                      "left": "trailer_0",
+                      "right": 0
+                    },
+                    "right": {
+                      "op": "=",
+                      "left": "num_jigs_on_rack_1",
+                      "right": 5
+                    }
+                  },
+                  "right": {
+                    "op": "<",
+                    "left": "num_jigs_on_rack_1",
+                    "right": 6
+                  }
+                },
+                "right": {
+                  "op": "=",
+                  "left": "rack_overload",
+                  "right": 0
+                }
+              },
+              "right": {
+                "op": "∨",
+                "left": {
+                  "op": "≠",
+                  "left": "restricted_rack",
+                  "right": 1
+                },
+                "right": {
+                  "op": "<",
+                  "left": "num_jigs_on_rack_1",
+                  "right": "rack_limit"
+                }
+              }
+            }
+          },
+          "destinations": [
+            {
+              "location": "loc_0",
+              "assignments": [
+                {
+                  "ref": "trailer_0",
+                  "value": 0
+                },
+                {
+                  "ref": "rack_1_5",
+                  "value": "trailer_0"
+                },
+                {
+                  "ref": "num_jigs_on_rack_1",
+                  "value": {
+                    "op": "+",
+                    "left": "num_jigs_on_rack_1",
+                    "right": 1
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "action": "pop_rack_2",
+          "location": "loc_0",
+          "guard": {
+            "exp": {
+              "op": "∧",
+              "left": {
+                "op": "∧",
+                "left": {
+                  "op": "=",
+                  "left": "truck",
+                  "right": 0
+                },
+                "right": {
+                  "op": ">",
+                  "left": "num_jigs_on_rack_2",
+                  "right": 0
+                }
+              },
+              "right": {
+                "op": "=",
+                "left": "rack_overload",
+                "right": 0
+              }
+            }
+          },
+          "destinations": [
+            {
+              "location": "loc_0",
+              "assignments": [
+                {
+                  "ref": "truck",
+                  "value": "rack_2_0"
+                },
+                {
+                  "ref": "rack_2_0",
+                  "value": "rack_2_1"
+                },
+                {
+                  "ref": "rack_2_1",
+                  "value": "rack_2_2"
+                },
+                {
+                  "ref": "rack_2_2",
+                  "value": "rack_2_3"
+                },
+                {
+                  "ref": "rack_2_3",
+                  "value": "rack_2_4"
+                },
+                {
+                  "ref": "rack_2_4",
+                  "value": "rack_2_5"
+                },
+                {
+                  "ref": "rack_2_5",
+                  "value": 0
+                },
+                {
+                  "ref": "num_jigs_on_rack_2",
+                  "value": {
+                    "op": "-",
+                    "left": "num_jigs_on_rack_2",
+                    "right": 1
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "action": "push_rack_2",
+          "location": "loc_0",
+          "guard": {
+            "exp": {
+              "op": "∧",
+              "left": {
+                "op": "∧",
+                "left": {
+                  "op": "∧",
+                  "left": {
+                    "op": "∧",
+                    "left": {
+                      "op": ">",
+                      "left": "trailer_0",
+                      "right": 0
+                    },
+                    "right": {
+                      "op": "=",
+                      "left": "num_jigs_on_rack_2",
+                      "right": 0
+                    }
+                  },
+                  "right": {
+                    "op": "<",
+                    "left": "num_jigs_on_rack_2",
+                    "right": 6
+                  }
+                },
+                "right": {
+                  "op": "=",
+                  "left": "rack_overload",
+                  "right": 0
+                }
+              },
+              "right": {
+                "op": "∨",
+                "left": {
+                  "op": "≠",
+                  "left": "restricted_rack",
+                  "right": 2
+                },
+                "right": {
+                  "op": "<",
+                  "left": "num_jigs_on_rack_2",
+                  "right": "rack_limit"
+                }
+              }
+            }
+          },
+          "destinations": [
+            {
+              "location": "loc_0",
+              "assignments": [
+                {
+                  "ref": "trailer_0",
+                  "value": 0
+                },
+                {
+                  "ref": "rack_2_0",
+                  "value": "trailer_0"
+                },
+                {
+                  "ref": "num_jigs_on_rack_2",
+                  "value": {
+                    "op": "+",
+                    "left": "num_jigs_on_rack_2",
+                    "right": 1
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "action": "push_rack_2",
+          "location": "loc_0",
+          "guard": {
+            "exp": {
+              "op": "∧",
+              "left": {
+                "op": "∧",
+                "left": {
+                  "op": "∧",
+                  "left": {
+                    "op": "∧",
+                    "left": {
+                      "op": ">",
+                      "left": "trailer_0",
+                      "right": 0
+                    },
+                    "right": {
+                      "op": "=",
+                      "left": "num_jigs_on_rack_2",
+                      "right": 1
+                    }
+                  },
+                  "right": {
+                    "op": "<",
+                    "left": "num_jigs_on_rack_2",
+                    "right": 6
+                  }
+                },
+                "right": {
+                  "op": "=",
+                  "left": "rack_overload",
+                  "right": 0
+                }
+              },
+              "right": {
+                "op": "∨",
+                "left": {
+                  "op": "≠",
+                  "left": "restricted_rack",
+                  "right": 2
+                },
+                "right": {
+                  "op": "<",
+                  "left": "num_jigs_on_rack_2",
+                  "right": "rack_limit"
+                }
+              }
+            }
+          },
+          "destinations": [
+            {
+              "location": "loc_0",
+              "assignments": [
+                {
+                  "ref": "trailer_0",
+                  "value": 0
+                },
+                {
+                  "ref": "rack_2_1",
+                  "value": "trailer_0"
+                },
+                {
+                  "ref": "num_jigs_on_rack_2",
+                  "value": {
+                    "op": "+",
+                    "left": "num_jigs_on_rack_2",
+                    "right": 1
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "action": "push_rack_2",
+          "location": "loc_0",
+          "guard": {
+            "exp": {
+              "op": "∧",
+              "left": {
+                "op": "∧",
+                "left": {
+                  "op": "∧",
+                  "left": {
+                    "op": "∧",
+                    "left": {
+                      "op": ">",
+                      "left": "trailer_0",
+                      "right": 0
+                    },
+                    "right": {
+                      "op": "=",
+                      "left": "num_jigs_on_rack_2",
+                      "right": 2
+                    }
+                  },
+                  "right": {
+                    "op": "<",
+                    "left": "num_jigs_on_rack_2",
+                    "right": 6
+                  }
+                },
+                "right": {
+                  "op": "=",
+                  "left": "rack_overload",
+                  "right": 0
+                }
+              },
+              "right": {
+                "op": "∨",
+                "left": {
+                  "op": "≠",
+                  "left": "restricted_rack",
+                  "right": 2
+                },
+                "right": {
+                  "op": "<",
+                  "left": "num_jigs_on_rack_2",
+                  "right": "rack_limit"
+                }
+              }
+            }
+          },
+          "destinations": [
+            {
+              "location": "loc_0",
+              "assignments": [
+                {
+                  "ref": "trailer_0",
+                  "value": 0
+                },
+                {
+                  "ref": "rack_2_2",
+                  "value": "trailer_0"
+                },
+                {
+                  "ref": "num_jigs_on_rack_2",
+                  "value": {
+                    "op": "+",
+                    "left": "num_jigs_on_rack_2",
+                    "right": 1
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "action": "push_rack_2",
+          "location": "loc_0",
+          "guard": {
+            "exp": {
+              "op": "∧",
+              "left": {
+                "op": "∧",
+                "left": {
+                  "op": "∧",
+                  "left": {
+                    "op": "∧",
+                    "left": {
+                      "op": ">",
+                      "left": "trailer_0",
+                      "right": 0
+                    },
+                    "right": {
+                      "op": "=",
+                      "left": "num_jigs_on_rack_2",
+                      "right": 3
+                    }
+                  },
+                  "right": {
+                    "op": "<",
+                    "left": "num_jigs_on_rack_2",
+                    "right": 6
+                  }
+                },
+                "right": {
+                  "op": "=",
+                  "left": "rack_overload",
+                  "right": 0
+                }
+              },
+              "right": {
+                "op": "∨",
+                "left": {
+                  "op": "≠",
+                  "left": "restricted_rack",
+                  "right": 2
+                },
+                "right": {
+                  "op": "<",
+                  "left": "num_jigs_on_rack_2",
+                  "right": "rack_limit"
+                }
+              }
+            }
+          },
+          "destinations": [
+            {
+              "location": "loc_0",
+              "assignments": [
+                {
+                  "ref": "trailer_0",
+                  "value": 0
+                },
+                {
+                  "ref": "rack_2_3",
+                  "value": "trailer_0"
+                },
+                {
+                  "ref": "num_jigs_on_rack_2",
+                  "value": {
+                    "op": "+",
+                    "left": "num_jigs_on_rack_2",
+                    "right": 1
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "action": "push_rack_2",
+          "location": "loc_0",
+          "guard": {
+            "exp": {
+              "op": "∧",
+              "left": {
+                "op": "∧",
+                "left": {
+                  "op": "∧",
+                  "left": {
+                    "op": "∧",
+                    "left": {
+                      "op": ">",
+                      "left": "trailer_0",
+                      "right": 0
+                    },
+                    "right": {
+                      "op": "=",
+                      "left": "num_jigs_on_rack_2",
+                      "right": 4
+                    }
+                  },
+                  "right": {
+                    "op": "<",
+                    "left": "num_jigs_on_rack_2",
+                    "right": 6
+                  }
+                },
+                "right": {
+                  "op": "=",
+                  "left": "rack_overload",
+                  "right": 0
+                }
+              },
+              "right": {
+                "op": "∨",
+                "left": {
+                  "op": "≠",
+                  "left": "restricted_rack",
+                  "right": 2
+                },
+                "right": {
+                  "op": "<",
+                  "left": "num_jigs_on_rack_2",
+                  "right": "rack_limit"
+                }
+              }
+            }
+          },
+          "destinations": [
+            {
+              "location": "loc_0",
+              "assignments": [
+                {
+                  "ref": "trailer_0",
+                  "value": 0
+                },
+                {
+                  "ref": "rack_2_4",
+                  "value": "trailer_0"
+                },
+                {
+                  "ref": "num_jigs_on_rack_2",
+                  "value": {
+                    "op": "+",
+                    "left": "num_jigs_on_rack_2",
+                    "right": 1
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "action": "push_rack_2",
+          "location": "loc_0",
+          "guard": {
+            "exp": {
+              "op": "∧",
+              "left": {
+                "op": "∧",
+                "left": {
+                  "op": "∧",
+                  "left": {
+                    "op": "∧",
+                    "left": {
+                      "op": ">",
+                      "left": "trailer_0",
+                      "right": 0
+                    },
+                    "right": {
+                      "op": "=",
+                      "left": "num_jigs_on_rack_2",
+                      "right": 5
+                    }
+                  },
+                  "right": {
+                    "op": "<",
+                    "left": "num_jigs_on_rack_2",
+                    "right": 6
+                  }
+                },
+                "right": {
+                  "op": "=",
+                  "left": "rack_overload",
+                  "right": 0
+                }
+              },
+              "right": {
+                "op": "∨",
+                "left": {
+                  "op": "≠",
+                  "left": "restricted_rack",
+                  "right": 2
+                },
+                "right": {
+                  "op": "<",
+                  "left": "num_jigs_on_rack_2",
+                  "right": "rack_limit"
+                }
+              }
+            }
+          },
+          "destinations": [
+            {
+              "location": "loc_0",
+              "assignments": [
+                {
+                  "ref": "trailer_0",
+                  "value": 0
+                },
+                {
+                  "ref": "rack_2_5",
+                  "value": "trailer_0"
+                },
+                {
+                  "ref": "num_jigs_on_rack_2",
+                  "value": {
+                    "op": "+",
+                    "left": "num_jigs_on_rack_2",
+                    "right": 1
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "action": "push_rack_0",
+          "location": "loc_0",
+          "guard": {
+            "exp": {
+              "op": "∧",
+              "left": {
+                "op": "∧",
+                "left": {
+                  "op": "∧",
+                  "left": {
+                    "op": "=",
+                    "left": "rack_overload",
+                    "right": 0
+                  },
+                  "right": {
+                    "op": ">",
+                    "left": "trailer_0",
+                    "right": 0
+                  }
+                },
+                "right": {
+                  "op": "=",
+                  "left": "restricted_rack",
+                  "right": 0
+                }
+              },
+              "right": {
+                "op": "≥",
+                "left": "num_jigs_on_rack_0",
+                "right": "rack_limit"
+              }
+            }
+          },
+          "destinations": [
+            {
+              "location": "loc_0",
+              "assignments": [
+                {
+                  "ref": "rack_overload",
+                  "value": 1
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "action": "push_rack_1",
+          "location": "loc_0",
+          "guard": {
+            "exp": {
+              "op": "∧",
+              "left": {
+                "op": "∧",
+                "left": {
+                  "op": "∧",
+                  "left": {
+                    "op": "=",
+                    "left": "rack_overload",
+                    "right": 0
+                  },
+                  "right": {
+                    "op": ">",
+                    "left": "trailer_0",
+                    "right": 0
+                  }
+                },
+                "right": {
+                  "op": "=",
+                  "left": "restricted_rack",
+                  "right": 1
+                }
+              },
+              "right": {
+                "op": "≥",
+                "left": "num_jigs_on_rack_1",
+                "right": "rack_limit"
+              }
+            }
+          },
+          "destinations": [
+            {
+              "location": "loc_0",
+              "assignments": [
+                {
+                  "ref": "rack_overload",
+                  "value": 1
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "action": "push_rack_2",
+          "location": "loc_0",
+          "guard": {
+            "exp": {
+              "op": "∧",
+              "left": {
+                "op": "∧",
+                "left": {
+                  "op": "∧",
+                  "left": {
+                    "op": "=",
+                    "left": "rack_overload",
+                    "right": 0
+                  },
+                  "right": {
+                    "op": ">",
+                    "left": "trailer_0",
+                    "right": 0
+                  }
+                },
+                "right": {
+                  "op": "=",
+                  "left": "restricted_rack",
+                  "right": 2
+                }
+              },
+              "right": {
+                "op": "≥",
+                "left": "num_jigs_on_rack_2",
+                "right": "rack_limit"
+              }
+            }
+          },
+          "destinations": [
+            {
+              "location": "loc_0",
+              "assignments": [
+                {
+                  "ref": "rack_overload",
+                  "value": 1
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "initial-locations": [
+        "loc_0"
+      ],
+      "locations": [
+        {
+          "name": "loc_0"
+        }
+      ],
+      "name": "automaton_0"
+    }
+  ],
+  "constants": [
+    {
+      "name": "max_swaps",
+      "type": "int",
+      "value": 40
+    },
+    {
+      "name": "num_jigs",
+      "type": "int",
+      "value": 6
+    },
+    {
+      "name": "num_racks",
+      "type": "int",
+      "value": 3
+    },
+    {
+      "name": "rack_max_capacity",
+      "type": "int",
+      "value": 6
+    },
+    {
+      "name": "num_production_lines",
+      "type": "int",
+      "value": 3
+    }
+  ],
+  "jani-version": 1,
+  "name": "beluga_6_3_3",
+  "properties": [
+    {
+      "expression": {
+        "objective": {
+          "goal": {
+            "exp": {
+              "op": "∧",
+              "left": {
+                "op": "∧",
+                "left": {
+                  "op": "∧",
+                  "left": {
+                    "op": "∧",
+                    "left": {
+                      "op": "∧",
+                      "left": {
+                        "op": "∧",
+                        "left": {
+                          "op": "∧",
+                          "left": {
+                            "op": "∧",
+                            "left": {
+                              "op": "∧",
+                              "left": {
+                                "op": "∧",
+                                "left": {
+                                  "op": "∧",
+                                  "left": {
+                                    "op": "∧",
+                                    "left": {
+                                      "op": "∧",
+                                      "left": {
+                                        "op": "∧",
+                                        "left": {
+                                          "op": "∧",
+                                          "left": {
+                                            "op": "∧",
+                                            "left": {
+                                              "op": "∧",
+                                              "left": {
+                                                "op": "∧",
+                                                "left": {
+                                                  "op": "∧",
+                                                  "left": {
+                                                    "op": "∧",
+                                                    "left": {
+                                                      "op": "∧",
+                                                      "left": {
+                                                        "op": "∧",
+                                                        "left": {
+                                                          "op": "∧",
+                                                          "left": {
+                                                            "op": "∧",
+                                                            "left": {
+                                                              "op": "∧",
+                                                              "left": {
+                                                                "op": "∧",
+                                                                "left": {
+                                                                  "op": "∧",
+                                                                  "left": {
+                                                                    "op": "∧",
+                                                                    "left": {
+                                                                      "op": "∧",
+                                                                      "left": {
+                                                                        "op": "=",
+                                                                        "left": "line_1",
+                                                                        "right": 0
+                                                                      },
+                                                                      "right": {
+                                                                        "op": "=",
+                                                                        "left": "line_2",
+                                                                        "right": 0
+                                                                      }
+                                                                    },
+                                                                    "right": {
+                                                                      "op": "=",
+                                                                      "left": "line_3",
+                                                                      "right": 0
+                                                                    }
+                                                                  },
+                                                                  "right": {
+                                                                    "op": "=",
+                                                                    "left": "rack_0_0",
+                                                                    "right": 0
+                                                                  }
+                                                                },
+                                                                "right": {
+                                                                  "op": "=",
+                                                                  "left": "rack_0_1",
+                                                                  "right": 0
+                                                                }
+                                                              },
+                                                              "right": {
+                                                                "op": "=",
+                                                                "left": "rack_0_2",
+                                                                "right": 0
+                                                              }
+                                                            },
+                                                            "right": {
+                                                              "op": "=",
+                                                              "left": "rack_0_3",
+                                                              "right": 0
+                                                            }
+                                                          },
+                                                          "right": {
+                                                            "op": "=",
+                                                            "left": "rack_0_4",
+                                                            "right": 0
+                                                          }
+                                                        },
+                                                        "right": {
+                                                          "op": "=",
+                                                          "left": "rack_0_5",
+                                                          "right": 0
+                                                        }
+                                                      },
+                                                      "right": {
+                                                        "op": "=",
+                                                        "left": "rack_1_0",
+                                                        "right": 0
+                                                      }
+                                                    },
+                                                    "right": {
+                                                      "op": "=",
+                                                      "left": "rack_1_1",
+                                                      "right": 0
+                                                    }
+                                                  },
+                                                  "right": {
+                                                    "op": "=",
+                                                    "left": "rack_1_2",
+                                                    "right": 0
+                                                  }
+                                                },
+                                                "right": {
+                                                  "op": "=",
+                                                  "left": "rack_1_3",
+                                                  "right": 0
+                                                }
+                                              },
+                                              "right": {
+                                                "op": "=",
+                                                "left": "rack_1_4",
+                                                "right": 0
+                                              }
+                                            },
+                                            "right": {
+                                              "op": "=",
+                                              "left": "rack_1_5",
+                                              "right": 0
+                                            }
+                                          },
+                                          "right": {
+                                            "op": "=",
+                                            "left": "rack_2_0",
+                                            "right": 0
+                                          }
+                                        },
+                                        "right": {
+                                          "op": "=",
+                                          "left": "rack_2_1",
+                                          "right": 0
+                                        }
+                                      },
+                                      "right": {
+                                        "op": "=",
+                                        "left": "rack_2_2",
+                                        "right": 0
+                                      }
+                                    },
+                                    "right": {
+                                      "op": "=",
+                                      "left": "rack_2_3",
+                                      "right": 0
+                                    }
+                                  },
+                                  "right": {
+                                    "op": "=",
+                                    "left": "rack_2_4",
+                                    "right": 0
+                                  }
+                                },
+                                "right": {
+                                  "op": "=",
+                                  "left": "rack_2_5",
+                                  "right": 0
+                                }
+                              },
+                              "right": {
+                                "op": "=",
+                                "left": "trailer_0",
+                                "right": 0
+                              }
+                            },
+                            "right": {
+                              "op": "=",
+                              "left": "beluga_1",
+                              "right": 0
+                            }
+                          },
+                          "right": {
+                            "op": "=",
+                            "left": "beluga_2",
+                            "right": 0
+                          }
+                        },
+                        "right": {
+                          "op": "=",
+                          "left": "beluga_3",
+                          "right": 0
+                        }
+                      },
+                      "right": {
+                        "op": "=",
+                        "left": "beluga_4",
+                        "right": 0
+                      }
+                    },
+                    "right": {
+                      "op": "=",
+                      "left": "beluga_5",
+                      "right": 0
+                    }
+                  },
+                  "right": {
+                    "op": "=",
+                    "left": "beluga_6",
+                    "right": 0
+                  }
+                },
+                "right": {
+                  "op": "=",
+                  "left": "truck",
+                  "right": 0
+                }
+              },
+              "right": {
+                "op": "=",
+                "left": "rack_overload",
+                "right": 0
+              }
+            },
+            "op": "state-condition"
+          },
+          "op": "objective"
+        },
+        "op": "PA",
+        "reach": {
+          "exp": {
+            "op": "=",
+            "left": "rack_overload",
+            "right": 1
+          },
+          "op": "state-condition"
+        },
+        "start": {
+          "exp": {
+            "op": "∧",
+            "left": {
+              "op": "∧",
+              "left": {
+                "op": "∧",
+                "left": {
+                  "op": "∧",
+                  "left": {
+                    "op": "∧",
+                    "left": {
+                      "op": "∧",
+                      "left": {
+                        "op": "∧",
+                        "left": {
+                          "op": "∧",
+                          "left": {
+                            "op": "∧",
+                            "left": {
+                              "op": "∧",
+                              "left": {
+                                "op": "∧",
+                                "left": {
+                                  "op": "∧",
+                                  "left": {
+                                    "op": "∧",
+                                    "left": {
+                                      "op": "∧",
+                                      "left": {
+                                        "op": "∧",
+                                        "left": {
+                                          "op": "∧",
+                                          "left": {
+                                            "op": "∧",
+                                            "left": {
+                                              "op": "∧",
+                                              "left": {
+                                                "op": "∧",
+                                                "left": {
+                                                  "op": "∧",
+                                                  "left": {
+                                                    "op": "∧",
+                                                    "left": {
+                                                      "op": "∧",
+                                                      "left": {
+                                                        "op": "∧",
+                                                        "left": {
+                                                          "op": "∧",
+                                                          "left": {
+                                                            "op": "∧",
+                                                            "left": {
+                                                              "op": "∧",
+                                                              "left": {
+                                                                "op": "∧",
+                                                                "left": {
+                                                                  "op": "∧",
+                                                                  "left": {
+                                                                    "op": "∧",
+                                                                    "left": {
+                                                                      "op": "∧",
+                                                                      "left": {
+                                                                        "op": "∧",
+                                                                        "left": {
+                                                                          "op": "∧",
+                                                                          "left": {
+                                                                            "op": "∧",
+                                                                            "left": {
+                                                                              "op": "∧",
+                                                                              "left": {
+                                                                                "op": "∧",
+                                                                                "left": {
+                                                                                  "op": "∧",
+                                                                                  "left": {
+                                                                                    "op": "∧",
+                                                                                    "left": {
+                                                                                      "op": "∧",
+                                                                                      "left": {
+                                                                                        "op": "∧",
+                                                                                        "left": {
+                                                                                          "op": "∧",
+                                                                                          "left": {
+                                                                                            "op": "∧",
+                                                                                            "left": {
+                                                                                              "op": "∧",
+                                                                                              "left": {
+                                                                                                "op": "∧",
+                                                                                                "left": {
+                                                                                                  "op": "∧",
+                                                                                                  "left": {
+                                                                                                    "op": "∧",
+                                                                                                    "left": {
+                                                                                                      "op": "∧",
+                                                                                                      "left": {
+                                                                                                        "op": "∧",
+                                                                                                        "left": {
+                                                                                                          "op": "∧",
+                                                                                                          "left": {
+                                                                                                            "op": "∧",
+                                                                                                            "left": {
+                                                                                                              "op": "∧",
+                                                                                                              "left": {
+                                                                                                                "op": "∧",
+                                                                                                                "left": {
+                                                                                                                  "op": "∧",
+                                                                                                                  "left": {
+                                                                                                                    "op": "∧",
+                                                                                                                    "left": {
+                                                                                                                      "op": "∧",
+                                                                                                                      "left": {
+                                                                                                                        "op": "∧",
+                                                                                                                        "left": {
+                                                                                                                          "op": "∧",
+                                                                                                                          "left": {
+                                                                                                                            "op": "∧",
+                                                                                                                            "left": {
+                                                                                                                              "op": "∧",
+                                                                                                                              "left": {
+                                                                                                                                "op": "∧",
+                                                                                                                                "left": {
+                                                                                                                                  "op": "∧",
+                                                                                                                                  "left": {
+                                                                                                                                    "op": "=",
+                                                                                                                                    "left": "num_jigs_on_rack_0",
+                                                                                                                                    "right": 0
+                                                                                                                                  },
+                                                                                                                                  "right": {
+                                                                                                                                    "op": "=",
+                                                                                                                                    "left": "num_jigs_on_rack_1",
+                                                                                                                                    "right": 0
+                                                                                                                                  }
+                                                                                                                                },
+                                                                                                                                "right": {
+                                                                                                                                  "op": "=",
+                                                                                                                                  "left": "num_jigs_on_rack_2",
+                                                                                                                                  "right": 0
+                                                                                                                                }
+                                                                                                                              },
+                                                                                                                              "right": {
+                                                                                                                                "op": "=",
+                                                                                                                                "left": "rack_0_0",
+                                                                                                                                "right": 0
+                                                                                                                              }
+                                                                                                                            },
+                                                                                                                            "right": {
+                                                                                                                              "op": "=",
+                                                                                                                              "left": "rack_0_1",
+                                                                                                                              "right": 0
+                                                                                                                            }
+                                                                                                                          },
+                                                                                                                          "right": {
+                                                                                                                            "op": "=",
+                                                                                                                            "left": "rack_0_2",
+                                                                                                                            "right": 0
+                                                                                                                          }
+                                                                                                                        },
+                                                                                                                        "right": {
+                                                                                                                          "op": "=",
+                                                                                                                          "left": "rack_0_3",
+                                                                                                                          "right": 0
+                                                                                                                        }
+                                                                                                                      },
+                                                                                                                      "right": {
+                                                                                                                        "op": "=",
+                                                                                                                        "left": "rack_0_4",
+                                                                                                                        "right": 0
+                                                                                                                      }
+                                                                                                                    },
+                                                                                                                    "right": {
+                                                                                                                      "op": "=",
+                                                                                                                      "left": "rack_0_5",
+                                                                                                                      "right": 0
+                                                                                                                    }
+                                                                                                                  },
+                                                                                                                  "right": {
+                                                                                                                    "op": "=",
+                                                                                                                    "left": "rack_1_0",
+                                                                                                                    "right": 0
+                                                                                                                  }
+                                                                                                                },
+                                                                                                                "right": {
+                                                                                                                  "op": "=",
+                                                                                                                  "left": "rack_1_1",
+                                                                                                                  "right": 0
+                                                                                                                }
+                                                                                                              },
+                                                                                                              "right": {
+                                                                                                                "op": "=",
+                                                                                                                "left": "rack_1_2",
+                                                                                                                "right": 0
+                                                                                                              }
+                                                                                                            },
+                                                                                                            "right": {
+                                                                                                              "op": "=",
+                                                                                                              "left": "rack_1_3",
+                                                                                                              "right": 0
+                                                                                                            }
+                                                                                                          },
+                                                                                                          "right": {
+                                                                                                            "op": "=",
+                                                                                                            "left": "rack_1_4",
+                                                                                                            "right": 0
+                                                                                                          }
+                                                                                                        },
+                                                                                                        "right": {
+                                                                                                          "op": "=",
+                                                                                                          "left": "rack_1_5",
+                                                                                                          "right": 0
+                                                                                                        }
+                                                                                                      },
+                                                                                                      "right": {
+                                                                                                        "op": "=",
+                                                                                                        "left": "rack_2_0",
+                                                                                                        "right": 0
+                                                                                                      }
+                                                                                                    },
+                                                                                                    "right": {
+                                                                                                      "op": "=",
+                                                                                                      "left": "rack_2_1",
+                                                                                                      "right": 0
+                                                                                                    }
+                                                                                                  },
+                                                                                                  "right": {
+                                                                                                    "op": "=",
+                                                                                                    "left": "rack_2_2",
+                                                                                                    "right": 0
+                                                                                                  }
+                                                                                                },
+                                                                                                "right": {
+                                                                                                  "op": "=",
+                                                                                                  "left": "rack_2_3",
+                                                                                                  "right": 0
+                                                                                                }
+                                                                                              },
+                                                                                              "right": {
+                                                                                                "op": "=",
+                                                                                                "left": "rack_2_4",
+                                                                                                "right": 0
+                                                                                              }
+                                                                                            },
+                                                                                            "right": {
+                                                                                              "op": "=",
+                                                                                              "left": "rack_2_5",
+                                                                                              "right": 0
+                                                                                            }
+                                                                                          },
+                                                                                          "right": {
+                                                                                            "op": "=",
+                                                                                            "left": "trailer_0",
+                                                                                            "right": 0
+                                                                                          }
+                                                                                        },
+                                                                                        "right": {
+                                                                                          "op": "=",
+                                                                                          "left": "line_1",
+                                                                                          "right": 5
+                                                                                        }
+                                                                                      },
+                                                                                      "right": {
+                                                                                        "op": "=",
+                                                                                        "left": "line_2",
+                                                                                        "right": 3
+                                                                                      }
+                                                                                    },
+                                                                                    "right": {
+                                                                                      "op": "=",
+                                                                                      "left": "line_3",
+                                                                                      "right": 1
+                                                                                    }
+                                                                                  },
+                                                                                  "right": {
+                                                                                    "op": "=",
+                                                                                    "left": "truck",
+                                                                                    "right": 0
+                                                                                  }
+                                                                                },
+                                                                                "right": {
+                                                                                  "op": "=",
+                                                                                  "left": "num_swaps",
+                                                                                  "right": 0
+                                                                                }
+                                                                              },
+                                                                              "right": {
+                                                                                "op": "=",
+                                                                                "left": "rack_overload",
+                                                                                "right": 0
+                                                                              }
+                                                                            },
+                                                                            "right": {
+                                                                              "op": "≥",
+                                                                              "left": "beluga_1",
+                                                                              "right": 1
+                                                                            }
+                                                                          },
+                                                                          "right": {
+                                                                            "op": "≤",
+                                                                            "left": "beluga_1",
+                                                                            "right": 6
+                                                                          }
+                                                                        },
+                                                                        "right": {
+                                                                          "op": "≠",
+                                                                          "left": "beluga_1",
+                                                                          "right": "beluga_2"
+                                                                        }
+                                                                      },
+                                                                      "right": {
+                                                                        "op": "≠",
+                                                                        "left": "beluga_1",
+                                                                        "right": "beluga_3"
+                                                                      }
+                                                                    },
+                                                                    "right": {
+                                                                      "op": "≠",
+                                                                      "left": "beluga_1",
+                                                                      "right": "beluga_4"
+                                                                    }
+                                                                  },
+                                                                  "right": {
+                                                                    "op": "≠",
+                                                                    "left": "beluga_1",
+                                                                    "right": "beluga_5"
+                                                                  }
+                                                                },
+                                                                "right": {
+                                                                  "op": "≠",
+                                                                  "left": "beluga_1",
+                                                                  "right": "beluga_6"
+                                                                }
+                                                              },
+                                                              "right": {
+                                                                "op": "≥",
+                                                                "left": "beluga_2",
+                                                                "right": 1
+                                                              }
+                                                            },
+                                                            "right": {
+                                                              "op": "≤",
+                                                              "left": "beluga_2",
+                                                              "right": 6
+                                                            }
+                                                          },
+                                                          "right": {
+                                                            "op": "≠",
+                                                            "left": "beluga_2",
+                                                            "right": "beluga_3"
+                                                          }
+                                                        },
+                                                        "right": {
+                                                          "op": "≠",
+                                                          "left": "beluga_2",
+                                                          "right": "beluga_4"
+                                                        }
+                                                      },
+                                                      "right": {
+                                                        "op": "≠",
+                                                        "left": "beluga_2",
+                                                        "right": "beluga_5"
+                                                      }
+                                                    },
+                                                    "right": {
+                                                      "op": "≠",
+                                                      "left": "beluga_2",
+                                                      "right": "beluga_6"
+                                                    }
+                                                  },
+                                                  "right": {
+                                                    "op": "≥",
+                                                    "left": "beluga_3",
+                                                    "right": 1
+                                                  }
+                                                },
+                                                "right": {
+                                                  "op": "≤",
+                                                  "left": "beluga_3",
+                                                  "right": 6
+                                                }
+                                              },
+                                              "right": {
+                                                "op": "≠",
+                                                "left": "beluga_3",
+                                                "right": "beluga_4"
+                                              }
+                                            },
+                                            "right": {
+                                              "op": "≠",
+                                              "left": "beluga_3",
+                                              "right": "beluga_5"
+                                            }
+                                          },
+                                          "right": {
+                                            "op": "≠",
+                                            "left": "beluga_3",
+                                            "right": "beluga_6"
+                                          }
+                                        },
+                                        "right": {
+                                          "op": "≥",
+                                          "left": "beluga_4",
+                                          "right": 1
+                                        }
+                                      },
+                                      "right": {
+                                        "op": "≤",
+                                        "left": "beluga_4",
+                                        "right": 6
+                                      }
+                                    },
+                                    "right": {
+                                      "op": "≠",
+                                      "left": "beluga_4",
+                                      "right": "beluga_5"
+                                    }
+                                  },
+                                  "right": {
+                                    "op": "≠",
+                                    "left": "beluga_4",
+                                    "right": "beluga_6"
+                                  }
+                                },
+                                "right": {
+                                  "op": "≥",
+                                  "left": "beluga_5",
+                                  "right": 1
+                                }
+                              },
+                              "right": {
+                                "op": "≤",
+                                "left": "beluga_5",
+                                "right": 6
+                              }
+                            },
+                            "right": {
+                              "op": "≠",
+                              "left": "beluga_5",
+                              "right": "beluga_6"
+                            }
+                          },
+                          "right": {
+                            "op": "≥",
+                            "left": "beluga_6",
+                            "right": 1
+                          }
+                        },
+                        "right": {
+                          "op": "≤",
+                          "left": "beluga_6",
+                          "right": 6
+                        }
+                      },
+                      "right": {
+                        "op": "≥",
+                        "left": "next_line",
+                        "right": 1
+                      }
+                    },
+                    "right": {
+                      "op": "≤",
+                      "left": "next_line",
+                      "right": 3
+                    }
+                  },
+                  "right": {
+                    "op": "≥",
+                    "left": "restricted_rack",
+                    "right": 0
+                  }
+                },
+                "right": {
+                  "op": "≤",
+                  "left": "restricted_rack",
+                  "right": 2
+                }
+              },
+              "right": {
+                "op": "≥",
+                "left": "rack_limit",
+                "right": 1
+              }
+            },
+            "right": {
+              "op": "≤",
+              "left": "rack_limit",
+              "right": 5
+            }
+          },
+          "locations": [
+            {
+              "automaton": "automaton_0",
+              "index": 0,
+              "location": "loc_0"
+            }
+          ],
+          "op": "state-condition"
+        }
+      },
+      "name": "beluga_6_3_3_random_rack"
+    }
+  ],
+  "system": {
+    "elements": [
+      {
+        "automaton": "automaton_0"
+      }
+    ],
+    "syncs": [
+      {
+        "result": "pop_beluga",
+        "synchronise": [
+          "pop_beluga"
+        ]
+      },
+      {
+        "result": "push_rack_0",
+        "synchronise": [
+          "push_rack_0"
+        ]
+      },
+      {
+        "result": "push_rack_1",
+        "synchronise": [
+          "push_rack_1"
+        ]
+      },
+      {
+        "result": "push_rack_2",
+        "synchronise": [
+          "push_rack_2"
+        ]
+      },
+      {
+        "result": "pop_rack_0",
+        "synchronise": [
+          "pop_rack_0"
+        ]
+      },
+      {
+        "result": "pop_rack_1",
+        "synchronise": [
+          "pop_rack_1"
+        ]
+      },
+      {
+        "result": "pop_rack_2",
+        "synchronise": [
+          "pop_rack_2"
+        ]
+      },
+      {
+        "result": "deliver",
+        "synchronise": [
+          "deliver"
+        ]
+      },
+      {
+        "result": "send_back",
+        "synchronise": [
+          "send_back"
+        ]
+      },
+      {
+        "result": "no_op",
+        "synchronise": [
+          "no_op"
+        ]
+      }
+    ]
+  },
+  "type": "mdp",
+  "variables": [
+    {
+      "name": "num_jigs_on_rack_0",
+      "initial-value": 0,
+      "type": {
+        "kind": "bounded",
+        "base": "int",
+        "lower-bound": 0,
+        "upper-bound": 6
+      }
+    },
+    {
+      "name": "num_jigs_on_rack_1",
+      "initial-value": 0,
+      "type": {
+        "kind": "bounded",
+        "base": "int",
+        "lower-bound": 0,
+        "upper-bound": 6
+      }
+    },
+    {
+      "name": "num_jigs_on_rack_2",
+      "initial-value": 0,
+      "type": {
+        "kind": "bounded",
+        "base": "int",
+        "lower-bound": 0,
+        "upper-bound": 6
+      }
+    },
+    {
+      "name": "rack_0_0",
+      "initial-value": 0,
+      "type": {
+        "kind": "bounded",
+        "base": "int",
+        "lower-bound": 0,
+        "upper-bound": 6
+      }
+    },
+    {
+      "name": "rack_0_1",
+      "initial-value": 0,
+      "type": {
+        "kind": "bounded",
+        "base": "int",
+        "lower-bound": 0,
+        "upper-bound": 6
+      }
+    },
+    {
+      "name": "rack_0_2",
+      "initial-value": 0,
+      "type": {
+        "kind": "bounded",
+        "base": "int",
+        "lower-bound": 0,
+        "upper-bound": 6
+      }
+    },
+    {
+      "name": "rack_0_3",
+      "initial-value": 0,
+      "type": {
+        "kind": "bounded",
+        "base": "int",
+        "lower-bound": 0,
+        "upper-bound": 6
+      }
+    },
+    {
+      "name": "rack_0_4",
+      "initial-value": 0,
+      "type": {
+        "kind": "bounded",
+        "base": "int",
+        "lower-bound": 0,
+        "upper-bound": 6
+      }
+    },
+    {
+      "name": "rack_0_5",
+      "initial-value": 0,
+      "type": {
+        "kind": "bounded",
+        "base": "int",
+        "lower-bound": 0,
+        "upper-bound": 6
+      }
+    },
+    {
+      "name": "rack_1_0",
+      "initial-value": 0,
+      "type": {
+        "kind": "bounded",
+        "base": "int",
+        "lower-bound": 0,
+        "upper-bound": 6
+      }
+    },
+    {
+      "name": "rack_1_1",
+      "initial-value": 0,
+      "type": {
+        "kind": "bounded",
+        "base": "int",
+        "lower-bound": 0,
+        "upper-bound": 6
+      }
+    },
+    {
+      "name": "rack_1_2",
+      "initial-value": 0,
+      "type": {
+        "kind": "bounded",
+        "base": "int",
+        "lower-bound": 0,
+        "upper-bound": 6
+      }
+    },
+    {
+      "name": "rack_1_3",
+      "initial-value": 0,
+      "type": {
+        "kind": "bounded",
+        "base": "int",
+        "lower-bound": 0,
+        "upper-bound": 6
+      }
+    },
+    {
+      "name": "rack_1_4",
+      "initial-value": 0,
+      "type": {
+        "kind": "bounded",
+        "base": "int",
+        "lower-bound": 0,
+        "upper-bound": 6
+      }
+    },
+    {
+      "name": "rack_1_5",
+      "initial-value": 0,
+      "type": {
+        "kind": "bounded",
+        "base": "int",
+        "lower-bound": 0,
+        "upper-bound": 6
+      }
+    },
+    {
+      "name": "rack_2_0",
+      "initial-value": 0,
+      "type": {
+        "kind": "bounded",
+        "base": "int",
+        "lower-bound": 0,
+        "upper-bound": 6
+      }
+    },
+    {
+      "name": "rack_2_1",
+      "initial-value": 0,
+      "type": {
+        "kind": "bounded",
+        "base": "int",
+        "lower-bound": 0,
+        "upper-bound": 6
+      }
+    },
+    {
+      "name": "rack_2_2",
+      "initial-value": 0,
+      "type": {
+        "kind": "bounded",
+        "base": "int",
+        "lower-bound": 0,
+        "upper-bound": 6
+      }
+    },
+    {
+      "name": "rack_2_3",
+      "initial-value": 0,
+      "type": {
+        "kind": "bounded",
+        "base": "int",
+        "lower-bound": 0,
+        "upper-bound": 6
+      }
+    },
+    {
+      "name": "rack_2_4",
+      "initial-value": 0,
+      "type": {
+        "kind": "bounded",
+        "base": "int",
+        "lower-bound": 0,
+        "upper-bound": 6
+      }
+    },
+    {
+      "name": "rack_2_5",
+      "initial-value": 0,
+      "type": {
+        "kind": "bounded",
+        "base": "int",
+        "lower-bound": 0,
+        "upper-bound": 6
+      }
+    },
+    {
+      "initial-value": 0,
+      "name": "trailer_0",
+      "type": {
+        "base": "int",
+        "kind": "bounded",
+        "lower-bound": 0,
+        "upper-bound": 6
+      }
+    },
+    {
+      "initial-value": 1,
+      "name": "beluga_1",
+      "type": {
+        "base": "int",
+        "kind": "bounded",
+        "lower-bound": 0,
+        "upper-bound": 6
+      }
+    },
+    {
+      "initial-value": 2,
+      "name": "beluga_2",
+      "type": {
+        "base": "int",
+        "kind": "bounded",
+        "lower-bound": 0,
+        "upper-bound": 6
+      }
+    },
+    {
+      "initial-value": 3,
+      "name": "beluga_3",
+      "type": {
+        "base": "int",
+        "kind": "bounded",
+        "lower-bound": 0,
+        "upper-bound": 6
+      }
+    },
+    {
+      "initial-value": 4,
+      "name": "beluga_4",
+      "type": {
+        "base": "int",
+        "kind": "bounded",
+        "lower-bound": 0,
+        "upper-bound": 6
+      }
+    },
+    {
+      "initial-value": 5,
+      "name": "beluga_5",
+      "type": {
+        "base": "int",
+        "kind": "bounded",
+        "lower-bound": 0,
+        "upper-bound": 6
+      }
+    },
+    {
+      "initial-value": 6,
+      "name": "beluga_6",
+      "type": {
+        "base": "int",
+        "kind": "bounded",
+        "lower-bound": 0,
+        "upper-bound": 6
+      }
+    },
+    {
+      "initial-value": 1,
+      "name": "next_line",
+      "type": {
+        "base": "int",
+        "kind": "bounded",
+        "lower-bound": 1,
+        "upper-bound": 3
+      }
+    },
+    {
+      "initial-value": 5,
+      "name": "line_1",
+      "type": {
+        "base": "int",
+        "kind": "bounded",
+        "lower-bound": 0,
+        "upper-bound": 6
+      }
+    },
+    {
+      "initial-value": 3,
+      "name": "line_2",
+      "type": {
+        "base": "int",
+        "kind": "bounded",
+        "lower-bound": 0,
+        "upper-bound": 6
+      }
+    },
+    {
+      "initial-value": 1,
+      "name": "line_3",
+      "type": {
+        "base": "int",
+        "kind": "bounded",
+        "lower-bound": 0,
+        "upper-bound": 6
+      }
+    },
+    {
+      "initial-value": 0,
+      "name": "truck",
+      "type": {
+        "base": "int",
+        "kind": "bounded",
+        "lower-bound": 0,
+        "upper-bound": 6
+      }
+    },
+    {
+      "initial-value": 0,
+      "name": "num_swaps",
+      "type": {
+        "base": "int",
+        "kind": "bounded",
+        "lower-bound": 0,
+        "upper-bound": 40
+      }
+    },
+    {
+      "name": "rack_overload",
+      "initial-value": 0,
+      "type": {
+        "kind": "bounded",
+        "base": "int",
+        "lower-bound": 0,
+        "upper-bound": 1
+      }
+    },
+    {
+      "name": "restricted_rack",
+      "initial-value": 0,
+      "type": {
+        "kind": "bounded",
+        "base": "int",
+        "lower-bound": 0,
+        "upper-bound": 2
+      }
+    },
+    {
+      "name": "rack_limit",
+      "initial-value": 1,
+      "type": {
+        "kind": "bounded",
+        "base": "int",
+        "lower-bound": 1,
+        "upper-bound": 5
+      }
+    }
+  ]
+}

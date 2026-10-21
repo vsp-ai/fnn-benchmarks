@@ -1,0 +1,120 @@
+{
+  "elements": [
+    32,
+    32
+  ],
+  "file": "nn-32_32.nnet",
+  "filter": false,
+  "input": [
+    {
+      "automaton": null,
+      "name": "num_jigs_on_rack_0"
+    },
+    {
+      "automaton": null,
+      "name": "num_jigs_on_rack_1"
+    },
+    {
+      "automaton": null,
+      "name": "rack_0_0"
+    },
+    {
+      "automaton": null,
+      "name": "rack_0_1"
+    },
+    {
+      "automaton": null,
+      "name": "rack_0_2"
+    },
+    {
+      "automaton": null,
+      "name": "rack_0_3"
+    },
+    {
+      "automaton": null,
+      "name": "rack_0_4"
+    },
+    {
+      "automaton": null,
+      "name": "rack_1_0"
+    },
+    {
+      "automaton": null,
+      "name": "rack_1_1"
+    },
+    {
+      "automaton": null,
+      "name": "rack_1_2"
+    },
+    {
+      "automaton": null,
+      "name": "rack_1_3"
+    },
+    {
+      "automaton": null,
+      "name": "rack_1_4"
+    },
+    {
+      "automaton": null,
+      "name": "trailer_0"
+    },
+    {
+      "automaton": null,
+      "name": "beluga_1"
+    },
+    {
+      "automaton": null,
+      "name": "beluga_2"
+    },
+    {
+      "automaton": null,
+      "name": "beluga_3"
+    },
+    {
+      "automaton": null,
+      "name": "beluga_4"
+    },
+    {
+      "automaton": null,
+      "name": "beluga_5"
+    },
+    {
+      "automaton": null,
+      "name": "next_line"
+    },
+    {
+      "automaton": null,
+      "name": "line_1"
+    },
+    {
+      "automaton": null,
+      "name": "line_2"
+    },
+    {
+      "automaton": null,
+      "name": "truck"
+    },
+    {
+      "automaton": null,
+      "name": "num_swaps"
+    },
+    {
+      "automaton": null,
+      "name": "restricted_rack"
+    },
+    {
+      "automaton": null,
+      "name": "rack_limit"
+    }
+  ],
+  "output": [
+    "pop_beluga",
+    "push_rack_0",
+    "push_rack_1",
+    "pop_rack_0",
+    "pop_rack_1",
+    "deliver",
+    "send_back",
+    "no_op"
+  ]
+}

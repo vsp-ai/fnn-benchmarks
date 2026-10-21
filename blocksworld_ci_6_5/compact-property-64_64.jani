@@ -1,0 +1,20 @@
+{
+    "properties": [
+        {
+            "expression": {
+                "file": "nn-64_64.jani2nnet",
+                "objective": {
+                    "file": "objective.jani"
+                },
+                "op": "PA",
+                "reach": {
+                    "file": "reach.jani"
+                },
+                "start": {
+                    "file": "start.jani"
+                }
+            },
+            "name": "compact-property-64_64"
+        }
+    ]
+}

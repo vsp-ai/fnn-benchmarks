@@ -1,0 +1,540 @@
+{
+  "properties": [
+    {
+      "expression": {
+        "objective": {
+          "goal": {
+            "exp": {
+              "op": "∧",
+              "left": {
+                "op": "∧",
+                "left": {
+                  "op": "∧",
+                  "left": {
+                    "op": "∧",
+                    "left": {
+                      "op": "∧",
+                      "left": {
+                        "op": "∧",
+                        "left": {
+                          "op": "∧",
+                          "left": {
+                            "op": "∧",
+                            "left": {
+                              "op": "∧",
+                              "left": {
+                                "op": "∧",
+                                "left": {
+                                  "op": "∧",
+                                  "left": {
+                                    "op": "∧",
+                                    "left": {
+                                      "op": "∧",
+                                      "left": {
+                                        "op": "∧",
+                                        "left": {
+                                          "op": "∧",
+                                          "left": {
+                                            "op": "∧",
+                                            "left": {
+                                              "op": "∧",
+                                              "left": {
+                                                "op": "∧",
+                                                "left": {
+                                                  "op": "∧",
+                                                  "left": {
+                                                    "op": "=",
+                                                    "left": "line_1",
+                                                    "right": 0
+                                                  },
+                                                  "right": {
+                                                    "op": "=",
+                                                    "left": "line_2",
+                                                    "right": 0
+                                                  }
+                                                },
+                                                "right": {
+                                                  "op": "=",
+                                                  "left": "rack_0_0",
+                                                  "right": 0
+                                                }
+                                              },
+                                              "right": {
+                                                "op": "=",
+                                                "left": "rack_0_1",
+                                                "right": 0
+                                              }
+                                            },
+                                            "right": {
+                                              "op": "=",
+                                              "left": "rack_0_2",
+                                              "right": 0
+                                            }
+                                          },
+                                          "right": {
+                                            "op": "=",
+                                            "left": "rack_0_3",
+                                            "right": 0
+                                          }
+                                        },
+                                        "right": {
+                                          "op": "=",
+                                          "left": "rack_0_4",
+                                          "right": 0
+                                        }
+                                      },
+                                      "right": {
+                                        "op": "=",
+                                        "left": "rack_1_0",
+                                        "right": 0
+                                      }
+                                    },
+                                    "right": {
+                                      "op": "=",
+                                      "left": "rack_1_1",
+                                      "right": 0
+                                    }
+                                  },
+                                  "right": {
+                                    "op": "=",
+                                    "left": "rack_1_2",
+                                    "right": 0
+                                  }
+                                },
+                                "right": {
+                                  "op": "=",
+                                  "left": "rack_1_3",
+                                  "right": 0
+                                }
+                              },
+                              "right": {
+                                "op": "=",
+                                "left": "rack_1_4",
+                                "right": 0
+                              }
+                            },
+                            "right": {
+                              "op": "=",
+                              "left": "trailer_0",
+                              "right": 0
+                            }
+                          },
+                          "right": {
+                            "op": "=",
+                            "left": "beluga_1",
+                            "right": 0
+                          }
+                        },
+                        "right": {
+                          "op": "=",
+                          "left": "beluga_2",
+                          "right": 0
+                        }
+                      },
+                      "right": {
+                        "op": "=",
+                        "left": "beluga_3",
+                        "right": 0
+                      }
+                    },
+                    "right": {
+                      "op": "=",
+                      "left": "beluga_4",
+                      "right": 0
+                    }
+                  },
+                  "right": {
+                    "op": "=",
+                    "left": "beluga_5",
+                    "right": 0
+                  }
+                },
+                "right": {
+                  "op": "=",
+                  "left": "truck",
+                  "right": 0
+                }
+              },
+              "right": {
+                "op": "=",
+                "left": "rack_overload",
+                "right": 0
+              }
+            },
+            "op": "state-condition"
+          },
+          "op": "objective"
+        },
+        "op": "PA",
+        "reach": {
+          "exp": {
+            "op": "=",
+            "left": "rack_overload",
+            "right": 1
+          },
+          "op": "state-condition"
+        },
+        "start": {
+          "exp": {
+            "op": "∧",
+            "left": {
+              "op": "∧",
+              "left": {
+                "op": "∧",
+                "left": {
+                  "op": "∧",
+                  "left": {
+                    "op": "∧",
+                    "left": {
+                      "op": "∧",
+                      "left": {
+                        "op": "∧",
+                        "left": {
+                          "op": "∧",
+                          "left": {
+                            "op": "∧",
+                            "left": {
+                              "op": "∧",
+                              "left": {
+                                "op": "∧",
+                                "left": {
+                                  "op": "∧",
+                                  "left": {
+                                    "op": "∧",
+                                    "left": {
+                                      "op": "∧",
+                                      "left": {
+                                        "op": "∧",
+                                        "left": {
+                                          "op": "∧",
+                                          "left": {
+                                            "op": "∧",
+                                            "left": {
+                                              "op": "∧",
+                                              "left": {
+                                                "op": "∧",
+                                                "left": {
+                                                  "op": "∧",
+                                                  "left": {
+                                                    "op": "∧",
+                                                    "left": {
+                                                      "op": "∧",
+                                                      "left": {
+                                                        "op": "∧",
+                                                        "left": {
+                                                          "op": "∧",
+                                                          "left": {
+                                                            "op": "∧",
+                                                            "left": {
+                                                              "op": "∧",
+                                                              "left": {
+                                                                "op": "∧",
+                                                                "left": {
+                                                                  "op": "∧",
+                                                                  "left": {
+                                                                    "op": "∧",
+                                                                    "left": {
+                                                                      "op": "∧",
+                                                                      "left": {
+                                                                        "op": "∧",
+                                                                        "left": {
+                                                                          "op": "∧",
+                                                                          "left": {
+                                                                            "op": "∧",
+                                                                            "left": {
+                                                                              "op": "∧",
+                                                                              "left": {
+                                                                                "op": "∧",
+                                                                                "left": {
+                                                                                  "op": "∧",
+                                                                                  "left": {
+                                                                                    "op": "∧",
+                                                                                    "left": {
+                                                                                      "op": "∧",
+                                                                                      "left": {
+                                                                                        "op": "∧",
+                                                                                        "left": {
+                                                                                          "op": "∧",
+                                                                                          "left": {
+                                                                                            "op": "∧",
+                                                                                            "left": {
+                                                                                              "op": "∧",
+                                                                                              "left": {
+                                                                                                "op": "∧",
+                                                                                                "left": {
+                                                                                                  "op": "=",
+                                                                                                  "left": "num_jigs_on_rack_0",
+                                                                                                  "right": 0
+                                                                                                },
+                                                                                                "right": {
+                                                                                                  "op": "=",
+                                                                                                  "left": "num_jigs_on_rack_1",
+                                                                                                  "right": 0
+                                                                                                }
+                                                                                              },
+                                                                                              "right": {
+                                                                                                "op": "=",
+                                                                                                "left": "rack_0_0",
+                                                                                                "right": 0
+                                                                                              }
+                                                                                            },
+                                                                                            "right": {
+                                                                                              "op": "=",
+                                                                                              "left": "rack_0_1",
+                                                                                              "right": 0
+                                                                                            }
+                                                                                          },
+                                                                                          "right": {
+                                                                                            "op": "=",
+                                                                                            "left": "rack_0_2",
+                                                                                            "right": 0
+                                                                                          }
+                                                                                        },
+                                                                                        "right": {
+                                                                                          "op": "=",
+                                                                                          "left": "rack_0_3",
+                                                                                          "right": 0
+                                                                                        }
+                                                                                      },
+                                                                                      "right": {
+                                                                                        "op": "=",
+                                                                                        "left": "rack_0_4",
+                                                                                        "right": 0
+                                                                                      }
+                                                                                    },
+                                                                                    "right": {
+                                                                                      "op": "=",
+                                                                                      "left": "rack_1_0",
+                                                                                      "right": 0
+                                                                                    }
+                                                                                  },
+                                                                                  "right": {
+                                                                                    "op": "=",
+                                                                                    "left": "rack_1_1",
+                                                                                    "right": 0
+                                                                                  }
+                                                                                },
+                                                                                "right": {
+                                                                                  "op": "=",
+                                                                                  "left": "rack_1_2",
+                                                                                  "right": 0
+                                                                                }
+                                                                              },
+                                                                              "right": {
+                                                                                "op": "=",
+                                                                                "left": "rack_1_3",
+                                                                                "right": 0
+                                                                              }
+                                                                            },
+                                                                            "right": {
+                                                                              "op": "=",
+                                                                              "left": "rack_1_4",
+                                                                              "right": 0
+                                                                            }
+                                                                          },
+                                                                          "right": {
+                                                                            "op": "=",
+                                                                            "left": "trailer_0",
+                                                                            "right": 0
+                                                                          }
+                                                                        },
+                                                                        "right": {
+                                                                          "op": "=",
+                                                                          "left": "line_1",
+                                                                          "right": 1
+                                                                        }
+                                                                      },
+                                                                      "right": {
+                                                                        "op": "=",
+                                                                        "left": "line_2",
+                                                                        "right": 3
+                                                                      }
+                                                                    },
+                                                                    "right": {
+                                                                      "op": "=",
+                                                                      "left": "truck",
+                                                                      "right": 0
+                                                                    }
+                                                                  },
+                                                                  "right": {
+                                                                    "op": "=",
+                                                                    "left": "num_swaps",
+                                                                    "right": 0
+                                                                  }
+                                                                },
+                                                                "right": {
+                                                                  "op": "=",
+                                                                  "left": "rack_overload",
+                                                                  "right": 0
+                                                                }
+                                                              },
+                                                              "right": {
+                                                                "op": "≥",
+                                                                "left": "beluga_1",
+                                                                "right": 1
+                                                              }
+                                                            },
+                                                            "right": {
+                                                              "op": "≤",
+                                                              "left": "beluga_1",
+                                                              "right": 5
+                                                            }
+                                                          },
+                                                          "right": {
+                                                            "op": "≠",
+                                                            "left": "beluga_1",
+                                                            "right": "beluga_2"
+                                                          }
+                                                        },
+                                                        "right": {
+                                                          "op": "≠",
+                                                          "left": "beluga_1",
+                                                          "right": "beluga_3"
+                                                        }
+                                                      },
+                                                      "right": {
+                                                        "op": "≠",
+                                                        "left": "beluga_1",
+                                                        "right": "beluga_4"
+                                                      }
+                                                    },
+                                                    "right": {
+                                                      "op": "≠",
+                                                      "left": "beluga_1",
+                                                      "right": "beluga_5"
+                                                    }
+                                                  },
+                                                  "right": {
+                                                    "op": "≥",
+                                                    "left": "beluga_2",
+                                                    "right": 1
+                                                  }
+                                                },
+                                                "right": {
+                                                  "op": "≤",
+                                                  "left": "beluga_2",
+                                                  "right": 5
+                                                }
+                                              },
+                                              "right": {
+                                                "op": "≠",
+                                                "left": "beluga_2",
+                                                "right": "beluga_3"
+                                              }
+                                            },
+                                            "right": {
+                                              "op": "≠",
+                                              "left": "beluga_2",
+                                              "right": "beluga_4"
+                                            }
+                                          },
+                                          "right": {
+                                            "op": "≠",
+                                            "left": "beluga_2",
+                                            "right": "beluga_5"
+                                          }
+                                        },
+                                        "right": {
+                                          "op": "≥",
+                                          "left": "beluga_3",
+                                          "right": 1
+                                        }
+                                      },
+                                      "right": {
+                                        "op": "≤",
+                                        "left": "beluga_3",
+                                        "right": 5
+                                      }
+                                    },
+                                    "right": {
+                                      "op": "≠",
+                                      "left": "beluga_3",
+                                      "right": "beluga_4"
+                                    }
+                                  },
+                                  "right": {
+                                    "op": "≠",
+                                    "left": "beluga_3",
+                                    "right": "beluga_5"
+                                  }
+                                },
+                                "right": {
+                                  "op": "≥",
+                                  "left": "beluga_4",
+                                  "right": 1
+                                }
+                              },
+                              "right": {
+                                "op": "≤",
+                                "left": "beluga_4",
+                                "right": 5
+                              }
+                            },
+                            "right": {
+                              "op": "≠",
+                              "left": "beluga_4",
+                              "right": "beluga_5"
+                            }
+                          },
+                          "right": {
+                            "op": "≥",
+                            "left": "beluga_5",
+                            "right": 1
+                          }
+                        },
+                        "right": {
+                          "op": "≤",
+                          "left": "beluga_5",
+                          "right": 5
+                        }
+                      },
+                      "right": {
+                        "op": "≥",
+                        "left": "next_line",
+                        "right": 1
+                      }
+                    },
+                    "right": {
+                      "op": "≤",
+                      "left": "next_line",
+                      "right": 2
+                    }
+                  },
+                  "right": {
+                    "op": "≥",
+                    "left": "restricted_rack",
+                    "right": 0
+                  }
+                },
+                "right": {
+                  "op": "≤",
+                  "left": "restricted_rack",
+                  "right": 1
+                }
+              },
+              "right": {
+                "op": "≥",
+                "left": "rack_limit",
+                "right": 1
+              }
+            },
+            "right": {
+              "op": "≤",
+              "left": "rack_limit",
+              "right": 4
+            }
+          },
+          "locations": [
+            {
+              "automaton": "automaton_0",
+              "index": 0,
+              "location": "loc_0"
+            }
+          ],
+          "op": "state-condition"
+        }
+      },
+      "name": "beluga_5_2_2_external"
+    }
+  ]
+}

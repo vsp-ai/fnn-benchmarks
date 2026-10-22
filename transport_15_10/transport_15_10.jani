@@ -1521,7 +1521,7 @@
         }
     ],
     "jani-version": 1,
-    "name": "/home/mago/Desktop/janibenchmarks/icaps27-fnn/description_files/transport_15_10.json",
+    "name": "transport_15_10",
     "properties": [
         {
             "expression": {
@@ -1713,7 +1713,7 @@
                     "op": "state-condition"
                 }
             },
-            "name": "/home/mago/Desktop/janibenchmarks/icaps27-fnn/description_files/transport_15_10.json-safety"
+            "name": "transport_15_10-safety"
         }
     ],
     "system": {

@@ -1941,7 +1941,7 @@
         }
     ],
     "jani-version": 1,
-    "name": "/home/mago/Desktop/janibenchmarks/icaps27-fnn/description_files/owl_det_8_8.json",
+    "name": "owl_det_8_8",
     "properties": [
         {
             "expression": {
@@ -2125,7 +2125,7 @@
                     "op": "state-condition"
                 }
             },
-            "name": "/home/mago/Desktop/janibenchmarks/icaps27-fnn/description_files/owl_det_8_8.json-safety"
+            "name": "owl_det_8_8-safety"
         }
     ],
     "system": {

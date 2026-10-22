@@ -1426,7 +1426,7 @@
         }
     ],
     "jani-version": 1,
-    "name": "/home/mago/Desktop/janibenchmarks/icaps27-fnn/description_files/transport_feat_8_8.json",
+    "name": "transport_feat_8_8",
     "properties": [
         {
             "expression": {
@@ -1806,7 +1806,7 @@
                     "op": "state-condition"
                 }
             },
-            "name": "/home/mago/Desktop/janibenchmarks/icaps27-fnn/description_files/transport_feat_8_8.json-safety"
+            "name": "transport_feat_8_8-safety"
         }
     ],
     "system": {

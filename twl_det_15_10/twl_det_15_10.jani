@@ -5008,7 +5008,7 @@
         }
     ],
     "jani-version": 1,
-    "name": "/home/mago/Desktop/janibenchmarks/icaps27-fnn/description_files/twl_det_15_10.json",
+    "name": "twl_det_15_10",
     "properties": [
         {
             "expression": {
@@ -5216,7 +5216,7 @@
                     "op": "state-condition"
                 }
             },
-            "name": "/home/mago/Desktop/janibenchmarks/icaps27-fnn/description_files/twl_det_15_10.json-safety"
+            "name": "twl_det_15_10-safety"
         }
     ],
     "system": {
